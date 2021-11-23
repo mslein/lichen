@@ -184,3 +184,288 @@ delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,5.00616016
 delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,3.527720739,umol CO2 *kg dw^-1 *s^-1,,,,T,lab,,,ppfd,200
 delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,2.073921971,umol CO2 *kg dw^-1 *s^-1,,,,T,lab,,,ppfd,200
 delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,1.433264887,umol CO2 *kg dw^-1 *s^-1,,,,T,lab,,,ppfd,200
+aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,net photosynthesis,410.5516387,nmol CO2 * g^-1 *g^-1 dry wt,15.66852368,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,net photosynthesis,643.6552891,nmol CO2 * g^-1 *g^-1 dry wt,20.89240614,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,net photosynthesis,782.6207667,nmol CO2 * g^-1 *g^-1 dry wt,48.74755934,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,net photosynthesis,679.5925184,nmol CO2 * g^-1 *g^-1 dry wt,54.83983287,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,net photosynthesis,499.9646813,nmol CO2 * g^-1 *g^-1 dry wt,74.86072423,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,net photosynthesis,233.2915728,nmol CO2 * g^-1 *g^-1 dry wt,81.82451253,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,net photosynthesis,-64.72691288,nmol CO2 * g^-1 *g^-1 dry wt,92.27019499,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,respiration,10.1379763,nmol CO2 * g^-1 *g^-1 dry wt,13.9275766,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,respiration,44.76949528,nmol CO2 * g^-1 *g^-1 dry wt,20.89240614,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,respiration,148.9181138,nmol CO2 * g^-1 *g^-1 dry wt,47.87604457,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,respiration,329.6642388,nmol CO2 * g^-1 *g^-1 dry wt,55.71030641,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,respiration,597.4577175,nmol CO2 * g^-1 *g^-1 dry wt,73.11977716,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,respiration,875.7010436,nmol CO2 * g^-1 *g^-1 dry wt,81.82451253,SD,5,T,lab,,,,
+aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,respiration,1124.342022,nmol CO2 * g^-1 *g^-1 dry wt,90.53028915,SD,5,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,-8.144275132,C,respiration,-0.007178834,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,-4.035394922,C,respiration,-0.137430769,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,0.763282933,C,respiration,-0.240420843,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,4.333467778,C,respiration,-0.413354746,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,9.344239717,C,respiration,-0.682520437,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,14.70719015,C,respiration,-1.241532468,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,-7.30140773,C,net photosynthesis,0.023993389,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,-3.237386009,C,net photosynthesis,0.203006798,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,1.890647595,C,net photosynthesis,0.335936962,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,5.618624143,C,net photosynthesis,0.213306543,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,10.71517811,C,net photosynthesis,0.036949229,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,15.47804787,C,net photosynthesis,-0.417855351,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,20.46521008,C,net photosynthesis,-0.918986651,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+kappen_2000,figure 4,pop,buellia ,frigida,25.75615083,C,net photosynthesis,-1.435493788,mg CO2 *dm^-2  *h^-1,,,,T,lab,,,,
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.01048218,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,3.157232704,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,6.27672956,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,5.438155136,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,7.819706499,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,7.215932914,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,2.050314465,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.278825996,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,2.519916143,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,5.169811321,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,4.264150943,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,5.102725367,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,3.693920335,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,1.178197065,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.13836478,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.373165618,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,0.909853249,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.809224319,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.171907757,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.599580713,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.834381551,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.071278826,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.708595388,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,1.077568134,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.540880503,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.507337526,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.465408805,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.666666667,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-1.06918239,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-4.557651992,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-4.859538784,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,germany
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.532494759,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.236897275,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.041928721,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-3.115303983,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,spain
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.63312369,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.800838574,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.310272537,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.846960168,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-2.578616352,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,antarctica
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.471698113,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.209643606,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.779874214,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.249475891,umol CO2 * kg^-1 * dry weight s^-1,,,,T,lab,,,location,svalbard
+green1998,figure 4a,pop,umbilicaria ,aprina ,0,C,gross photosynthesis,13.33290551,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,5,C,gross photosynthesis,17.04471709,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,10,C,gross photosynthesis,23.87473278,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,15,C,gross photosynthesis,25.71523686,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,20,C,gross photosynthesis,22.56494587,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,0,C,net photosynthesis,6.160201827,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,5,C,net photosynthesis,6.75252584,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,10,C,net photosynthesis,7.344849853,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,15,C,net photosynthesis,-6.721401555,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,20,C,net photosynthesis,-7.687858721,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,0,C,dark respiration,-7.251156131,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,5,C,dark respiration,-10.40112625,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,10,C,dark respiration,-16.04713564,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,15,C,dark respiration,-32.29657914,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+green1998,figure 4a,pop,umbilicaria ,aprina ,20,C,dark respiration,-30.14419047,umol m^-2 *s^-1,,,,T,lab,,,ppfd,800
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,5,C,co2 assimilation,0.74751929,umol m^-2 *s^-1,0.09040794,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,9,C,co2 assimilation,1.1047409,umol m^-2 *s^-1,0.06835722,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,13,C,co2 assimilation,1.31642778,umol m^-2 *s^-1,0.06174201,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,16,C,co2 assimilation,1.4399118,umol m^-2 *s^-1,0.19845645,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,19,C,co2 assimilation,1.42668137,umol m^-2 *s^-1,0.12789416,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,22,C,co2 assimilation,1.46196251,umol m^-2 *s^-1,0.14112459,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,25,C,co2 assimilation,1.27673649,umol m^-2 *s^-1,0.15656009,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,lobaria,pulmonaria ,28,C,co2 assimilation,0.9415656,umol m^-2 *s^-1,0.11025358,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,platismatia,glauca,6,C,co2 assimilation,0.1786108,umol m^-2 *s^-1,0.02425579,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,platismatia,glauca,11,C,co2 assimilation,0.30209482,umol m^-2 *s^-1,0.06174201,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,platismatia,glauca,16,C,co2 assimilation,0.44762955,umol m^-2 *s^-1,0.04189636,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3a,pop,platismatia,glauca,21,C,co2 assimilation,0.41675854,umol m^-2 *s^-1,0.02866593,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,platismatia,glauca,5,C,respiratory release,-0.1212789,umol m^-2 *s^-1,0.0154355,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,platismatia,glauca,10,C,respiratory release,-0.1124587,umol m^-2 *s^-1,0.030871,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,platismatia,glauca,15,C,respiratory release,-0.1168688,umol m^-2 *s^-1,0.01984564,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,platismatia,glauca,20,C,respiratory release,-0.2094818,umol m^-2 *s^-1,0.02646086,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,3,C,respiratory release,-0.0418964,umol m^-2 *s^-1,0.02425579,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,7,C,respiratory release,-0.213892,umol m^-2 *s^-1,0.030871,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,12,C,respiratory release,-0.4652701,umol m^-2 *s^-1,0.07497244,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,15,C,respiratory release,-0.6284454,umol m^-2 *s^-1,0.0463065,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,18,C,respiratory release,-0.8357222,umol m^-2 *s^-1,0.04410143,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,21,C,respiratory release,-1.047409,umol m^-2 *s^-1,0.11907387,SEM,4,T,lab,,,ppfd,300
+sundberg1997,figure 3b,pop,lobaria,pulmonaria ,26,C,respiratory release,-1.3737596,umol m^-2 *s^-1,0.05071665,SEM,4,T,lab,,,ppfd,300
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.165611681,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.149919851,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.143612302,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.131051879,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,3,C,net photosynthesis,0.127945325,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.121632805,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.112228642,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,2,C,net photosynthesis,0.13421311,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.140630009,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.168912084,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.17202858,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.187765144,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.203476856,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.212900901,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,4,C,net photosynthesis,0.225466294,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,5,C,net photosynthesis,0.24438397,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,5,C,net photosynthesis,0.266373408,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,net photosynthesis,0.275807394,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,5,C,net photosynthesis,0.28993849,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,net photosynthesis,0.316649891,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.222498913,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.235089158,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.263351351,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.269678782,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.285380553,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.282219323,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.297926064,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.313697422,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.323116496,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.335681889,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.348267164,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.363889407,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.351324014,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.357631563,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.385893756,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,net photosynthesis,0.39530786,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.407893135,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.395337683,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.392221187,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.39225101,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.370226779,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.376544268,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,8,C,net photosynthesis,0.379670705,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,9,C,net photosynthesis,0.376613855,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.351497981,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.370360982,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.392365331,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,9,C,net photosynthesis,0.323210935,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,9,C,net photosynthesis,0.298075179,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.247893135,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.25732712,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,net photosynthesis,0.266761106,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,net photosynthesis,0.285609195,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.276170239,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.266736253,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.316997825,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.345264989,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,net photosynthesis,0.354674122,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.364366573,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.405209071,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,13,C,net photosynthesis,0.471157502,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,13,C,net photosynthesis,0.486854303,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,13,C,net photosynthesis,0.496278347,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.499439578,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.490035415,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.493201615,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.559135135,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,13,C,net photosynthesis,0.549691208,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.549730972,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.546574713,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.534019261,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,14,C,net photosynthesis,0.518312519,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,net photosynthesis,0.549860205,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,net photosynthesis,0.534148493,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,net photosynthesis,0.474472818,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,net photosynthesis,0.461897484,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.452607642,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,18,C,net photosynthesis,0.524873563,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.546803355,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.559371233,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.57508543,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.587635912,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.597069897,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.603397328,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,18,C,net photosynthesis,0.578276483,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,17,C,net photosynthesis,0.565701149,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.525097235,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.496825101,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.512596459,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.449769494,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.421497359,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.405790618,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.405765766,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.405750854,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.380620068,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.368064616,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,net photosynthesis,0.361762038,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,net photosynthesis,0.358566014,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,net photosynthesis,0.374262815,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,net photosynthesis,0.389964585,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.088569121,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.085378068,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,dark respiration,-0.107357564,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,dark respiration,-0.126185772,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,dark respiration,-0.145033861,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.145063684,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.141952159,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.129381796,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.129396707,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,6,C,dark respiration,-0.119942839,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,7,C,dark respiration,-0.132493321,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,dark respiration,-0.103957751,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,10,C,dark respiration,-0.116493321,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,dark respiration,-0.135296676,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,dark respiration,-0.085040075,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,dark respiration,-0.097615409,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,dark respiration,-0.10700963,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,11,C,dark respiration,-0.119560112,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,12,C,dark respiration,-0.128964275,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,12,C,dark respiration,-0.106964896,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,12,C,dark respiration,-0.100667288,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,12,C,dark respiration,-0.08499037,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.188366573,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.191485555,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.172630009,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.160089469,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.156918298,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,15,C,dark respiration,-0.14125132,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.131812364,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.141216527,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.128636222,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.109793103,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,16,C,dark respiration,-0.103520348,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,19,C,dark respiration,-0.282338614,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,19,C,dark respiration,-0.279172414,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,19,C,dark respiration,-0.266607021,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.291712954,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.301132029,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.263420938,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.247753961,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.238300093,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.232042249,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.222593352,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.206886611,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.323036968,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.297901212,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,22,C,dark respiration,-0.285301025,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.27903324,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.279063063,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.2696589,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,20,C,dark respiration,-0.263391115,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.247669463,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.266467847,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.260214974,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,22,C,dark respiration,-0.250741224,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,22,C,dark respiration,-0.241317179,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.244473439,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.24764461,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.228806462,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.21309475,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.222493942,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,22,C,dark respiration,-0.203625971,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
+tretiach1997,figure 2,pop,verrucaria,baldensis,21,C,dark respiration,-0.19108543,umol m^-2 *s^-1,,,4,T,lab,,,ppfd,200
