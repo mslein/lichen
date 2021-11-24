@@ -10,42 +10,34 @@ screen_abstracts(lichen2)
 
 ##ask mary about the difference in units between the spreadsheet 
 ## and the plos one figure 1....
-lichen_data <- read_csv("lichen_data.csv") 
-count(lichen_data, study_id, response_def, response_units)
-count(lichen_data, response_units)
-lichen_calcs <- lichen_data %>%
+lichen_data <- read_csv("extraction/lichen_data.csv") %>%
   mutate(temp_dep=1/((8.617333262145*10^-5)*(temp+273.15)),
-         metric= case_when(response_units %in% c("nmol O2 *g of dried weight ^1 *min^-1") ~ "vo2", 
-                           response_units %in% c("ratio") ~ "other", 
-                           TRUE ~ "vco2")) %>%
-  filter(!metric %in% c("vo2"),
-         !response_def %in% c("max photosynthesis"))
-test_1<- lichen_calcs %>%
-  filter(response_def %in% c("dark respiration", "net photosynthesis"),
-         !response_units %in% c("umol CO2 * m^-2 *s^-1")) %>%
-  mutate(std_units = response_value/1000)
-count(test_1, response_def, response_units)
+         mmol_co2 = case_when(gas_unit %in% c("mg") ~ (1/44.01), 
+                                  gas_unit %in% c("nmol") ~ (0.000001),
+                                  gas_unit %in% c("umol") ~ (0.0001)),
+         mg_sample = case_when(mass %in% c("g") ~ (1000), 
+                               mass %in% c("kg") ~ (1000000),
+                               mass %in% c("mg") ~ (1)),
+         per_min = case_when(time %in% c("hr") ~ (1/60),
+                             time %in% c("sec") ~ (60), 
+                             TRUE ~ (1)),
+         std_response = response_value*(mmol_co2*mg_sample*per_min))
+       
 
-ggplot(lichen_calcs,aes(x=temp_dep, y=response_value, group=response_def, color=response_def))+
+subset_lichen<- lichen_data %>%
+  filter(response_def %in% c("dark respiration", 
+                             "respiration", 
+                             "net photosynthesis",
+                             "net photosynthesis rate")) %>%
+  mutate(broad_responses = case_when(response_def %in% 
+                    c("dark respiration","respiration") ~ "respiration",
+TRUE ~ "photosynthesis"))
+  
+                                
+ggplot(subset_lichen, aes(x=temp_dep, y=std_response, color=broad_responses))+
   geom_smooth(method="lm")+
   stat_poly_eq(formula = my.formula, 
                aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
                parse = TRUE)+
   geom_point()
-
-
-
-  mutate(value_converted_o2=value*1375) %>%
-  mutate(temp_dep=1/((8.617333262145*10^-5)*(temp+273.15)))
-view(lichen1)
-screen_abstracts(lichen1)
-
-my.formula <- y ~ x
-
-ggplot(lichen_metabolic, aes(x=temp_dep, y=value_converted_o2, colour=response))+
-  geom_smooth(method="lm")+
-  stat_poly_eq(formula = my.formula, 
-               aes(label = paste(..eq.label.., ..rr.label.., sep = "~~~")), 
-               parse = TRUE)+
-  geom_point()
-  #facet_wrap(~response)
+  #facet_wrap(~broad_responses)
