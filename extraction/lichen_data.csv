@@ -590,195 +590,397 @@ smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,76.408640
 smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,76.41344134,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,178,178
 smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,80.66186619,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,268,268
 smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,84.22622262,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,268,268
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,86.472288,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,102.816998,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,118.090591,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,178.923104,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,198.508545,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,1,C,dark respiration,220.237865,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,356.123451,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,381.659222,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,423.54417,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,469.81715,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,539.643292,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,619.729367,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,759.739999,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,21,C,dark respiration,786.108071,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,872.489653,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,951.440889,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,1037.27324,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,21,C,dark respiration,967.74938,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,21,C,dark respiration,902.885401,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,499.213093,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,553.858403,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,636.215445,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,658.463395,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,705.857429,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,868.845496,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,963.829586,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,899.114289,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,1,C,dark respiration,86.4942259,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,1,C,dark respiration,95.9621342,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,1,C,dark respiration,95.9621342,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,1,C,dark respiration,106.466427,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,1,C,dark respiration,114.100584,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,11,C,dark respiration,205.554489,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,220.293739,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,11,C,dark respiration,244.407729,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,11,C,dark respiration,271.161306,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,11,C,dark respiration,290.604882,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,471.877447,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,523.530518,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,601.301627,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,601.301627,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,690.625731,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,311.442655,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,357.707849,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,383.357229,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,488.502528,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,541.975428,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,601.301627,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,667.121844,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,1,C,dark respiration,178.968497,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,1,C,dark respiration,220.293739,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,1,C,dark respiration,253.018647,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,1,C,dark respiration,370.310531,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,11,C,dark respiration,440.305422,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,10,C,dark respiration,488.502528,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,10,C,dark respiration,561.070185,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,793.219041,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,21,C,dark respiration,793.219041,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,880.047094,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,976.379596,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1102.17428,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1244.1761,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1380.36721,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1531.4662,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,1,C,dark respiration,30.6097157,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,1,C,dark respiration,35.156827,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,1,C,dark respiration,39.6863585,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,1,C,dark respiration,46.37783,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,11,C,dark respiration,89.541571,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,89.541571,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,102.843083,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,140.447312,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,220.293739,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,236.089864,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,271.161306,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,300.843408,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,345.53407,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,357.707849,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,505.713339,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,425.320621,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,29,C,dark respiration,396.863585,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,370.310531,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,31,C,dark respiration,370.310531,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cladonia ,sylvatica,31,C,dark respiration,383.357229,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,88.9282446,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,1,C,dark respiration,102.085677,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,1,C,dark respiration,113.216215,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,125.560331,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,141.672941,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,11,C,dark respiration,189.944942,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,9,C,dark respiration,233.622881,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,241.822467,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,268.188696,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,11,C,dark respiration,250.309839,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,11,C,dark respiration,287.344584,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,11,C,dark respiration,307.868717,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,11,C,dark respiration,329.858826,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,19,C,dark respiration,482.083332,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,465.737109,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,21,C,dark respiration,482.083332,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,534.645526,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,534.645526,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,19,C,dark respiration,534.645526,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,613.749329,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,613.749329,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,657.587542,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,729.285195,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,808.80014,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,896.984705,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,31,C,dark respiration,729.285195,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,islandica,31,C,dark respiration,657.587542,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,52.3530518,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,61.18024,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,63.3357285,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,72.7443296,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,83.5505902,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,89.541571,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,1,C,dark respiration,102.843083,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,150.518063,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,166.994205,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,185.273874,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,205.554489,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,220.293739,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,228.055078,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,11,C,dark respiration,205.554489,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,12,C,dark respiration,185.273874,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,21,C,dark respiration,244.407729,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,280.714801,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,345.53407,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,383.357229,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,21,C,dark respiration,396.863585,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,440.305422,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,488.502528,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,316.881504,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,357.707849,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,396.863585,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,455.818164,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,505.713339,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,561.070185,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,31,C,dark respiration,561.070185,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,cetraria,nivalis,31,C,dark respiration,488.502528,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,1,C,dark respiration,53.0054613,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,1,C,dark respiration,85.9129133,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,1,C,dark respiration,98.6242105,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,1,C,dark respiration,113.216215,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,1,C,dark respiration,134.528717,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,171.271032,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,11,C,dark respiration,177.282222,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,203.512121,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,11,C,dark respiration,210.654895,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,11,C,dark respiration,241.822467,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,241.822467,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,268.188696,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,419.949456,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,21,C,dark respiration,434.688646,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,465.737109,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,516.517052,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,572.833599,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,21,C,dark respiration,516.517052,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,29,C,dark respiration,516.517052,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,499.003268,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,534.645526,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,29,C,dark respiration,553.410265,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,657.587542,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,704.556983,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,808.80014,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,84.7621339,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,97.4558564,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,108.236336,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,108.153679,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,120.117542,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,1,C,dark respiration,124.445485,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,177.751038,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,11,C,dark respiration,190.742276,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,197.31318,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,211.62634,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,11,C,dark respiration,235.096117,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,11,C,dark respiration,211.788076,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,21,C,dark respiration,245.528496,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,21,C,dark respiration,282.334052,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,21,C,dark respiration,324.615552,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,360.340663,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,400.099325,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,372.849017,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,21,C,dark respiration,373.371595,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,338.977188,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,363.289054,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,480.43023,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,533.235408,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,592.221432,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,623.95906,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
-scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,704.995587,mm^3 *g^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,,,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,86.472288,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,102.816998,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,118.090591,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,178.923104,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,198.508545,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,0,C,dark respiration,220.237865,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,356.123451,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,381.659222,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,423.54417,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,469.81715,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,539.643292,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,10,C,dark respiration,619.729367,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,759.739999,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,786.108071,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,872.489653,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,951.440889,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,1037.27324,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,967.74938,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,20,C,dark respiration,902.885401,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,499.213093,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,553.858403,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,636.215445,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,658.463395,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,705.857429,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,868.845496,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,963.829586,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,lobaria ,scrobiculata,30,C,dark respiration,899.114289,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,0,C,dark respiration,86.4942259,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,0,C,dark respiration,95.9621342,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,0,C,dark respiration,95.9621342,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,0,C,dark respiration,106.466427,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,0,C,dark respiration,114.100584,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,205.554489,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,220.293739,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,244.407729,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,271.161306,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,10,C,dark respiration,290.604882,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,471.877447,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,523.530518,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,601.301627,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,601.301627,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,20,C,dark respiration,690.625731,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,311.442655,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,357.707849,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,383.357229,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,488.502528,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,541.975428,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,601.301627,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,solorina,crocea,30,C,dark respiration,667.121844,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,0,C,dark respiration,178.968497,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,0,C,dark respiration,220.293739,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,0,C,dark respiration,253.018647,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,0,C,dark respiration,370.310531,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,10,C,dark respiration,440.305422,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,10,C,dark respiration,488.502528,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,10,C,dark respiration,561.070185,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,793.219041,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,793.219041,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,880.047094,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,20,C,dark respiration,976.379596,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1102.17428,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1244.1761,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1380.36721,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,peltigera,apthosa,30,C,dark respiration,1531.4662,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,0,C,dark respiration,30.6097157,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,0,C,dark respiration,35.156827,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,0,C,dark respiration,39.6863585,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,0,C,dark respiration,46.37783,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,89.541571,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,89.541571,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,102.843083,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,10,C,dark respiration,140.447312,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,220.293739,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,236.089864,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,271.161306,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,300.843408,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,345.53407,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,20,C,dark respiration,357.707849,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,505.713339,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,425.320621,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,396.863585,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,370.310531,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,370.310531,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cladonia ,sylvatica,30,C,dark respiration,383.357229,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,88.9282446,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,102.085677,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,113.216215,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,125.560331,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,0,C,dark respiration,141.672941,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,189.944942,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,233.622881,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,241.822467,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,268.188696,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,250.309839,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,287.344584,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,307.868717,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,10,C,dark respiration,329.858826,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,482.083332,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,465.737109,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,482.083332,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,534.645526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,534.645526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,534.645526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,20,C,dark respiration,613.749329,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,613.749329,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,657.587542,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,729.285195,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,808.80014,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,896.984705,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,729.285195,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,islandica,30,C,dark respiration,657.587542,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,52.3530518,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,61.18024,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,63.3357285,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,72.7443296,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,83.5505902,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,89.541571,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,0,C,dark respiration,102.843083,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,150.518063,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,166.994205,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,185.273874,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,205.554489,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,220.293739,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,228.055078,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,205.554489,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,10,C,dark respiration,185.273874,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,244.407729,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,280.714801,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,345.53407,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,383.357229,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,396.863585,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,440.305422,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,20,C,dark respiration,488.502528,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,316.881504,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,357.707849,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,396.863585,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,455.818164,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,505.713339,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,561.070185,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,561.070185,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,cetraria,nivalis,30,C,dark respiration,488.502528,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,0,C,dark respiration,53.0054613,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,0,C,dark respiration,85.9129133,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,0,C,dark respiration,98.6242105,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,0,C,dark respiration,113.216215,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,0,C,dark respiration,134.528717,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,171.271032,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,177.282222,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,203.512121,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,210.654895,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,241.822467,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,241.822467,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,10,C,dark respiration,268.188696,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,419.949456,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,434.688646,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,465.737109,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,516.517052,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,572.833599,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,20,C,dark respiration,516.517052,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,516.517052,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,499.003268,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,534.645526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,553.410265,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,657.587542,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,704.556983,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,dactylina,arctica,30,C,dark respiration,808.80014,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,84.7621339,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,97.4558564,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,108.236336,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,108.153679,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,120.117542,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,0,C,dark respiration,124.445485,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,177.751038,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,190.742276,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,197.31318,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,211.62634,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,235.096117,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,10,C,dark respiration,211.788076,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,245.528496,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,282.334052,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,324.615552,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,360.340663,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,400.099325,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,372.849017,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,20,C,dark respiration,373.371595,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,338.977188,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,363.289054,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,480.43023,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,533.235408,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,592.221432,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,623.95906,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,alectorina ,nigricans,30,C,dark respiration,704.995587,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,arctic,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,99.41571215,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,99.37210883,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,111.1341423,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,109.1211927,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,136.4320259,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,0,C,dark respiration,155.4634294,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,239.7903956,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,168.2495366,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,150.4426175,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,150.5086299,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,168.3233626,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,10,C,dark respiration,129.615536,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,240.8798694,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,219.4394353,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,165.9041261,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,156.8563778,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,145.5626692,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,135.1512649,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,142.9574766,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,20,C,dark respiration,154.0040104,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,650.0560145,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,614.7843309,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,570.4779533,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,423.3040814,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,378.4201026,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,385.7672844,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,378.530792,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,344.8129991,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,lacinata ,30,C,dark respiration,358.0704512,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,83.08372061,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,94.69574849,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,102.0438393,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,100.217781,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,105.9836816,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,0,C,dark respiration,112.0978382,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,151.8920395,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,169.9477821,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,186.6233185,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,204.9350841,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,220.8211234,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,242.5241761,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,10,C,dark respiration,271.3735612,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,277.8088902,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,299.4101127,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,322.6671713,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,389.1236285,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,419.225689,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,419.4729427,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,419.3802055,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,451.9227838,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,20,C,dark respiration,505.6811127,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,312.2102227,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,489.2930761,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,547.537129,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,601.3066255,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,578.9962961,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,647.8228664,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,711.4931058,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,sticta,weigelii,30,C,dark respiration,796.0698648,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,63.12385581,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,69.26536064,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,76.00439046,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,81.86471325,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,88.17689655,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,91.51322104,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,0,C,dark respiration,100.4168104,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,375.3073481,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,335.7375916,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,300.3397908,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,289.3902145,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,258.8789539,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,258.8789539,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,10,C,dark respiration,278.8398301,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,468.987493,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,505.1487999,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,495.8551286,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,544.0983264,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,554.2962063,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,554.2962063,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,608.2253078,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,20,C,dark respiration,655.1225542,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,305.9689739,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,419.5407636,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,544.0983264,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,554.2962063,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,554.2962063,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,732.3347598,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,788.8014725,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,peltigera,subamerican ,30,C,dark respiration,849.6220543,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,41.96562903,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,41.98404072,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,46.92187028,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,50.55450533,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,48.68297304,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,52.45195056,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,56.49619453,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,0,C,dark respiration,60.85226502,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,82.26439939,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,91.94640655,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,102.8130133,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,110.7564786,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,114.9134642,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,102.7829526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,110.6755385,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,10,C,dark respiration,135.7959792,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,113.3366184,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,122.0485304,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,133.9032123,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,136.462754,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,149.7284478,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,20,C,dark respiration,149.68467,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,147.6306927,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,161.9820342,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,177.7414788,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,191.4740135,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,191.4040367,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,252.8814158,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,267.5052597,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,272.4392748,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,cladonia ,scholanderi ,30,C,dark respiration,293.4453743,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,56.78354632,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,61.18023998,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,65.91736526,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,73.71957725,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,79.42761098,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,82.44528659,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,0,C,dark respiration,88.82894334,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,107.0350844,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,133.8727386,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,149.7183884,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,167.4395853,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,187.2583256,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,155.406606,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,164.3466946,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,10,C,dark respiration,271.8845038,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,158.3312505,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,180.4042663,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,201.7575519,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,217.379439,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,261.9329436,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,292.9362512,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,315.6180145,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,20,C,dark respiration,346.4556222,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,327.6092198,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,366.3862033,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,366.3862033,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,366.3862033,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,327.6092198,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,594.9293944,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,640.9941871,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,parmelia ,nigrociliata,30,C,dark respiration,716.8645214,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,47.14906963,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,49.87964953,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,48.9260827,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,52.72979991,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,54.74115576,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,58.96246238,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,0,C,dark respiration,54.713146,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,10,C,dark respiration,103.5934508,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,10,C,dark respiration,115.8381969,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,10,C,dark respiration,124.8439403,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,10,C,dark respiration,115.9059732,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,20,C,dark respiration,219.4394353,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,20,C,dark respiration,236.3958422,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,20,C,dark respiration,274.4610174,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,20,C,dark respiration,245.4668976,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,30,C,dark respiration,160.5578625,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,30,C,dark respiration,220.4686825,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,30,C,dark respiration,255.9317904,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,dendrescoides,30,C,dark respiration,275.748335,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,0,C,dark respiration,43.12280728,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,0,C,dark respiration,49.16064753,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,0,C,dark respiration,55.00448242,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,0,C,dark respiration,55.00448242,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,10,C,dark respiration,109.9540145,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,10,C,dark respiration,120.7428707,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,10,C,dark respiration,140.2497667,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,10,C,dark respiration,156.9215666,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,20,C,dark respiration,200.1583408,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,20,C,dark respiration,232.4953882,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,20,C,dark respiration,275.1598565,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,20,C,dark respiration,313.6863663,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,30,C,dark respiration,169.1231116,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,30,C,dark respiration,211.7209998,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,30,C,dark respiration,228.1835126,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,ramalina ,leptosperma,30,C,dark respiration,313.6863663,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,0,C,dark respiration,42.11893049,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,0,C,dark respiration,52.68355591,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,0,C,dark respiration,62.31338271,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,0,C,dark respiration,72.3366939,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,10,C,dark respiration,121.3786588,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,10,C,dark respiration,163.5674903,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,10,C,dark respiration,237.4872563,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,10,C,dark respiration,265.5970861,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,20,C,dark respiration,245.3951185,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,20,C,dark respiration,413.7267308,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,20,C,dark respiration,445.6308322,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,20,C,dark respiration,413.5150366,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,329.1698874,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,368.131597,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,389.1952924,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,411.7651604,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
