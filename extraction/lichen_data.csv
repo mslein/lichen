@@ -1,351 +1,592 @@
-﻿study_id,source,org_level,genus,species,temp,temp_units,response_def,response_value,response_units ,gas,gas_unit,mass,time,error,error_type,sample_size,realm,exp_design,time_point,time_units,add_trt,add_value
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,5,C,O2 consumption,331.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,189.6,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,15,C,O2 consumption,686.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,63.6,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,25,C,O2 consumption,1214.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,86.4,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,35,C,O2 consumption,1603.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,52.8,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,sphacelata,5,C,O2 consumption,273.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.6,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,sphacelata,15,C,O2 consumption,576,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,sphacelata,25,C,O2 consumption,921.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,sphacelata,35,C,O2 consumption,1456.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,79.2,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,5,C,O2 consumption,177.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,160.8,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,15,C,O2 consumption,441.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.2,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,25,C,O2 consumption,648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,38.4,SEM,,T,lab,,,,
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,35,C,O2 consumption,784.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,45.6,SEM,,T,lab,,,,
-shelyakin2020,fig 1a,pop,ramalina,terebrata,5,C,O2 consumption,212.5603865,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,
-shelyakin2020,fig 1a,pop,ramalina,terebrata,15,C,O2 consumption,347.826087,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,
-shelyakin2020,fig 1a,pop,ramalina,terebrata,25,C,O2 consumption,637.6811594,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,
-shelyakin2020,fig 1a,pop,ramalina,terebrata,35,C,O2 consumption,801.9323671,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,5,C,O2 consumption,318.8405797,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,15,C,O2 consumption,676.3285024,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.63285024,SEM,,T,lab,,,,
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,25,C,O2 consumption,1207.729469,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,35,C,O2 consumption,1594.202899,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,
-shelyakin2020,fig 1c,pop,usnea,sphacelata,5,C,O2 consumption,173.9904868,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,
-shelyakin2020,fig 1c,pop,usnea,sphacelata,15,C,O2 consumption,434.1261006,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,
-shelyakin2020,fig 1c,pop,usnea,sphacelata,25,C,O2 consumption,635.7656108,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.80487805,SEM,,T,lab,,,,
-shelyakin2020,fig 1c,pop,usnea,sphacelata,35,C,O2 consumption,749.6002429,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,97.56097561,SEM,,T,lab,,,,
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,5,C,O2 consumption,265.5586586,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,15,C,O2 consumption,587.9254365,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.91408396,SEM,,T,lab,,,,
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,25,C,O2 consumption,921.2360648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,35,C,O2 consumption,1463.388053,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.40871421,SEM,,T,lab,,,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,5,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.52173913,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,15,C,net photosynthesis,2.14492754,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.2173913,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,23,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,1.02898551,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,5,C,net photosynthesis,0.75362319,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.31884058,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,15,C,net photosynthesis,0.92753623,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.92753623,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,23,C,net photosynthesis,-0.8115942,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.39130435,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,5,C,net photosynthesis,1.27536232,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.23188406,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,15,C,net photosynthesis,1.56521739,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.53623188,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,23,C,net photosynthesis,0.08695652,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.66666667,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,5,C,respiration,-0.7859425,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.2971246,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,15,C,respiration,-1.9361022,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.1341853,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,stereocaulon,alpinum,23,C,respiration,-2.4728435,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.84345048,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,5,C,respiration,-0.4025559,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.14376997,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,15,C,respiration,-0.9776358,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.32587859,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,usnea ,aurantiaco-atra,23,C,respiration,-3.1054313,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,1.53354633,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,5,C,respiration,-0.8626198,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.23961661,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,15,C,respiration,-3.4696486,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.11501597,SD,3,T,lab,1,week,,
-colesie2018,figure 3,pop,placopsis,contortuplicata,23,C,respiration,-4.9265176,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.94888179,SD,3,T,lab,1,week,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-8,C,net photosynthesis,0.132890365,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-5.9,C,net photosynthesis,0.451827243,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-4,C,net photosynthesis,1.249169435,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-2,C,net photosynthesis,1.926910299,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,0,C,net photosynthesis,3.202657807,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,2,C,net photosynthesis,3.322259136,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,4,C,net photosynthesis,3.441860465,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-8,C,dark respiration,-0.066445183,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-5.9,C,dark respiration,-0.265780731,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-4,C,dark respiration,-0.176079734,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,-2,C,dark respiration,-0.38538206,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,0,C,dark respiration,-0.514950166,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,2,C,dark respiration,-1.013289037,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-schroeter1995,figure 1,pop,umbilicaria ,aprina,4,C,dark respiration,-1.50166113,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,1,C,max photosynthesis,81.94444444,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,5,C,max photosynthesis,85.55555556,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,10,C,max photosynthesis,91.01851852,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,15,C,max photosynthesis,95.09259259,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,20,C,max photosynthesis,97.17592593,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-smith2000,figure 3,pop,turgidiusculum,complicatulum,25,C,max photosynthesis,73.84259259,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,
-delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,2.640657084,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,4.069815195,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,5.154004107,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,5.326488706,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,4.981519507,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,4.069815195,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,2.616016427,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.457905544,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,2.344969199,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,4.513347023,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,5.006160164,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,3.527720739,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,2.073921971,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,1.433264887,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,ppfd,200
-aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,net photosynthesis,410.5516387,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,15.66852368,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,net photosynthesis,643.6552891,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,20.89240614,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,net photosynthesis,782.6207667,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,48.74755934,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,net photosynthesis,679.5925184,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,54.83983287,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,net photosynthesis,499.9646813,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,74.86072423,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,net photosynthesis,233.2915728,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,81.82451253,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,net photosynthesis,-64.72691288,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,92.27019499,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,respiration,10.1379763,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,13.9275766,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,respiration,44.76949528,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,20.89240614,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,respiration,148.9181138,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,47.87604457,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,respiration,329.6642388,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,55.71030641,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,respiration,597.4577175,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,73.11977716,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,respiration,875.7010436,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,81.82451253,SD,5,T,lab,,,,
-aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,respiration,1124.342022,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,90.53028915,SD,5,T,lab,,,,
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.01048218,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,3.157232704,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,6.27672956,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,5.438155136,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,7.819706499,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,7.215932914,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,2.050314465,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.278825996,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,2.519916143,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,5.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,4.264150943,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,5.102725367,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,3.693920335,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,1.178197065,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.13836478,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.373165618,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,0.909853249,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.809224319,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.171907757,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.599580713,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.834381551,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.071278826,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.708595388,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,1.077568134,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.540880503,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.507337526,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.465408805,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.666666667,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-1.06918239,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-4.557651992,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-4.859538784,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.532494759,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.236897275,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.041928721,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-3.115303983,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.63312369,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.800838574,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.310272537,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.846960168,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-2.578616352,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.471698113,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.209643606,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.779874214,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.249475891,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,gross photosynthesis,6.13031915,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.83776596,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,gross photosynthesis,7.99202128,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.21010638,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,gross photosynthesis,12.9255319,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,2.04787234,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,gross photosynthesis,12.4601064,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,2.14095745,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,gross photosynthesis,10.9707447,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.86170213,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,gross photosynthesis,8.92287234,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.81515957,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,net photosynthesis,4.08244681,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.02393617,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,net photosynthesis,6.13031915,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.93085106,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,net photosynthesis,9.57446809,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.95478723,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,net photosynthesis,8.55053191,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.67553191,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,net photosynthesis,4.64095745,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.81515957,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,net photosynthesis,-0.3856383,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.30319149,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,dark respiration,-1.9680851,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,dark respiration,-1.875,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.37234043,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,dark respiration,-3.2712766,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,dark respiration,-3.8297872,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,dark respiration,-6.3430851,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.95478723,SEM,5,T,lab,,,ppfd,600
-zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,dark respiration,-9.5079787,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.76861702,SEM,5,T,lab,,,ppfd,600
-insarov1996,table1,pop,alectoria,ochroleuca,7,C,net photosynthesis rate,0.33,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location ,canada
-insarov1996,table1,pop,alectoria,ochroleuca,7,C,net photosynthesis rate,0.08,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location ,canada
-insarov1996,table1,pop,cladonia,caroliniana,27,C,net photosynthesis rate,1.19,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,ecmocyna,12,C,net photosynthesis rate,0.23,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,evansii,25,C,net photosynthesis rate,0.97,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,leporina,20,C,net photosynthesis rate,0.75,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,mitis,22,C,net photosynthesis rate,2.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,prostrata,22,C,net photosynthesis rate,0.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,2.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,rangiferina,18,C,net photosynthesis rate,0.58,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,6,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,cladonia,rangiferina,15,C,net photosynthesis rate,5.8,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,9.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,cladonia,stellaris,25,C,net photosynthesis rate,4.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,cladonia,subtenius,25,C,net photosynthesis rate,0.9,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa
-insarov1996,table1,pop,cladonia,uncialis,22,C,net photosynthesis rate,1.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,lasallia,hispanica,20,C,net photosynthesis rate,1.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,lasallia,pustulata,20,C,net photosynthesis rate,1.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,melanelia,olivacea,20,C,net photosynthesis rate,1.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,sweden
-insarov1996,table1,pop,parmeliopsis,ambigua,15,C,net photosynthesis rate,1,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,sweden
-insarov1996,table1,pop,peltigera,polydactyla,25,C,net photosynthesis rate,6,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,peltigera,praetextata,15,C,net photosynthesis rate,6.7,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,peltigera,rufescens,35,C,net photosynthesis rate,4.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,peltigera,rufescens,35,C,net photosynthesis rate,10.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,ramalina,maciformis,20,C,net photosynthesis rate,2,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,israel
-insarov1996,table1,pop,thamnolia,vermicularis ,15,C,net photosynthesis rate,1.17,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,europe
-insarov1996,table1,pop,umbilicaria ,decussata,10,C,net photosynthesis rate,0.99,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,umbilicaria ,deusta,14,C,net photosynthesis rate,1.85,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,umbilicaria ,grisea,20,C,net photosynthesis rate,0.95,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,umbilicaria ,havaassii,15,C,net photosynthesis rate,0.37,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,umbilicaria ,mammulata,14,C,net photosynthesis rate,0.95,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,umbilicaria ,muhlenbergii,14,C,net photosynthesis rate,0.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,umbilicaria ,papulosa,14,C,net photosynthesis rate,0.85,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,umbilicaria ,spodochroa,10,C,net photosynthesis rate,0.89,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,umbilicaria ,subglabra,10,C,net photosynthesis rate,0.78,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain
-insarov1996,table1,pop,umbilicaria ,vellea,14,C,net photosynthesis rate,0.8,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada
-insarov1996,table1,pop,usnea,antarctica,13,C,net photosynthesis rate,0.3,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,antarctica
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,13,C,net photosynthesis,6.750330251,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,12,C,net photosynthesis,13.75165125,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,14,C,net photosynthesis,15.46895641,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,24.58388375,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,19.63011889,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,18.57331572,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,19,C,net photosynthesis,19.03566711,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,21,C,net photosynthesis,20.75297226,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,21,C,net photosynthesis,20.22457067,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,24,C,net photosynthesis,20.62087186,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,22,C,net photosynthesis,25.64068692,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,24,C,net photosynthesis,22.998679,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,25,C,net photosynthesis,24.84808454,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,27,C,net photosynthesis,23.98943197,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,28,C,net photosynthesis,22.40422721,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,net photosynthesis,20.22457067,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,27,C,net photosynthesis,19.63011889,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,net photosynthesis,18.11096433,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,32,C,net photosynthesis,14.14795244,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,30,C,net photosynthesis,24.05548217,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,32,C,net photosynthesis,20.88507266,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,33,C,net photosynthesis,22.998679,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,35,C,net photosynthesis,12.0343461,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,37,C,net photosynthesis,15.46895641,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,35,C,net photosynthesis,23.13077939,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,net photosynthesis,23.26287979,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,40,C,net photosynthesis,16.12945839,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,40,C,net photosynthesis,8.005284016,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,45,C,net photosynthesis,5.693527081,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,43,C,net photosynthesis,22.07397622,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,46,C,net photosynthesis,19.1677675,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,net photosynthesis,13.09114927,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,net photosynthesis,6.287978864,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,13,C,dark respiration,-6.06340819,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,19,C,dark respiration,-2.49669749,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,dark respiration,-8.969616909,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,22,C,dark respiration,-11.34742404,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,25,C,dark respiration,-14.64993395,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,dark respiration,-9.498018494,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,dark respiration,-14.38573316,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,dark respiration,-17.42404227,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,42,C,dark respiration,-18.87714663,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,46,C,dark respiration,-21.98150594,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,dark respiration,-23.17040951,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,dark respiration,-22.04755614,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,ppfd,300
-uchida2006,figure 1b,pop,cetrariella,delisei,4,C,net photosynthesis,0.20327869,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.01516393,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1b,pop,cetrariella,delisei,7,C,net photosynthesis,0.2,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.01270492,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1b,pop,cetrariella,delisei,12,C,net photosynthesis,0.19016393,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.025,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1b,pop,cetrariella,delisei,15,C,net photosynthesis,0.16885246,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.02827869,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1b,pop,cetrariella,delisei,20,C,net photosynthesis,0.13852459,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.0204918,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1c,pop,cetrariella,delisei,4,C,dark respiration,0.02723624,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00382514,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1c,pop,cetrariella,delisei,7,C,dark respiration,0.03482076,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00437158,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1c,pop,cetrariella,delisei,12,C,dark respiration,0.05438292,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.0057377,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1c,pop,cetrariella,delisei,15,C,dark respiration,0.07071061,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00956284,SD,3,T,lab,,,ppfd,800
-uchida2006,figure 1c,pop,cetrariella,delisei,20,C,dark respiration,0.105028,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00765027,SD,3,T,lab,,,ppfd,800
-lange2004,figure 4,pop,pseudocyphellaria,aurata,10,C,net photosynthesis,12.43046358,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,13,C,net photosynthesis,12.07284768,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,17,C,net photosynthesis,14.63576159,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,15,C,net photosynthesis,16.54304636,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,16,C,net photosynthesis,17.1986755,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,15,C,net photosynthesis,19.58278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,net photosynthesis,17.55629139,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,net photosynthesis,20.05960265,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,19,C,net photosynthesis,19.22516556,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,20,C,net photosynthesis,19.94039735,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,20,C,net photosynthesis,18.15231788,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,net photosynthesis,19.34437086,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,net photosynthesis,18.39072848,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,22,C,net photosynthesis,19.58278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,net photosynthesis,18.74834437,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,23,C,net photosynthesis,17.01986755,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,25,C,net photosynthesis,15.88741722,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,26,C,net photosynthesis,15.94701987,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,net photosynthesis,14.81456954,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,net photosynthesis,12.96688742,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,15.64900662,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,33,C,net photosynthesis,13.44370861,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,29,C,net photosynthesis,11.41721854,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,9.450331126,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,32,C,net photosynthesis,8.258278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,6.589403974,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,31,C,net photosynthesis,6.470198675,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,32,C,net photosynthesis,5.218543046,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,7.185430464,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,2.298013245,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,1.344370861,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,net photosynthesis,4.682119205,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,4.920529801,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,38,C,net photosynthesis,3.490066225,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,1.40397351,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,net photosynthesis,-0.801324503,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,-1.397350993,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,40,C,net photosynthesis,0.688741722,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,41,C,net photosynthesis,0.331125828,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,42,C,net photosynthesis,-0.801324503,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,40,C,net photosynthesis,-2.410596026,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,9,C,dark respiration,-1.158940397,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,10,C,dark respiration,-3.304635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,13,C,dark respiration,-1.993377483,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,14,C,dark respiration,-3.900662252,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,16,C,dark respiration,-2.589403974,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-3.304635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-3.900662252,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-7.59602649,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-3.42384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-5.450331126,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-7.834437086,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-4.973509934,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-7.953642384,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-10.69536424,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,26,C,dark respiration,-6.642384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,dark respiration,-9.503311258,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,dark respiration,-12.12582781,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,29,C,dark respiration,-8.907284768,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,dark respiration,-9.920529801,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,dark respiration,-13.0794702,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,33,C,dark respiration,-12.42384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,dark respiration,-14.86754967,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,41,C,dark respiration,-18.08609272,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,43,C,dark respiration,-20.35099338,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-lange2004,figure 4,pop,pseudocyphellaria,aurata,46,C,dark respiration,-24.04635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,
-sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,3.44,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,5,C,net photosynthesis,5.98,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,10,C,net photosynthesis,5.96,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,15,C,net photosynthesis,6,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,20,C,net photosynthesis,5.9,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,25,C,net photosynthesis,4.48,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,dark respiration,-0.72,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,5,C,dark respiration,-1.24,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,10,C,dark respiration,-1.36,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,15,C,dark respiration,-2.7,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,20,C,dark respiration,-3.68,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,grisea,25,C,dark respiration,-4.52,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,5.109433962,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,5,C,net photosynthesis,7.202515723,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,10,C,net photosynthesis,7.48427673,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,15,C,net photosynthesis,6.316981132,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,20,C,net photosynthesis,6.397484277,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,25,C,net photosynthesis,4.867924528,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,dark respiration,-1.33081761,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,5,C,dark respiration,-2.01509434,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,10,C,dark respiration,-2.256603774,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,15,C,dark respiration,-3.383647799,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,20,C,dark respiration,-4.389937107,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
-sancho1997,figure 2,pop,umbilicaria ,freyi,25,C,dark respiration,-5.516981132,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,ppfd,400-470
+﻿study_id,source,org_level,genus,species,temp,temp_units,response_def,response_value,response_units ,gas,gas_unit,mass,time,error,error_type,sample_size,realm,exp_design,time_point,time_units,add_trt,add_value,ppfd,avg_ppfd
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,5,C,O2 consumption,331.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,189.6,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,15,C,O2 consumption,686.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,63.6,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,25,C,O2 consumption,1214.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,86.4,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,35,C,O2 consumption,1603.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,52.8,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,sphacelata,5,C,O2 consumption,273.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.6,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,sphacelata,15,C,O2 consumption,576,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,sphacelata,25,C,O2 consumption,921.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,sphacelata,35,C,O2 consumption,1456.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,79.2,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,5,C,O2 consumption,177.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,160.8,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,15,C,O2 consumption,441.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.2,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,25,C,O2 consumption,648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,38.4,SEM,,T,lab,,,,,60-80,70
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,35,C,O2 consumption,784.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,45.6,SEM,,T,lab,,,,,60-80,70
+shelyakin2020,fig 1a,pop,ramalina,terebrata,5,C,O2 consumption,212.5603865,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1a,pop,ramalina,terebrata,15,C,O2 consumption,347.826087,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1a,pop,ramalina,terebrata,25,C,O2 consumption,637.6811594,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1a,pop,ramalina,terebrata,35,C,O2 consumption,801.9323671,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,5,C,O2 consumption,318.8405797,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,15,C,O2 consumption,676.3285024,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.63285024,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,25,C,O2 consumption,1207.729469,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,35,C,O2 consumption,1594.202899,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1c,pop,usnea,sphacelata,5,C,O2 consumption,173.9904868,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1c,pop,usnea,sphacelata,15,C,O2 consumption,434.1261006,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1c,pop,usnea,sphacelata,25,C,O2 consumption,635.7656108,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.80487805,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1c,pop,usnea,sphacelata,35,C,O2 consumption,749.6002429,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,97.56097561,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,5,C,O2 consumption,265.5586586,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,15,C,O2 consumption,587.9254365,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.91408396,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,25,C,O2 consumption,921.2360648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,80,80
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,35,C,O2 consumption,1463.388053,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.40871421,SEM,,T,lab,,,,,80,80
+colesie2018,figure 3,pop,stereocaulon,alpinum,5,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.52173913,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,stereocaulon,alpinum,15,C,net photosynthesis,2.14492754,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.2173913,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,stereocaulon,alpinum,23,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,1.02898551,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,5,C,net photosynthesis,0.75362319,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.31884058,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,15,C,net photosynthesis,0.92753623,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.92753623,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,23,C,net photosynthesis,-0.8115942,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.39130435,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,5,C,net photosynthesis,1.27536232,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.23188406,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,15,C,net photosynthesis,1.56521739,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.53623188,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,23,C,net photosynthesis,0.08695652,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.66666667,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,stereocaulon,alpinum,5,C,respiration,-0.7859425,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.2971246,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,stereocaulon,alpinum,15,C,respiration,-1.9361022,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.1341853,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,stereocaulon,alpinum,23,C,respiration,-2.4728435,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.84345048,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,5,C,respiration,-0.4025559,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.14376997,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,15,C,respiration,-0.9776358,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.32587859,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,usnea ,aurantiaco-atra,23,C,respiration,-3.1054313,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,1.53354633,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,5,C,respiration,-0.8626198,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.23961661,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,15,C,respiration,-3.4696486,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.11501597,SD,3,T,lab,1,week,,,150-200 ,175
+colesie2018,figure 3,pop,placopsis,contortuplicata,23,C,respiration,-4.9265176,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.94888179,SD,3,T,lab,1,week,,,150-200 ,175
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-8,C,net photosynthesis,0.132890365,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-5.9,C,net photosynthesis,0.451827243,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-4,C,net photosynthesis,1.249169435,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-2,C,net photosynthesis,1.926910299,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,0,C,net photosynthesis,3.202657807,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,2,C,net photosynthesis,3.322259136,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,4,C,net photosynthesis,3.441860465,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-8,C,dark respiration,-0.066445183,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-5.9,C,dark respiration,-0.265780731,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-4,C,dark respiration,-0.176079734,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,-2,C,dark respiration,-0.38538206,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,0,C,dark respiration,-0.514950166,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,2,C,dark respiration,-1.013289037,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+schroeter1995,figure 1,pop,umbilicaria ,aprina,4,C,dark respiration,-1.50166113,umol CO2 *kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,net photosynthesis,410.5516387,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,15.66852368,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,net photosynthesis,643.6552891,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,20.89240614,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,net photosynthesis,782.6207667,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,48.74755934,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,net photosynthesis,679.5925184,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,54.83983287,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,net photosynthesis,499.9646813,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,74.86072423,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,net photosynthesis,233.2915728,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,81.82451253,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,net photosynthesis,-64.72691288,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,92.27019499,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,2,C,respiration,10.1379763,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,13.9275766,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,5,C,respiration,44.76949528,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,20.89240614,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,10,C,respiration,148.9181138,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,47.87604457,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,15,C,respiration,329.6642388,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,55.71030641,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,20,C,respiration,597.4577175,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,73.11977716,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,25,C,respiration,875.7010436,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,81.82451253,SD,5,T,lab,,,,,500,500
+aubert_2007,figure 1,pop,xanthoria ,elegans,30,C,respiration,1124.342022,nmol CO2 * min^-1 *g^-1 dry wt,co2,nmol,g,min,90.53028915,SD,5,T,lab,,,,,500,500
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.01048218,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,3.157232704,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,6.27672956,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,5.438155136,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,7.819706499,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,7.215932914,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,2.050314465,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,1.278825996,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,2.519916143,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,5.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,4.264150943,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,5.102725367,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,3.693920335,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,1.178197065,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.13836478,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.373165618,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,0.909853249,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.809224319,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.171907757,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.599580713,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.834381551,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,net photosynthesis,0.071278826,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,net photosynthesis,0.708595388,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,net photosynthesis,1.077568134,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,net photosynthesis,0.540880503,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,net photosynthesis,0.507337526,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,net photosynthesis,-0.465408805,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,net photosynthesis,-0.666666667,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,1200,1200
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-1.06918239,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-2.142557652,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-4.557651992,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-4.859538784,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,germany,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.532494759,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.236897275,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.303983229,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.041928721,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-3.115303983,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.719077568,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,spain,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.63312369,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-0.800838574,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.169811321,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.310272537,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.846960168,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-2.578616352,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,antarctica,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,0,C,dark respiration,-0.733752621,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,5,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,10,C,dark respiration,-1.002096436,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,15,C,dark respiration,-1.471698113,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,20,C,dark respiration,-2.209643606,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,25,C,dark respiration,-2.779874214,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+domaschke_2013,figure 1,pop,Cetraria ,aculeata ,30,C,dark respiration,-3.249475891,umol CO2 * kg^-1 * dry weight s^-1,co2,umol,kg,sec,,,,T,lab,,,location,svalbard,0,0
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,gross photosynthesis,6.13031915,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.83776596,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,gross photosynthesis,7.99202128,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.21010638,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,gross photosynthesis,12.9255319,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,2.04787234,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,gross photosynthesis,12.4601064,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,2.14095745,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,gross photosynthesis,10.9707447,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.86170213,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,gross photosynthesis,8.92287234,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.81515957,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,net photosynthesis,4.08244681,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.02393617,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,net photosynthesis,6.13031915,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.93085106,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,net photosynthesis,9.57446809,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.95478723,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,net photosynthesis,8.55053191,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.67553191,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,net photosynthesis,4.64095745,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.81515957,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,net photosynthesis,-0.3856383,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.30319149,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,10,C,dark respiration,-1.9680851,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,15,C,dark respiration,-1.875,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.37234043,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,20,C,dark respiration,-3.2712766,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,25,C,dark respiration,-3.8297872,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,0.46542553,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,30,C,dark respiration,-6.3430851,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.95478723,SEM,5,T,lab,,,,,600,600
+zotz2003,figure3a,pop,Parmotrema ,endosulphureum ,35,C,dark respiration,-9.5079787,nmol CO2 * g dry wt^-1 *s^-1,co2,nmol,g,sec,1.76861702,SEM,5,T,lab,,,,,600,600
+insarov1996,table1,pop,alectoria,ochroleuca,7,C,net photosynthesis rate,0.33,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location ,canada,150,150
+insarov1996,table1,pop,alectoria,ochroleuca,7,C,net photosynthesis rate,0.08,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location ,canada,150,150
+insarov1996,table1,pop,cladonia,caroliniana,27,C,net photosynthesis rate,1.19,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1000,1000
+insarov1996,table1,pop,cladonia,ecmocyna,12,C,net photosynthesis rate,0.23,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,700,700
+insarov1996,table1,pop,cladonia,evansii,25,C,net photosynthesis rate,0.97,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1138,1138
+insarov1996,table1,pop,cladonia,leporina,20,C,net photosynthesis rate,0.75,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1138,1138
+insarov1996,table1,pop,cladonia,mitis,22,C,net photosynthesis rate,2.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1135,1135
+insarov1996,table1,pop,cladonia,prostrata,22,C,net photosynthesis rate,0.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1138,1138
+insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,2.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1135,1135
+insarov1996,table1,pop,cladonia,rangiferina,18,C,net photosynthesis rate,0.58,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,800,800
+insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,6,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,600,600
+insarov1996,table1,pop,cladonia,rangiferina,15,C,net photosynthesis rate,5.8,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,400,400
+insarov1996,table1,pop,cladonia,rangiferina,25,C,net photosynthesis rate,9.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,600,600
+insarov1996,table1,pop,cladonia,stellaris,25,C,net photosynthesis rate,4.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,600,600
+insarov1996,table1,pop,cladonia,subtenius,25,C,net photosynthesis rate,0.9,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,usa,1138,1138
+insarov1996,table1,pop,cladonia,uncialis,22,C,net photosynthesis rate,1.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,1135,1135
+insarov1996,table1,pop,lasallia,hispanica,20,C,net photosynthesis rate,1.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,lasallia,pustulata,20,C,net photosynthesis rate,1.55,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,melanelia,olivacea,20,C,net photosynthesis rate,1.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,sweden,500,500
+insarov1996,table1,pop,parmeliopsis,ambigua,15,C,net photosynthesis rate,1,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,sweden,500,500
+insarov1996,table1,pop,peltigera,polydactyla,25,C,net photosynthesis rate,6,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,300,300
+insarov1996,table1,pop,peltigera,praetextata,15,C,net photosynthesis rate,6.7,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,450,450
+insarov1996,table1,pop,peltigera,rufescens,35,C,net photosynthesis rate,4.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,1000,1000
+insarov1996,table1,pop,peltigera,rufescens,35,C,net photosynthesis rate,10.5,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,1000,1000
+insarov1996,table1,pop,ramalina,maciformis,20,C,net photosynthesis rate,2,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,israel,700,700
+insarov1996,table1,pop,thamnolia,vermicularis ,15,C,net photosynthesis rate,1.17,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,europe,260,260
+insarov1996,table1,pop,umbilicaria ,decussata,10,C,net photosynthesis rate,0.99,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,umbilicaria ,deusta,14,C,net photosynthesis rate,1.85,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,700,700
+insarov1996,table1,pop,umbilicaria ,grisea,20,C,net photosynthesis rate,0.95,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,umbilicaria ,havaassii,15,C,net photosynthesis rate,0.37,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,umbilicaria ,mammulata,14,C,net photosynthesis rate,0.95,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,700,700
+insarov1996,table1,pop,umbilicaria ,muhlenbergii,14,C,net photosynthesis rate,0.4,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,700,700
+insarov1996,table1,pop,umbilicaria ,papulosa,14,C,net photosynthesis rate,0.85,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,700,700
+insarov1996,table1,pop,umbilicaria ,spodochroa,10,C,net photosynthesis rate,0.89,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,umbilicaria ,subglabra,10,C,net photosynthesis rate,0.78,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,spain,620,620
+insarov1996,table1,pop,umbilicaria ,vellea,14,C,net photosynthesis rate,0.8,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,canada,700,700
+insarov1996,table1,pop,usnea,antarctica,13,C,net photosynthesis rate,0.3,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,,,,T,lab,,,location,antarctica,600,600
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,13,C,net photosynthesis,6.750330251,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,12,C,net photosynthesis,13.75165125,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,14,C,net photosynthesis,15.46895641,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,24.58388375,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,19.63011889,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,net photosynthesis,18.57331572,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,19,C,net photosynthesis,19.03566711,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,21,C,net photosynthesis,20.75297226,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,21,C,net photosynthesis,20.22457067,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,24,C,net photosynthesis,20.62087186,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,22,C,net photosynthesis,25.64068692,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,24,C,net photosynthesis,22.998679,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,25,C,net photosynthesis,24.84808454,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,27,C,net photosynthesis,23.98943197,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,28,C,net photosynthesis,22.40422721,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,net photosynthesis,20.22457067,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,27,C,net photosynthesis,19.63011889,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,net photosynthesis,18.11096433,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,32,C,net photosynthesis,14.14795244,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,30,C,net photosynthesis,24.05548217,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,32,C,net photosynthesis,20.88507266,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,33,C,net photosynthesis,22.998679,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,35,C,net photosynthesis,12.0343461,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,37,C,net photosynthesis,15.46895641,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,35,C,net photosynthesis,23.13077939,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,net photosynthesis,23.26287979,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,40,C,net photosynthesis,16.12945839,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,40,C,net photosynthesis,8.005284016,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,45,C,net photosynthesis,5.693527081,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,43,C,net photosynthesis,22.07397622,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,46,C,net photosynthesis,19.1677675,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,net photosynthesis,13.09114927,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,net photosynthesis,6.287978864,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,300,300
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,13,C,dark respiration,-6.06340819,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,19,C,dark respiration,-2.49669749,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,18,C,dark respiration,-8.969616909,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,22,C,dark respiration,-11.34742404,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,25,C,dark respiration,-14.64993395,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,29,C,dark respiration,-9.498018494,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,dark respiration,-14.38573316,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,39,C,dark respiration,-17.42404227,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,42,C,dark respiration,-18.87714663,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,46,C,dark respiration,-21.98150594,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,dark respiration,-23.17040951,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+lange2000,figure 7 ,pop,leptogium ,phyllocarpum,50,C,dark respiration,-22.04755614,nmol CO2 * mg^-1 *s^-1,co2,nmol,mg,sec,,,,T,lab,,,,,0,0
+uchida2006,figure 1b,pop,cetrariella,delisei,4,C,net photosynthesis,0.20327869,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.01516393,SD,3,T,lab,,,,,800,800
+uchida2006,figure 1b,pop,cetrariella,delisei,7,C,net photosynthesis,0.2,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.01270492,SD,3,T,lab,,,,,800,800
+uchida2006,figure 1b,pop,cetrariella,delisei,12,C,net photosynthesis,0.19016393,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.025,SD,3,T,lab,,,,,800,800
+uchida2006,figure 1b,pop,cetrariella,delisei,15,C,net photosynthesis,0.16885246,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.02827869,SD,3,T,lab,,,,,800,800
+uchida2006,figure 1b,pop,cetrariella,delisei,20,C,net photosynthesis,0.13852459,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.0204918,SD,3,T,lab,,,,,800,800
+uchida2006,figure 1c,pop,cetrariella,delisei,4,C,dark respiration,0.02723624,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00382514,SD,3,T,lab,,,,,0,0
+uchida2006,figure 1c,pop,cetrariella,delisei,7,C,dark respiration,0.03482076,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00437158,SD,3,T,lab,,,,,0,0
+uchida2006,figure 1c,pop,cetrariella,delisei,12,C,dark respiration,0.05438292,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.0057377,SD,3,T,lab,,,,,0,0
+uchida2006,figure 1c,pop,cetrariella,delisei,15,C,dark respiration,0.07071061,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00956284,SD,3,T,lab,,,,,0,0
+uchida2006,figure 1c,pop,cetrariella,delisei,20,C,dark respiration,0.105028,mg CO2 *g dry wt ^-1 * hr^-1,co2,mg,g,hr,0.00765027,SD,3,T,lab,,,,,0,0
+lange2004,figure 4,pop,pseudocyphellaria,aurata,10,C,net photosynthesis,12.43046358,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,13,C,net photosynthesis,12.07284768,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,17,C,net photosynthesis,14.63576159,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,15,C,net photosynthesis,16.54304636,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,16,C,net photosynthesis,17.1986755,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,15,C,net photosynthesis,19.58278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,net photosynthesis,17.55629139,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,net photosynthesis,20.05960265,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,19,C,net photosynthesis,19.22516556,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,20,C,net photosynthesis,19.94039735,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,20,C,net photosynthesis,18.15231788,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,net photosynthesis,19.34437086,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,net photosynthesis,18.39072848,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,22,C,net photosynthesis,19.58278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,net photosynthesis,18.74834437,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,23,C,net photosynthesis,17.01986755,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,25,C,net photosynthesis,15.88741722,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,26,C,net photosynthesis,15.94701987,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,net photosynthesis,14.81456954,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,net photosynthesis,12.96688742,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,15.64900662,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,33,C,net photosynthesis,13.44370861,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,29,C,net photosynthesis,11.41721854,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,9.450331126,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,32,C,net photosynthesis,8.258278146,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,net photosynthesis,6.589403974,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,31,C,net photosynthesis,6.470198675,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,32,C,net photosynthesis,5.218543046,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,7.185430464,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,2.298013245,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,34,C,net photosynthesis,1.344370861,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,net photosynthesis,4.682119205,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,4.920529801,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,38,C,net photosynthesis,3.490066225,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,1.40397351,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,net photosynthesis,-0.801324503,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,37,C,net photosynthesis,-1.397350993,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,40,C,net photosynthesis,0.688741722,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,41,C,net photosynthesis,0.331125828,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,42,C,net photosynthesis,-0.801324503,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,40,C,net photosynthesis,-2.410596026,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,9,C,dark respiration,-1.158940397,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,10,C,dark respiration,-3.304635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,13,C,dark respiration,-1.993377483,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,14,C,dark respiration,-3.900662252,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,16,C,dark respiration,-2.589403974,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-3.304635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-3.900662252,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,18,C,dark respiration,-7.59602649,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-3.42384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-5.450331126,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,21,C,dark respiration,-7.834437086,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-4.973509934,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-7.953642384,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,24,C,dark respiration,-10.69536424,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,26,C,dark respiration,-6.642384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,dark respiration,-9.503311258,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,27,C,dark respiration,-12.12582781,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,29,C,dark respiration,-8.907284768,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,dark respiration,-9.920529801,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,30,C,dark respiration,-13.0794702,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,33,C,dark respiration,-12.42384106,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,36,C,dark respiration,-14.86754967,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,41,C,dark respiration,-18.08609272,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,43,C,dark respiration,-20.35099338,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+lange2004,figure 4,pop,pseudocyphellaria,aurata,46,C,dark respiration,-24.04635762,nmol CO2 * g^-1 *s^-1,co2,nmol,g,sec,,,,T,lab,,,,,150,150
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,dark respiration ,-0.414784394,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,dark respiration ,-0.661190965,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,dark respiration ,-1.055441478,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,dark respiration ,-2.583162218,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,dark respiration ,-3.618069815,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,dark respiration ,-4.012320329,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,dark respiration ,-4.258726899,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,0.718685832,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,0.718685832,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,0.176591376,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,-0.488706366,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,-1.006160164,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,-1.770020534,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,-2.459958932,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,1.359342916,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,1.457905544,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,1.655030801,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,0.81724846,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,-0.143737166,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,-0.858316222,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,-1.474332649,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,2.147843943,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,2.813141684,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,3.084188912,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,2.911704312,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,2.616016427,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,1.260780287,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,0.275154004,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,2.640657084,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,4.069815195,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,5.154004107,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,5.326488706,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,5.006160164,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,4.069815195,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,2.616016427,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,2.985626283,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,5.055441478,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,6.583162218,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,7.889117043,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,7.987679671,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,6.804928131,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,5.055441478,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,3.478439425,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,5.794661191,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,7.963039014,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,9.416837782,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,10.87063655,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,9.811088296,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,7.420944559,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,teloschistes,lacunosus,0,C,net photosynthesis,3.626283368,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,5,C,net photosynthesis,5.967145791,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,10,C,net photosynthesis,8.406570842,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,15,C,net photosynthesis,10.27926078,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,20,C,net photosynthesis,11.90554415,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,25,C,net photosynthesis,11.80698152,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,teloschistes,lacunosus,30,C,net photosynthesis,8.997946612,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,dark respiration ,-0.468781986,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,dark respiration ,-0.714431934,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,dark respiration ,-1.303991812,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,dark respiration ,-2.409416581,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,dark respiration ,-3.785056295,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,dark respiration ,-5.357215967,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,dark respiration ,-7.445240532,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,0,0
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,0.41555783,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,0.390992835,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,0.341862845,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,-0.345957011,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,-1.64790174,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,-1.770726714,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,-3.072671443,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,25,25
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,0.784032753,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,0.955987718,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,1.299897646,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,0.906857728,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,-0.272262027,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,-0.984646878,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,-2.016376663,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,50,50
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.177072671,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,1.668372569,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,2.749232344,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,2.552712385,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,1.299897646,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,0.268167861,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,-0.517911975,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,100,100
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.398157625,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,2.282497441,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,4.444216991,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,4.886386899,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,3.461617195,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,2.012282497,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,1.373592631,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,200,200
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.545547595,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,2.822927329,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,6.114636643,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,7.023541453,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,5.303991812,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,3.682702149,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,3.117707267,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,400,400
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.619242579,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,3.363357216,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,7.588536336,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,9.062436029,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,6.949846469,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,5.033776868,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,4.419651996,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,800,800
+delprado_1995,figure 2,pop,ramalina,bourgeana,0,C,net photosynthesis,1.668372569,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,5,C,net photosynthesis,3.48618219,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,10,C,net photosynthesis,8.423746162,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,15,C,net photosynthesis,10.11873081,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,20,C,net photosynthesis,8.178096213,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,25,C,net photosynthesis,5.74616172,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+delprado_1995,figure 2,pop,ramalina,bourgeana,30,C,net photosynthesis,5.279426817,umol CO2 *kg dw^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,,,1200,1200
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,dark respiration,-0.733714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,dark respiration,-1.227428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,dark respiration,-1.355428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,dark respiration,-2.708571429,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,dark respiration,-3.677714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,35,C,dark respiration,-4.518857143,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,1.899428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,net photosynthesis,2.521142857,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,net photosynthesis,2.137142857,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,net photosynthesis,1.405714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,net photosynthesis,1.003428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,35,C,net photosynthesis,0.052571429,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,2.173714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,net photosynthesis,3.526857143,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,net photosynthesis,2.722285714,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,net photosynthesis,2.301714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,net photosynthesis,1.405714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,35,C,net photosynthesis,0.747428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,2.356571429,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,net photosynthesis,4.313142857,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,net photosynthesis,4.642285714,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,net photosynthesis,3.819428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,net photosynthesis,4.002285714,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,36,C,net photosynthesis,3.252571429,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,3.435428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,net photosynthesis,5.977142857,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,net photosynthesis,5.958857143,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,net photosynthesis,6.013714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,net photosynthesis,5.904,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,35,C,net photosynthesis,4.477714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,grisea,0,C,net photosynthesis,4.093714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,grisea,7,C,net photosynthesis,6.489142857,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,grisea,14,C,net photosynthesis,8.994285714,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,grisea,21,C,net photosynthesis,7.549714286,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,grisea,28,C,net photosynthesis,7.915428571,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,grisea,35,C,net photosynthesis,6.726857143,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,dark respiration,-1.323360184,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,dark respiration,-2.02301496,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,dark respiration,-2.243958573,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,dark respiration,-3.367088608,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,dark respiration,-4.379746835,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,dark respiration,-5.539700806,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,0,0
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,2.487917146,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,net photosynthesis,2.985040276,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,net photosynthesis,1.843498274,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,net photosynthesis,1.548906789,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,net photosynthesis,0.867663982,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,net photosynthesis,-0.53164557,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,60-70,65
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,3.169159954,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,net photosynthesis,4.642117376,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,net photosynthesis,2.101265823,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,net photosynthesis,2.395857307,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,net photosynthesis,1.972382048,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,net photosynthesis,0.665132336,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,110,110
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,3.758342923,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,net photosynthesis,6.115074799,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,net photosynthesis,4.310701956,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,net photosynthesis,3.86881473,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,net photosynthesis,3.647871116,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,net photosynthesis,1.401611047,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,220-240,230
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,5.084004603,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,net photosynthesis,7.219792865,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,net photosynthesis,7.477560414,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,net photosynthesis,6.336018412,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,net photosynthesis,6.409666283,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,net photosynthesis,4.86306099,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,400-470,435
+sancho1997,figure 2,pop,umbilicaria ,freyi,0,C,net photosynthesis,5.930955121,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,7,C,net photosynthesis,8.950517837,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,14,C,net photosynthesis,9.742232451,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,21,C,net photosynthesis,10.16570771,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,28,C,net photosynthesis,8.84004603,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+sancho1997,figure 2,pop,umbilicaria ,freyi,35,C,net photosynthesis,7.403912543,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,2,T,lab,,,,,610-650,630
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,dark respiration,-75.84038404,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,dark respiration,-71.08790879,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-50.27962796,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,18,18
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-44.34023402,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,16,16
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-37.80408041,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,18,18
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-38.97869787,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,32,32
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-33.03810381,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,32,32
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-27.69156916,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,32,32
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-14.60726073,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,47,47
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-11.6369637,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,47,47
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,-6.289528953,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,48,48
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,3.830783078,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,69,69
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,8.584458446,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,70,70
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,12.7479748,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,75,75
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,32.38223822,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,106,106
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,32.98229823,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,112,112
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,31.79777978,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,116,116
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,50.57515752,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,181,181
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,54.73717372,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,185,185
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,59.18871887,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,181,181
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,55.99729973,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,257,257
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,63.42274227,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,257,257
+smith2000,figure 2,pop,turgidiusculum,complicatulum,25,C,photosynthesis,71.73957396,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,257,257
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,dark respiration,-52.67266727,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,dark respiration,-46.1380138,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,dark respiration,-39.60336034,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,-35.43294329,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,-30.08640864,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,-25.03690369,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,-11.06030603,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,29,29
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,-5.119711971,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,29,29
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,1.413741374,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,28,28
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,15.09630963,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,47,47
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,37.6969697,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,74,74
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,60.31323132,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,116,116
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,79.08970897,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,181,181
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,88.95469547,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,244,244
+smith2000,figure 2,pop,turgidiusculum,complicatulum,20,C,photosynthesis,85.39033903,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,244,244
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,dark respiration,-34.85088509,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,dark respiration,-31.28652865,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,dark respiration,-28.31623162,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,-8.696669667,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,16,16
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,-5.726372637,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,16,16
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,-1.567956796,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,16,16
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,4.382238224,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,26,26
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,7.353135314,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,27,27
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,10.32343234,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,27,27
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,24.00240024,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,42,42
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,27.5679568,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,44,44
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,30.53645365,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,42,42
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,43.04230423,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,73,73
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,47.20072007,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,73,73
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,62.68406841,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,111,111
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,66.83888389,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,107,107
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,84.72247225,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,170,170
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,82.35763576,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,181,181
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,91.93279328,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,252,252
+smith2000,figure 2,pop,turgidiusculum,complicatulum,15,C,photosynthesis,84.80408041,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,252,252
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,dark respiration,-25.93939394,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,dark respiration,-22.3750375,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,dark respiration,-18.81068107,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,-3.946594659,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,14,14
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,0.805280528,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,18.04740474,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,28,28
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,20.72157216,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,29,29
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,23.39513951,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,29,29
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,32.91569157,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,45,45
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,33.81158116,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,50,50
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,37.07530753,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,46,46
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,51.36093609,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,75,75
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,54.330033,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,73,73
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,67.44014401,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,115,115
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,70.4080408,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,112,112
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,73.97359736,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,113,113
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,83.53975398,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,175,175
+smith2000,figure 2,pop,turgidiusculum,complicatulum,10,C,photosynthesis,87.17971797,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,252,252
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,dark respiration,-8.711671167,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,12.09180918,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,28.150015,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,32,32
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,29.93219322,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,32,32
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,40.0450045,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,45,45
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,41.82958296,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,48,48
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,54.33423342,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,78,78
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,66.84308431,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,112,112
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,80.56945695,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,175,175
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,79.44794479,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,242,242
+smith2000,figure 2,pop,turgidiusculum,complicatulum,5,C,photosynthesis,84.79327933,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,241,241
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,dark respiration,-0.394839484,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,0,0
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,16.25022502,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,13,13
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,30.52265227,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,28,28
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,32.30723072,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,30,30
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,40.04440444,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,45,45
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,42.42544254,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,50,50
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,52.54185419,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,67,67
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,64.45664566,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,101,101
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,65.05310531,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,104,104
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,73.43534353,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,170,170
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,76.40864086,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,173,173
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,76.41344134,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,178,178
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,80.66186619,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,268,268
+smith2000,figure 2,pop,turgidiusculum,complicatulum,1,C,photosynthesis,84.22622262,umol CO2 *g^-1 *h^-1,co2,umol,g,hr,,,,I,lab,,,,,268,268
