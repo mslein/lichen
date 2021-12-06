@@ -1,32 +1,32 @@
 ﻿study_id,source,org_level,genus,species,temp,temp_units,response_def,response_value,response_units ,gas,gas_unit,mass,time,error,error_type,sample_size,realm,exp_design,time_point,time_units,add_trt,add_value,ppfd,avg_ppfd
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,5,C,O2 consumption,331.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,189.6,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,15,C,O2 consumption,686.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,63.6,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,25,C,O2 consumption,1214.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,86.4,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,umbilicaria ,decussata,35,C,O2 consumption,1603.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,52.8,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,sphacelata,5,C,O2 consumption,273.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.6,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,sphacelata,15,C,O2 consumption,576,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,sphacelata,25,C,O2 consumption,921.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,sphacelata,35,C,O2 consumption,1456.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,79.2,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,5,C,O2 consumption,177.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,160.8,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,15,C,O2 consumption,441.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.2,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,25,C,O2 consumption,648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,38.4,SEM,,T,lab,,,,,60-80,70
-shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,35,C,O2 consumption,784.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,45.6,SEM,,T,lab,,,,,60-80,70
-shelyakin2020,fig 1a,pop,ramalina,terebrata,5,C,O2 consumption,212.5603865,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1a,pop,ramalina,terebrata,15,C,O2 consumption,347.826087,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1a,pop,ramalina,terebrata,25,C,O2 consumption,637.6811594,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1a,pop,ramalina,terebrata,35,C,O2 consumption,801.9323671,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,5,C,O2 consumption,318.8405797,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,15,C,O2 consumption,676.3285024,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.63285024,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,25,C,O2 consumption,1207.729469,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1b,pop,umbilicaria ,decussata,35,C,O2 consumption,1594.202899,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1c,pop,usnea,sphacelata,5,C,O2 consumption,173.9904868,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1c,pop,usnea,sphacelata,15,C,O2 consumption,434.1261006,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1c,pop,usnea,sphacelata,25,C,O2 consumption,635.7656108,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.80487805,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1c,pop,usnea,sphacelata,35,C,O2 consumption,749.6002429,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,97.56097561,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,5,C,O2 consumption,265.5586586,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,15,C,O2 consumption,587.9254365,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.91408396,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,25,C,O2 consumption,921.2360648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,80,80
-shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,35,C,O2 consumption,1463.388053,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.40871421,SEM,,T,lab,,,,,80,80
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,5,C,O2 consumption,331.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,189.6,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,15,C,O2 consumption,686.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,63.6,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,25,C,O2 consumption,1214.4,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,86.4,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,umbilicaria ,decussata,35,C,O2 consumption,1603.2,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,52.8,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,sphacelata,5,C,O2 consumption,273.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.6,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,sphacelata,15,C,O2 consumption,576,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,sphacelata,25,C,O2 consumption,921.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,48,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,sphacelata,35,C,O2 consumption,1456.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,79.2,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,5,C,O2 consumption,177.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,160.8,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,15,C,O2 consumption,441.6,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.2,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,25,C,O2 consumption,648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,38.4,SEM,,T,lab,,,,,0,0
+shelyakin2019,figure 3,pop,usnea,aurantiaco-atra,35,C,O2 consumption,784.8,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,45.6,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1a,pop,ramalina,terebrata,5,C,O2 consumption,212.5603865,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1a,pop,ramalina,terebrata,15,C,O2 consumption,347.826087,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1a,pop,ramalina,terebrata,25,C,O2 consumption,637.6811594,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1a,pop,ramalina,terebrata,35,C,O2 consumption,801.9323671,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,5,C,O2 consumption,318.8405797,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,77.29468599,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,15,C,O2 consumption,676.3285024,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,67.63285024,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,25,C,O2 consumption,1207.729469,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,96.61835749,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1b,pop,umbilicaria ,decussata,35,C,O2 consumption,1594.202899,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,91.78743961,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1c,pop,usnea,sphacelata,5,C,O2 consumption,173.9904868,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1c,pop,usnea,sphacelata,15,C,O2 consumption,434.1261006,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,78.04878049,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1c,pop,usnea,sphacelata,25,C,O2 consumption,635.7656108,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.80487805,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1c,pop,usnea,sphacelata,35,C,O2 consumption,749.6002429,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,97.56097561,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,5,C,O2 consumption,265.5586586,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,15,C,O2 consumption,587.9254365,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,87.91408396,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,25,C,O2 consumption,921.2360648,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,76.92482347,SEM,,T,lab,,,,,0,0
+shelyakin2020,fig 1d,pop,usnea,aurantiaco-atra,35,C,O2 consumption,1463.388053,nmol O2 *g of dried weight ^1 *min^-1,o2,nmol,g,min,93.40871421,SEM,,T,lab,,,,,0,0
 colesie2018,figure 3,pop,stereocaulon,alpinum,5,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.52173913,SD,3,T,lab,1,week,,,150-200 ,175
 colesie2018,figure 3,pop,stereocaulon,alpinum,15,C,net photosynthesis,2.14492754,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,0.2173913,SD,3,T,lab,1,week,,,150-200 ,175
 colesie2018,figure 3,pop,stereocaulon,alpinum,23,C,net photosynthesis,1.91304348,umol CO2 *g^-1 *s^-1,co2,umol,g,sec,1.02898551,SD,3,T,lab,1,week,,,150-200 ,175
@@ -984,3 +984,19 @@ scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,329.169
 scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,368.131597,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
 scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,389.1952924,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
 scholander1952,figure 3,pop,teloschistes,flavicans,30,C,dark respiration,411.7651604,mg *kg^-1*h^-1,o2,mg,kg,hr,,,,l,lab,,,location,tropical,0,0
+reiter200,figure7,pop,cetraria ,islandica,2,C,photosynthesis,0.636461994,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,161.1347817,1000,1000
+reiter200,figure7,pop,cetraria ,islandica,2,C,dark respiration,-1.373112607,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,160.7893779,0,0
+reiter200,figure7,pop,cetraria ,islandica,10,C,photosynthesis,2.239211297,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,126.7854088,1000,1000
+reiter200,figure7,pop,cetraria ,islandica,10,C,dark respiration,-2.209473628,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,127.2751712,0,0
+reiter200,figure7,pop,cetraria ,islandica,20,C,photosynthesis,2.525189626,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,124.8641979,1000,1000
+reiter200,figure7,pop,cetraria ,islandica,20,C,dark respiration,-3.541916465,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,125.014077,0,0
+reiter200,figure7,pop,cetraria ,islandica,30,C,photosynthesis,-2.011173184,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,126.4759777,1000,1000
+reiter200,figure7,pop,cetraria ,islandica,30,C,dark respiration,-6.670391061,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,126.8924581,0,0
+reiter200,figure7,pop,flavocetraria,nivalis,2,C,photosynthesis,0.531791908,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,228.9959016,1000,1000
+reiter200,figure7,pop,flavocetraria,nivalis,2,C,dark respiration,-1.687861272,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,228.9959016,0,0
+reiter200,figure7,pop,flavocetraria,nivalis,10,C,photosynthesis,0.597701149,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,158.8421318,1000,1000
+reiter200,figure7,pop,flavocetraria,nivalis,10,C,dark respiration,-4.091954023,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,158.286675,0,0
+reiter200,figure7,pop,flavocetraria,nivalis,20,C,photosynthesis,-1.333333333,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,241.1202186,1000,1000
+reiter200,figure7,pop,flavocetraria,nivalis,20,C,dark respiration,-6.527536232,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,240.9405441,0,0
+reiter200,figure7,pop,flavocetraria,nivalis,30,C,photosynthesis,-5.6,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,181.6466552,1000,1000
+reiter200,figure7,pop,flavocetraria,nivalis,30,C,dark respiration,-10.88695652,umol CO2 * kg^-1 *s^-1,co2,umol,kg,sec,,,,T,lab,,,max water content ,181.7883511,0,0
