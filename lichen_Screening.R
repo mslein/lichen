@@ -11,6 +11,9 @@ pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork)
 
 ##ask mary about the difference in units between the spreadsheet 
 ## and the plos one figure 1....
+
+
+#i actually think i forgot to differentiate the molar mass shit fuck between co2 and o2
 library(tidyverse)
 lichen_data <- read_csv("extraction/lichen_data.csv") %>%
   mutate(inv_T=1/((8.617333262145*10^-5)*(temp+273.15)),
@@ -48,6 +51,9 @@ photosynthesis <- subset_lichen %>%
 respiration <- subset_lichen %>%
   filter(broad_responses == "respiration")
 
+subset_lichen %>%
+  ggplot(aes(x=abs(latitude)))+
+  geom_histogram(bins=100)
 
 
 
@@ -60,7 +66,7 @@ respiration$elevation_broad<- relevel(respiration$elevation_broad, "neutral")
 respiration$lichen_type<- relevel(respiration$lichen_type, "green algae")
 
 #random effects for photosynthesis 
-model00p<- lmer(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|species/ study_id) , data=photosynthesis, REML=FALSE)
+model00p<- lmer(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|species/ study_id), data=photosynthesis, REML=FALSE)
 model0p <- lmer(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=photosynthesis, REML=FALSE)
 model1p <- lmer(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type*centre_temp + elevation_broad + (1|study_id) , data=photosynthesis, REML=FALSE)
 model2p <- gls(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type*centre_temp + elevation_broad, data=photosynthesis)
@@ -99,7 +105,7 @@ model7p <- lmer(log(abs_mmol_mg_min) ~abs(latitude) +lichen_type + elevation_bro
 #missing lichen type
 model10p <- lmer(log(abs_mmol_mg_min) ~centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=photosynthesis)
 #missing interaction between lichen type + centre temp
-model11p <- lmer(log(abs_mmol_mg_min) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=photosynthesis)
+model11p <- lmer(log(abs_mmol_mg_min) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + avg_ppfd + (1+centre_temp|study_id), data=photosynthesis)
 full_modelp <- lmer(log(abs_mmol_mg_min) ~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=photosynthesis)
 model.sel(model3p, model4p, model5p, model6p, model7p, model10p, model11p, full_modelp)
 
@@ -253,6 +259,9 @@ r_plot <- ggplot(data=respiration, aes(x=centre_temp, y=log(abs_mmol_mg_min)), c
 
 p_plot + r_plot
 
-
-
+lichen_data %>%
+  ggplot()+
+  geom_point(aes(x=inv_T, y=response_value, colour=metabolic_category))+
+  facet_wrap(~`mass/area`)
+  
 
