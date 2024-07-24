@@ -51,11 +51,29 @@ lichen_max_ppfd <- lichen %>%
 
 npp <- lichen_max_ppfd %>%
   filter(metabolic_category == "npp") %>%
-  filter_all(all_vars(!is.infinite(.)))
-
+  filter_all(all_vars(!is.infinite(.))) %>%
+  filter(case_when(study_id %in% c("adams_1971", "delprado_1995", "domaschke_2013", 
+                                   "eickmeieradams1973", "kershaw1983", 
+                                   "macfarlane1983", "aubert_2007", 
+                                   "sanchokappen1989") ~ inv_T < 41, 
+                   study_id %in% c("coxson_2003", "reiter2000", 
+                                   "sancho1997",
+                                   "kappen_2000") ~ inv_T < 42, 
+                   study_id %in% c("brownkershaw1984", "lange2000", 
+                                   "zotz2003", "lechowicz1973", "lechowiczadams1974", 
+                                   "sonesson1989", "sundberg1997", "tretiach1997") ~ inv_T < 40,
+                   study_id %in% c() ~ inv_T < 43,
+                   study_id %in% c("kappen1983") ~ inv_T < 41.5,
+                   study_id %in% c("schroeter1995") ~ inv_T < 42.5,
+                   study_id %in% c("zotz1998", "lange2004") ~ inv_T < 39.5,
+                   TRUE ~ inv_T < 50))
 r <- lichen %>%
   filter(metabolic_category == "r") %>%
-  filter_all(all_vars(!is.infinite(.)))
+  filter_all(all_vars(!is.infinite(.))) %>%
+  filter(case_when(study_id %in% c("castillohelmuth2005") ~ inv_T < 38, 
+                   study_id %in% c("dorey2020") ~ inv_T < 41, 
+                   study_id %in% c("kemp2011") ~ inv_T < 40.5,
+                   TRUE ~ inv_T < 50))
 
 gpp <- lichen_max_ppfd %>%
   filter(metabolic_category == "gpp")
@@ -73,7 +91,6 @@ r$lichen_type<- relevel(r$lichen_type, "green algae")
 gpp$latitude_broad<- relevel(gpp$latitude_broad, "temperate")
 
 #random effects for npp
-#singular fit?
 model00npp<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad  + (1+centre_temp|species), data=npp, REML=FALSE)
 model0npp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad  + (1+centre_temp|study_id) , data=npp, REML=FALSE)
 model1npp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad  + (1|study_id) , data=npp, REML=FALSE)
@@ -83,24 +100,6 @@ model00r<- lmer(log(abs(mol_grammin)) ~abs(latitude) +lichen_type*centre_temp + 
 model0r <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=r, REML=FALSE)
 model1r <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1|study_id) , data=r, REML=FALSE)
 model2r <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad, data=r, na.action=na.exclude)
-#random effects for gpp
-#singular fit?
-model00gpp<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1+centre_temp|species) , data=gpp, REML=FALSE)
-model0gpp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + (1+centre_temp|study_id) , data=gpp, REML=FALSE)
-model1gpp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1|study_id) , data=gpp, REML=FALSE)
-model2gpp <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude) , data=gpp, na.action=na.exclude)
-
-#model0npp == best by 2 AIC
-#model0r == best by 2 AIC
-#model1gpp <- different random effects structure
-
-
-#model selection -- random effects --> all the data togetehr (not relevant anymore)
-#model00 <- lmer(log(abs_mmol_mg_min) ~broad_responses*centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1|centre_temp) , data=subset_lichen, REML=FALSE)
-#model0 <- lmer(log(abs_mmol_mg_min) ~broad_responses*centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=subset_lichen, REML=FALSE)
-#model1 <- lmer(log(abs_mmol_mg_min) ~broad_responses*centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1|centre_temp) + (1 |study_id) , data=subset_lichen, REML=FALSE)
-#model1 <- lmer(log(abs_mmol_mg_min) ~broad_responses*centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1|study_id) , data=subset_lichen, REML=FALSE)
-#model2 <- gls(log(abs_mmol_mg_min) ~broad_responses*centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad, data=subset_lichen)
 
 #model selection for npp random effects
 model.sel(model00npp, model0npp, model1npp, model2npp)
@@ -108,11 +107,8 @@ model.sel(model00npp, model0npp, model1npp, model2npp)
 #model selection for respiration random effects
 model.sel(model00r, model0r, model1r, model2r)
 
-#model selection for gpp random effects
-#model.sel(model1gpp, model2gpp)
-
 #model0 prevails for npp and r 
-#model 1 prevails for gpp
+
 
 
 #model selection for photosynthesis
@@ -132,8 +128,10 @@ model8npp <- lmer(log(abs(mol_grammin)) ~centre_temp +  abs(latitude) + elevatio
 model9npp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=npp)
 model.sel(model3npp, model4npp, model5npp, model6npp, model7npp, model8npp, model9npp)
 
-#model3npp, model7npp, model9npp are tied
-
+#model7npp
+#going with model9npp
+summary(model6npp)
+confint(model6npp)
 
 #model selection for respiration
 #missing elevation
@@ -152,14 +150,19 @@ model9r <- lmer(log(abs(mol_grammin))~lichen_type*centre_temp +  abs(latitude) +
 model.sel(model3r, model4r, model5r, model6r, model7r, model8r, model9r)
 
 #model8r is best by < 2 AIC
-
-
 summary(model8r)
 confint(model8r)
 
 
-summary(model7npp)
-confint(model7npp)
+
+
+#plots
+#install.packages("remotes")
+remotes::install_github("palaeoverse/rphylopic")
+library(rphylopic)
+#code to get the uuid's for the phylopic pngs
+uuid <- rphylopic::get_uuid(name = "Hypogymnia physodes")
+
 
 
 
@@ -176,25 +179,25 @@ randslope_p<- random.effects(model7npp) %>%
          r_slope=centre_temp)
 
 photosynthesis_joined<- left_join(randslope_p,npp_df, by="study_id") %>%
-  mutate(c_intercept=case_when(lichen_type == "green algae" & elevation_broad == "neutral" ~-11.933541,
-                               lichen_type == "green algae" & elevation_broad == "high" ~-11.933541+0.028084, 
-                               lichen_type == "cyanobacteria" & elevation_broad == "neutral" ~-11.933541+0.683963,
-                               lichen_type == "cyanobacteria" & elevation_broad == "high" ~-11.933541+0.683963+0.028084, 
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "neutral" ~ -11.933541+1.222073, 
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "high" ~ -11.933541+1.222073+0.028084),
-         latitudeii=abs(latitude)*-0.052765, 
-         f_intercept=r_intercept+c_intercept+latitudeii, 
+  mutate(c_intercept=case_when(lichen_type == "green algae" & elevation_broad == "neutral" ~-11.626354,
+                               lichen_type == "green algae" & elevation_broad == "high" ~-11.626354+0.110541, 
+                               lichen_type == "cyanobacteria" & elevation_broad == "neutral" ~-11.6263541+0.625760,
+                               lichen_type == "cyanobacteria" & elevation_broad == "high" ~-11.626354+0.625760+0.110541, 
+                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "neutral" ~ -11.626354+1.216862, 
+                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "high" ~ -11.626354+1.216862+0.110541),
+         latitudeii=abs(latitude)*-0.056548,
+         f_intercept=r_intercept+c_intercept+latitudeii,
          f_slope=r_slope) %>%
   as.data.frame()
 
-p_plot<- ggplot(data=npp, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="#abbb80")+
+npp_plot<- ggplot(data=npp, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="#abbb80")+
   geom_point(colour="#abbb80", alpha=0.3, size=4)+
-  #scale_x_reverse(limits=c(4, -4.5))+
+  scale_x_reverse(limits=c(4, -4.5))+
   geom_abline(data=photosynthesis_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="#abbb80", size=1, alpha=0.5)+
-  geom_abline(aes(slope=0, intercept=-11.933541), colour="#99a873", size=2)+
+  geom_abline(aes(slope=0, intercept=-11.626354), colour="#99a873", size=2)+
   #geom_hline(yintercept=-9.1055, size=1.5)+  
   xlab("Temperature (1/kT)")+
-  #ylab("Metabolic rate (log(mmol CO2 per mg per min))")+
+  ylab("")+
   theme_bw()+
   theme(axis.text=element_text(size=20),
         axis.title=element_text(size=20,face="bold"),
@@ -204,11 +207,13 @@ p_plot<- ggplot(data=npp, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="#
         strip.text = element_text(size = 20), 
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
   ggtitle("NPP")+
-  xlab("Temperature (1/kT)")
-  #ylim(-31, -4)
+  xlab("Temperature (1/kT)")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4, y=-20, ysize=3, alpha=1,fill = "#99a873")+
+  ylim(-22,-5)
+
+
 
 respiration_df<- count(r, study_id, lichen_type, elevation_broad, latitude, centre_temp)
-
 
 randslope_r<- random.effects(model8r) %>%
   as.data.frame() %>%
@@ -235,7 +240,7 @@ r_plot <- ggplot(data=r, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="gr
   geom_point(colour="grey", alpha=0.3, size=4)+
   scale_x_reverse(limits=c(4, -4.5))+
   geom_abline(data=respiration_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=0.6018, intercept = -15.34, size=2.5, colour="grey65")+  
+  geom_abline(slope=0.584779, intercept = -15.304981, size=2.5, colour="grey65")+  
   xlab("Temperature (1/kT)")+
   ylab("")+
   theme_bw()+
@@ -246,17 +251,41 @@ r_plot <- ggplot(data=r, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="gr
         # The new stuff
         strip.text = element_text(size = 20), 
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("R")
+  ggtitle("R")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4, y=-20, ysize=3, alpha=1, fill = "grey65")+
+  ylim(-22,-5)
   #scale_x_continuous(sec.axis = sec_axis(~.*(1/(8.61*10^-5))-273.15), name = "Temperature (°C)")
   #scale_x_continuous(sec.axis = sec_axis(~ . * 20, name = "Temperature (°C)"))
 
 #how do i plot this if this is the centred term?
 
 
-ggplot(data=r, aes(x=temp, y=log(abs(mol_grammin))), colour="grey")+
-  geom_point(colour="grey", alpha=0.3, size=4)+
-  geom_abline(data=respiration_joined, aes(slope=f_slope, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=-0.6018, intercept = -15.34, size=2.5, colour="grey65")+  
+
+gpp_df<- count(gpp_comb, study_id, lichen_type, elevation_broad, centre_temp, latitude)
+
+randslope_gpp<- random.effects(model6gpp) %>%
+  as.data.frame() %>%
+  select(-condsd) %>%
+  pivot_wider(names_from = term, values_from = condval) %>%
+  rename(r_intercept = `(Intercept)`, 
+         study_id= grp, 
+         r_slope=centre_temp)
+
+gpp_joined<- left_join(randslope_gpp,gpp_df, by="study_id") %>%
+  mutate(c_intercept=case_when(lichen_type == "cyanobacteria"  ~-13.19796+1.34267,
+                               lichen_type == "green algae"  ~-13.19796,
+                               lichen_type == "cyanobacteria + green algae" ~-13.19796+0.60857),
+         latitudeii=abs(latitude)*-0.03066,
+         f_intercept=r_intercept+c_intercept+latitudeii,
+         f_slope=r_slope) %>%
+  as.data.frame()
+
+
+gpp_plot <- ggplot(data=gpp_comb, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="olivedrab1")+
+  geom_point(colour="olivedrab1", alpha=0.3, size=4)+
+  scale_x_reverse(limits=c(4, -4.5))+
+  geom_abline(data=gpp_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="olivedrab1", size=1, alpha=0.5)+
+  geom_abline(slope=0, intercept = -11.71171, size=2.5, colour="olivedrab2")+  
   xlab("Temperature (1/kT)")+
   ylab("")+
   theme_bw()+
@@ -267,12 +296,19 @@ ggplot(data=r, aes(x=temp, y=log(abs(mol_grammin))), colour="grey")+
         # The new stuff
         strip.text = element_text(size = 20), 
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("Respiration")
+  ggtitle("GPP")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4, y=-20, ysize=3, alpha=1, fill = "olivedrab2")+
+  ylim(-22,-5)+
+  ylab("Metabolic rate (log(mmol O2 /mg / min))")
+
+lichen_plots <- (gpp_plot + npp_plot + r_plot)
+full_plots <- lichen_plots / coral_plots
+
+full_fig<- full_plots  
 
 
 
-
-p_plot + r_plot
+ggsave(full_fig, filename = "./figures/fig_c.png", dpi=700, width=20, height=15)
 
 
 ### making the friedman and sun figure
@@ -316,237 +352,120 @@ ggplot() +
 
 
 
+
+
+
+
 # trying to back calculate GPP 
 
-gpp_arithmetic <- read_csv("extraction/lichengpp_arithmetic3oct2023.csv") %>%
-  mutate(r_value = r_value*-1,
+
+#figuring out which studies have both npp and r
+count(lichen, study_id, metabolic_category) 
+
+gpp_arithmetic <- read_csv("extraction/lichen dataset/gpp_arithmetic2jun2024.csv") %>%
+  mutate(r_value = abs(r_value)*-1,
     gpp = npp_value + r_value) %>%
   unite("gas_units", gas_unit, gas) %>%
   mutate(inv_T=1/((8.617333262145*10^-5)*(temp+273.15)),
-         mol_gpp = case_when(gas_units %in% c("mg_co2") ~ gpp*(1/44010), 
-                         gas_units %in% c("mg_o2") ~ gpp*(1/32000), 
+         mol = case_when(gas_units %in% c("mg_co2") ~ gpp*(1/44010), 
                          gas_units %in% c("nmol_co2") ~ gpp*(1/10^9), 
-                         gas_units %in% c("nmol_o2") ~ gpp*(1/10^9),
                          gas_units %in% c("umol_co2") ~ gpp*(1/10^6)),
-         mol_r = case_when(gas_units %in% c("mg_co2") ~ r_value*(1/44010), 
-                           gas_units %in% c("mg_o2") ~ r_value*(1/32000), 
-                           gas_units %in% c("nmol_co2") ~ r_value*(1/10^9), 
-                           gas_units %in% c("nmol_o2") ~ r_value*(1/10^9),
-                           gas_units %in% c("umol_co2") ~ r_value*(1/10^6)),
-         mol_npp = case_when(gas_units %in% c("mg_co2") ~ npp_value*(1/44010), 
-                             gas_units %in% c("mg_o2") ~ npp_value*(1/32000), 
-                             gas_units %in% c("nmol_co2") ~ npp_value*(1/10^9), 
-                             gas_units %in% c("nmol_o2") ~ npp_value*(1/10^9),
-                             gas_units %in% c("umol_co2") ~ npp_value*(1/10^6)),
          gram = case_when(`mass/area` %in% c("g") ~ 1, 
                           `mass/area` %in% c("kg") ~ 1000, 
                           `mass/area` %in% c("m") ~ 1000, 
                           `mass/area` %in% c("mg") ~ 1/1000, 
-                          `mass/area` %in% c("mg chla") ~ 1/1000),
+                          `mass/area` %in% c("mg chla") ~ 1/1000,
+                          `mass/area` %in% c("mg chl") ~ 1/1000),
          min = case_when(time %in% c("hr") ~ 60, 
                          time %in% c("min") ~ 1, 
                          time %in% c("sec") ~ 1/60),
-         gpp_mol_grammin= mol_gpp/(gram*min),
-         r_mol_grammin = mol_r/(gram*min),
-         npp_mol_grammin= mol_npp/(gram*min),
+         mol_grammin= mol/(gram*min),
          latitude_broad=as.factor(latitude_broad), 
          elevation_broad=as.factor(elevation_broad), 
          lichen_type=as.factor(lichen_type), 
-         centre_temp = I(inv_T-mean(inv_T)))
+         centre_temp = I(inv_T-mean(inv_T))) %>%
+  select(study_id, centre_temp, lichen_type, elevation_broad, latitude, species, mol_grammin, inv_T)
 
-gpp_arithmetic$latitude_broad<- relevel(gpp_arithmetic$latitude_broad, "temperate")
-gpp_arithmetic$elevation_broad<- relevel(gpp_arithmetic$elevation_broad, "neutral")
-gpp_arithmetic$lichen_type<- relevel(gpp_arithmetic$lichen_type, "green algae")
+gpp_collect <- gpp %>% select(study_id, centre_temp, lichen_type, elevation_broad, latitude, species, mol_grammin, inv_T) %>%
+  mutate(elevation_broad=as.factor(elevation_broad), 
+         lichen_type = as.factor(lichen_type))
 
 
-model3gpp <- lmer(log(abs(gpp_mol_grammin)) ~centre_temp +lichen_type*centre_temp +abs(latitude)+ (1+centre_temp|study_id), data=gpp_arithmetic)
+gpp_comb <- rbind(gpp_collect, gpp_arithmetic) %>%
+  filter(case_when(study_id %in% c("adams_1971", "delprado_1995", "domanschke_2013", 
+                                   "eickermeieradams1973", "kershaw1983", 
+                                   "lechowiczadams1974", "macfarlane1983", "kershaw1977", 
+                                   "lange_1980", "lange_1991", "lechowicz1973", "sancho1997",
+                                   "smith2001", "sundberg1997", "treitach1997") ~ inv_T < 41, 
+                   study_id %in% c("aubert_2007", "coxson_2003", "reiter2000",
+                                    "sanchokappen1989", "sonesson1989", 
+                                   "green1998") ~ inv_T < 42, 
+                   study_id %in% c("brownkershaw1984", "lange2004", "lange2000", 
+                                   "zotz2003") ~ inv_T < 40,
+                   study_id %in% c("kappen_2000", "schroeter1995") ~ inv_T < 43,
+                   study_id %in% c("kappen1983") ~ inv_T < 41.5,
+                   study_id %in% c("schroeter1995") ~ inv_T < 42.5,
+                   study_id %in% c("zotz1998") ~ inv_T < 39.5,
+                   TRUE ~ inv_T < 50))
+
+gpp_comb$elevation_broad<- relevel(gpp_comb$elevation_broad, "neutral")
+gpp_comb$lichen_type<- relevel(gpp_comb$lichen_type, "green algae")
+
+model00gpp<- lmer(log(abs(mol_grammin)) ~lichen_type*centre_temp +  abs(latitude) + elevation_broad  + (1+centre_temp|species) , data=gpp_comb, REML=FALSE)
+model0gpp <- lmer(log(abs(mol_grammin)) ~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id) , data=gpp_comb, REML=FALSE)
+model1gpp <- lmer(log(abs(mol_grammin)) ~lichen_type*centre_temp +  abs(latitude) + elevation_broad+ (1|study_id) , data=gpp_comb, REML=FALSE)
+model2gpp <- gls(log(abs(mol_grammin)) ~lichen_type*centre_temp +  abs(latitude) + elevation_broad , data=gpp_comb, na.action=na.exclude)
+
+model.sel(model00gpp, model0gpp, model1gpp, model2gpp)
+#model0gpp is best
+
+
+model3gpp <- lmer(log(abs(mol_grammin)) ~centre_temp +lichen_type*centre_temp +abs(latitude)+ (1+centre_temp|study_id), data=gpp_comb)
 #missing latitude
-model4gpp <- lmer(log(abs(gpp_mol_grammin)) ~centre_temp +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=gpp_arithmetic)
+model4gpp <- lmer(log(abs(mol_grammin)) ~centre_temp +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=gpp_comb)
 #missing both latitude and elevation
-model5gpp <- lmer(log(abs(gpp_mol_grammin)) ~centre_temp +lichen_type*centre_temp + (1+centre_temp|study_id), data=gpp_arithmetic)
+model5gpp <- lmer(log(abs(mol_grammin)) ~centre_temp +lichen_type*centre_temp + (1+centre_temp|study_id), data=gpp_comb)
 #missing temp
-model6gpp <- lmer(log(abs(gpp_mol_grammin)) ~abs(latitude) +lichen_type + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
+model6gpp <- lmer(log(abs(mol_grammin)) ~abs(latitude) +lichen_type + elevation_broad + (1+centre_temp|study_id), data=gpp_comb)
 #missing lichen type
-model7gpp <- lmer(log(abs(gpp_mol_grammin)) ~centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
+model7gpp <- lmer(log(abs(mol_grammin)) ~centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_comb)
 #missing interaction between lichen type + centre temp
-model8gpp <- lmer(log(abs(gpp_mol_grammin)) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-model9gpp <- lmer(log(abs(gpp_mol_grammin))~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
+model8gpp <- lmer(log(abs(mol_grammin)) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_comb)
+model9gpp <- lmer(log(abs(mol_grammin))~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_comb)
 model.sel(model3gpp, model4gpp, model5gpp, model6gpp, model7gpp, model8gpp, model9gpp)
 
-
-#model6gpp is best 
+#model 6 is best
 summary(model6gpp)
-
-
-model3npp2 <- lmer(log(abs(npp_mol_grammin)) ~centre_temp +lichen_type*centre_temp +abs(latitude)+ (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing latitude
-model4npp2 <- lmer(log(abs(npp_mol_grammin)) ~centre_temp +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=gpp_arithmetic)
-#missing both latitude and elevation
-model5npp2 <- lmer(log(abs(npp_mol_grammin)) ~centre_temp +lichen_type*centre_temp + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing temp
-model6npp2 <- lmer(log(abs(npp_mol_grammin)) ~abs(latitude) +lichen_type + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing lichen type
-model7npp2 <- lmer(log(abs(npp_mol_grammin)) ~centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing interaction between lichen type + centre temp
-model8npp2 <- lmer(log(abs(npp_mol_grammin)) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-model9npp2 <- lmer(log(abs(npp_mol_grammin))~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-model.sel(model3npp2, model4npp2, model5npp2, model6npp2, model7npp2, model8npp2, model9npp2)
+confint(model6gpp)
 
 
 
-#model8npp2 is best model w temperature
-summary(model6npp2)
+#creating the friedmann and sun figure 
+
+count(lichen_max_ppfd, study_id, metabolic_category)
+
+#has npp, gpp, and r
+all_lichen <- lichen_max_ppfd  %>%
+  filter(study_id %in% c("nakamura2003","jiang2021", "castillohelmuth2005", 
+                         "silbiger2019", "hadjioannou2019")) 
+write_csv(all_coral, "f+s_npp_gpp_r.csv")
+
+#has npp and r
+npp_and_r_coral <- coral %>%
+  filter(study_id %in% c("bahr2018", "godefroid2023", "hill2014", "howe2001", 
+                         "juillet-leclerc2014", "rodolfo-metalpa2006", "samiel2015"))
+write_csv(npp_and_r_coral, "f+s_npp_r.csv")
 
 
-model3r2 <- lmer(log(abs(r_mol_grammin)) ~centre_temp +lichen_type*centre_temp +abs(latitude)+ (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing latitude
-model4r2 <- lmer(log(abs(r_mol_grammin)) ~centre_temp +lichen_type*centre_temp + elevation_broad + (1+centre_temp|study_id) , data=gpp_arithmetic)
-#missing both latitude and elevation
-model5r2 <- lmer(log(abs(r_mol_grammin)) ~centre_temp +lichen_type*centre_temp + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing temp
-model6r2 <- lmer(log(abs(r_mol_grammin)) ~abs(latitude) +lichen_type + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing lichen type
-model7r2 <- lmer(log(abs(r_mol_grammin)) ~centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-#missing interaction between lichen type + centre temp
-model8r2 <- lmer(log(abs(r_mol_grammin)) ~centre_temp +lichen_type +abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-model9r2 <- lmer(log(abs(r_mol_grammin))~lichen_type*centre_temp +  abs(latitude) + elevation_broad + (1+centre_temp|study_id), data=gpp_arithmetic)
-model.sel(model3r2, model4r2, model5r2, model6r2, model7r2, model8r2, model9r2)
-
-
-#model4r2 is best
-summary(model4r2)
-
-g_df<- count(gpp_arithmetic, study_id, lichen_type, elevation_broad, latitude)
-
-
-randslope_g<- random.effects(model6gpp) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=centre_temp)
-
-g_joined<- left_join(randslope_g,g_df, by="study_id") %>%
-  mutate(c_intercept=case_when(lichen_type == "cyanobacteria" & elevation_broad == "high" ~3.007445+0.560869+-14.278130,
-                               lichen_type == "cyanobacteria" & elevation_broad == "neutral" ~3.007445+-14.278130, 
-                               lichen_type == "green algae" & elevation_broad == "high" ~-14.278130+0.560869,
-                               lichen_type == "green algae" & elevation_broad == "neutral" ~-14.278130,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "high" ~1.272075+-14.278130+0.560869,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "neutral" ~1.272075+-14.278130),
-         latitudeii=abs(latitude)*-0.032704, 
-         f_intercept=r_intercept+c_intercept+latitudeii, 
-         f_slope=r_slope) %>%
-  as.data.frame()
+#has gpp and r 
+#omitting banc-prandi for now because their gpp data literally makes no fucking sense
+gpp_and_r_coral <- coral %>%
+  filter(study_id %in% c("higuchi2015", "kemp2011"))
+write_csv(gpp_and_r_coral, "f+s_gpp_r.csv")
 
 
 
 
-
-gpp_plot<-ggplot(data=gpp_arithmetic, aes(x=centre_temp, y=log(abs(gpp_mol_grammin))), colour="olivedrab1")+
-  geom_point(colour="olivedrab1", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(4, -4.5))+
-  geom_abline(data=g_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="olivedrab1", size=1, alpha=0.5)+
-  geom_abline(slope=0.174060, intercept = -13.772024, size=1.5, colour="olivedrab2")+ 
-  xlab("Temperature (1/kT)")+
-  ylab("Metabolic rate (log(mmol CO2 / mg / min))")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("GPP")
-
-
-
-
-
-randslope_n<- random.effects(model6npp2) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=centre_temp)
-
-n_joined<- left_join(randslope_n,g_df, by="study_id") %>%
-  mutate(c_intercept=case_when(lichen_type == "cyanobacteria" & elevation_broad == "high" ~0.599995+0.754487+-11.772943,
-                               lichen_type == "cyanobacteria" & elevation_broad == "neutral" ~0.599995+-11.772943, 
-                               lichen_type == "green algae" & elevation_broad == "high" ~-11.772943+0.754487,
-                               lichen_type == "green algae" & elevation_broad == "neutral" ~-11.772943,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "high" ~1.206334+-11.772943+0.754487,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "neutral" ~1.206334+-11.772943),
-         latitudeii=abs(latitude)*-0.058892, 
-         f_intercept=r_intercept+c_intercept+latitudeii, 
-         f_slope=r_slope+-0.049502) %>%
-  as.data.frame()
-
-
-npp_plot <- ggplot(data=gpp_arithmetic, aes(x=centre_temp, y=log(abs(npp_mol_grammin))), colour="#abbb80")+
-  geom_point(colour="#abbb80", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(4, -4.5))+
-  geom_abline(data=n_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="#abbb80", size=1, alpha=0.5)+
-  geom_abline(slope=0.049502, intercept = -11.772943, size=1.5, colour="#99a873")+ 
-  xlab("Temperature (1/kT)")+
-  ylab("")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("NPP")
-
-
-
-randslope_r<- random.effects(model4r2) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=centre_temp)
-
-r_joined<- left_join(randslope_r,g_df, by="study_id") %>%
-  mutate(c_intercept=case_when(lichen_type == "cyanobacteria" & elevation_broad == "high" ~4.06343+0.50715+-16.32424,
-                               lichen_type == "cyanobacteria" & elevation_broad == "neutral" ~4.06343+-16.32424, 
-                               lichen_type == "green algae" & elevation_broad == "high" ~-16.32424+0.50715,
-                               lichen_type == "green algae" & elevation_broad == "neutral" ~-16.32424,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "high" ~1.32314+-16.32424+0.50715,
-                               lichen_type == "cyanobacteria + green algae" & elevation_broad == "neutral" ~1.32314+-16.32424),
-         f_intercept=r_intercept+c_intercept, 
-         p_slope= case_when(lichen_type== "cyanobacteria" ~ -0.10089+-0.52651, 
-                            lichen_type== "cyanobacteria + green algae" ~ -0.36705+-0.52651, 
-                            lichen_type== "green algae" ~ -0.52651),
-         f_slope=r_slope+p_slope) %>%
-  as.data.frame()
-
-resp_plot<- ggplot(data=gpp_arithmetic, aes(x=centre_temp, y=log(abs(r_mol_grammin))), colour="grey")+
-  geom_point(colour="grey", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(4, -4.5))+
-  geom_abline(data=r_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=0.52651, intercept = -16.32424, size=1.5, colour="grey65")+ 
-  xlab("Temperature (1/kT)")+
-  ylab("")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("R")
-
-
-
-
-gpp_plot + npp_plot + resp_plot
 
 
 
