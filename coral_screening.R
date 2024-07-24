@@ -7,9 +7,8 @@ pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork)
 # ALL FIELDS = ("temperature" AND ("symbio*" OR "holobiont") AND ("respiration" OR "photosynthesis")) AND "coral"
 # 384 papers ----> coral.bib
 
-coral1 <- read_bibliography("lit search files/coral.bib")
-#lichen2 <- read_bibliography("wos155.bib")
-screen_abstracts(coral1)
+#coral1 <- read_bibliography("lit search files/coral.bib")
+#screen_abstracts(coral1)
 
 #72 candidate studies, 24 only have 2 temps
 #17 isolated algae studies, 4 have 2 temps		
@@ -19,17 +18,16 @@ screen_abstracts(coral1)
 #29 jan 2024
 # ABSTRACT = "zooxan*" AND "temperature" AND ("photosynthesis" OR "respiration")
 #65 papers -----> zoox.bib
-coral2 <- read_bibliography("lit search files/zoox.bib")
+#coral2 <- read_bibliography("lit search files/zoox.bib")
 #lichen2 <- read_bibliography("wos155.bib")
-screen_abstracts(coral2)
+#screen_abstracts(coral2)
 
 #### mixotroph search 
 # 18 jan 
 #ALL FIELDS = "mixotroph*" AND "photosynthesis" AND "temperature"
 # 71 papers ----> mixotroph.bib
-mixo1 <- read_bibliography("lit search files/mixotroph.bib")
-#lichen2 <- read_bibliography("wos155.bib")
-screen_abstracts(mixo1)
+#mixo1 <- read_bibliography("lit search files/mixotroph.bib")
+#3screen_abstracts(mixo1)
 
 
 
@@ -37,24 +35,27 @@ screen_abstracts(mixo1)
 # 13 march 
 # ABSTRACT = "symbiodinium" AND "temperature" and "photosynthesis"
 # 41 papers ----> symbiodinium.bib
-symbio1 <- read_bibliography("lit search files/symbiodinium.bib")
-#lichen2 <- read_bibliography("wos155.bib")
-screen_abstracts(symbio1)
+#symbio1 <- read_bibliography("lit search files/symbiodinium.bib")
+#screen_abstracts(symbio1)
 
 
 
 ########## 16 April 2024
 
+
+#so this study already log transformed these, i tried transforming them back but it doesn't
+#seem like it worked
+
 #corals
 coral <- read_csv("extraction/coral dataset/coral/coral_data.csv") %>%
   unite("gas_units", gas_unit, gas) %>%
-  mutate(inv_T=1/((8.617333262145*10^-5)*(temp+273.15)),
-         mol = case_when(gas_units %in% c("log umol_o2") ~ (response_value^10)*(1/10^6),
+  mutate(inv_T=(1/((8.617333262145*10^-5)*(temp+273.15))),
+         mol = case_when(gas_units %in% c("log umol_o2") ~ (exp(response_value))*(1/10^6),
                          gas_units %in% c("mg_o2") ~ response_value*(1/32000),
                          gas_units %in% c("ug_o2") ~ response_value*(1/32000000),
                          gas_units %in% c("nmol_o2") ~ response_value*(1/10^9),
                          gas_units %in% c("umol_o2") ~ response_value*(1/10^6),
-                         gas_units %in% c("log umol_o2") ~ (response_value^10)*(1/10^6),
+                         gas_units %in% c("log umol_o2") ~ (response_value^10)/10^-6, 
                          gas_units %in% c("mmol_o2") ~ response_value*(1/10^3),
                          gas_units %in% c("pg_DIC") ~ response_value*(1/(1.2011*10^13)),
                          gas_units %in% c("uL_o2") ~ response_value*(4*10^-14), 
@@ -62,7 +63,7 @@ coral <- read_csv("extraction/coral dataset/coral/coral_data.csv") %>%
          gram = case_when(`mass/area` %in% c("g") ~ 1, 
                           `mass/area` %in% c("468 mm^2") ~ 10^3/(468), 
                           `mass/area` %in% c("l") ~ 1/1000, 
-                          `mass/area` %in% c("cm^2") ~ 1000, 
+                          `mass/area` %in% c("cm^2") ~ 1, 
                           `mass/area` %in% c("chla") ~ 1, 
                           `mass/area` %in% c("larvae^-1") ~ 1, 
                           `mass/area` %in% c("cell") ~ 1, 
@@ -77,124 +78,131 @@ coral <- read_csv("extraction/coral dataset/coral/coral_data.csv") %>%
                          time %in% c("day") ~ 1440),
          mol_grammin= mol/(gram*min),
          abs_molco2_g_min = abs(mol_grammin), 
-         log=log(abs_molco2_g_min),
-         centre_temp = I(inv_T-mean(inv_T)), 
-         centre_celsius = I(temp-mean(temp)), 
+         log=log(abs_molco2_g_min), 
          depth_broad = case_when(avg_depth_m < 20 ~ "shallow", 
                                  TRUE ~ "deep"), 
          depth_broad = as.factor(depth_broad), 
-         cnidarian_type = as.factor(cnidarian_type))
+         cnidarian_type = as.factor(cnidarian_type), 
+         broad_coral = case_when(cnidarian_type == "soft coral" ~ "soft", 
+                                 TRUE ~ "hard"), 
+         broad_coral =as.factor(broad_coral))
 
 
 
 
 npp_coral <- coral %>%
   filter(metabolic_category == "npp") %>%
-  filter_all(all_vars(!is.infinite(.)))
+  filter_all(all_vars(!is.infinite(.))) %>%
+  mutate(centre_temp = I(inv_T-mean(inv_T))) %>%
+  filter(case_when(study_id %in% c("castillohelmuth2005") ~ inv_T < 38, 
+                   study_id %in% c("jiang2021") ~ inv_T < 38.25, 
+                   TRUE ~ inv_T < 50))
+
 
 r_coral <- coral %>%
   filter(metabolic_category == "r") %>%
-  filter_all(all_vars(!is.infinite(.)))
+  filter_all(all_vars(!is.infinite(.))) %>%
+  mutate(centre_temp = I(inv_T-mean(inv_T)))%>%
+  filter(case_when(study_id %in% c("castillohelmuth2005") ~ inv_T < 38, 
+                   study_id %in% c("dorey2020") ~ inv_T < 41, 
+                   study_id %in% c("kemp2011") ~ inv_T < 40.5,
+                   TRUE ~ inv_T < 50))
 
 gpp_coral <- coral %>%
   filter(metabolic_category == "gpp")
 
 
 npp_coral$depth_broad<- relevel(npp_coral$depth_broad, "shallow")
-npp_coral$cnidarian_type<- relevel(npp_coral$cnidarian_type, "hermatypic coral")
+npp_coral$broad_coral<- relevel(npp_coral$broad_coral, "hard")
 r_coral$depth_broad<- relevel(r_coral$depth_broad, "shallow")
-r_coral$cnidarian_type<- relevel(r_coral$cnidarian_type, "hermatypic coral")
-gpp_coral$cnidarian_type<- relevel(gpp_coral$cnidarian_type, "hermatypic coral")
+r_coral$broad_coral<- relevel(r_coral$broad_coral, "hard")
+
+
+npp_coral 
 
 
 #random effects for npp
 model00npp_coral<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|species), data=npp_coral, REML=FALSE)
-model0npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=npp_coral, REML=FALSE)
+model0npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id), data=npp_coral, REML=FALSE)
 model1npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp + (1|study_id) , data=npp_coral, REML=FALSE)
 model2npp_coral <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp, data=npp_coral, na.action=na.exclude)
 model.sel(model00npp_coral, model0npp_coral, model1npp_coral, model2npp_coral)
+#model0npp_coral is best by > 2 AIC
 #random effects for respiration
+#this one has a singular fit
 model00r_coral<- lmer(log(abs(mol_grammin)) ~abs(latitude) +centre_temp  + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|species) , data=r_coral, REML=FALSE)
 model0r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_coral, REML=FALSE)
 model1r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp + (1|study_id) , data=r_coral, REML=FALSE)
 model2r_coral <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  + depth_broad +cnidarian_type*centre_temp, data=r_coral, na.action=na.exclude)
 model.sel(model00r_coral, model0r_coral, model1r_coral, model2r_coral)
-#random effects for gpp
-#singular fit?
-#this has a singular fit
-model00gpp_coral<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1+centre_temp|species) , data=gpp_coral, REML=FALSE)
-#this also has a singular fit
-model0gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1+centre_temp|study_id) , data=gpp_coral, REML=FALSE)
-model1gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1|study_id) , data=gpp_coral, REML=FALSE)
-model2gpp_coral <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude), data=gpp_coral, , na.action=na.exclude)
-model.sel(model00gpp_coral, model0gpp_coral, model1gpp_coral, model2gpp_coral)
+#model0r_coral is best by > 2 AIC
+
+
 
 #model0npp == best by 2 AIC
 #model0r == best by 2 AIC
-#model0gpp == best by 2 AIC ---> has a singular fit though
+
 
 
 #model selection for photosynthesis
 #model selection for photosynthesis
 #missing depth
-model3npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp +  (1+centre_temp|study_id), data=npp_coral)
+model3npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +centre_temp +  (1+centre_temp|study_id), data=npp_coral)
 #missing latitude
-model4npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=npp_coral)
+model4npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + depth_broad +centre_temp + (1+centre_temp|study_id) , data=npp_coral)
 #missing both latitude and depth
-model5npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp +cnidarian_type*centre_temp + (1+centre_temp|study_id), data=npp_coral)
+model5npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + (1+centre_temp|study_id), data=npp_coral)
 #missing interaction between lichen type + centre temp
-model6npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type + (1+centre_temp|study_id), data=npp_coral)
 #missing temp
-model7npp_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + depth_broad +cnidarian_type + (1+centre_temp|study_id), data=npp_coral)
-#missing cnidarian type
-model8npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad + (1+centre_temp|study_id), data=npp_coral)
+model7npp_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + depth_broad  + (1+centre_temp|study_id), data=npp_coral)
 #full model
-model9npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=npp_coral, REML=FALSE)
-model.sel(model3npp_coral, model4npp_coral, model5npp_coral, model6npp_coral, model7npp_coral, model8npp_coral, model9npp_coral)
-#model 7 is best
-summary(model7npp_coral)
+model9npp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad + (1+centre_temp|study_id) , data=npp_coral)
+model.sel(model3npp_coral, model4npp_coral, model5npp_coral, model7npp_coral, model9npp_coral)
+#model 7, 9 are tied, going with model 9 because it has everything
+summary(model9npp_coral)
+confint(model9npp_coral)
 
-final_npp_coral<- model.avg(model6npp_coral, model7npp_coral)
-random.effects(model7npp_coral)
+
 
 #model selection for respiration
 #missing depth
-model3r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp +  (1+centre_temp|study_id), data=r_coral)
+model3r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +centre_temp +  (1+centre_temp|study_id), data=r_coral)
 #missing latitude
-model4r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_coral)
+model4r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + depth_broad +centre_temp + (1+centre_temp|study_id) , data=r_coral)
 #missing both latitude and depth
-model5r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp +cnidarian_type*centre_temp + (1+centre_temp|study_id), data=r_coral)
+model5r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp +centre_temp + (1+centre_temp|study_id), data=r_coral)
 #missing interaction between lichen type + centre temp
-model6r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type + (1+centre_temp|study_id), data=r_coral)
+model6r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +broad_coral + (1+centre_temp|study_id), data=r_coral)
 #missing temp
-model7r_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + depth_broad +cnidarian_type + (1+centre_temp|study_id), data=r_coral)
+model7r_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + depth_broad +broad_coral + (1+centre_temp|study_id), data=r_coral)
 #missing cnidarian type
 model8r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad + (1+centre_temp|study_id), data=r_coral)
 #full model
-model9r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_coral, REML=FALSE)
+model9r_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + depth_broad +centre_temp + (1+centre_temp|study_id) , data=r_coral)
 model.sel(model3r_coral, model4r_coral, model5r_coral, model6r_coral, model7r_coral, model8r_coral, model9r_coral)
 
-#model 4r is best, but failed to converge, going with model 5r
-summary(model5r_coral)
-confint(model5r_coral)
 
-#model selection for gpp -->  these are all singular fits
-#missing temp
-model7gpp_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + (1|study_id), data=gpp_coral)
-#missing latitude
-model8gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp  + (1|study_id), data=gpp_coral)
-#full model
-model9gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1|study_id) , data=gpp_coral, REML=FALSE)
-model.sel(model7gpp_coral, model8gpp_coral, model9gpp_coral)
-
-#model 8gpp and 9 are tied, going w/ model 9 
-summary(model9gpp_coral)
+#model 6r is best by more than 2 AIC
+summary(model6r_coral)
+confint(model6r_coral)
 
 
 
-npp_coral_df<- count(npp_coral, study_id, latitude, cnidarian_type)
 
-randslope_npp_coral<- random.effects(model7npp_coral) %>%
+
+
+#plots
+#install.packages("remotes")
+remotes::install_github("palaeoverse/rphylopic")
+library(rphylopic)
+#code to get the uuid's for the phylopic pngs
+uuid <- rphylopic::get_uuid(name = "Acropora florida")
+
+
+
+npp_coral_df<- count(npp_coral, study_id, latitude, depth_broad)
+
+randslope_npp_coral<- random.effects(model9npp_coral) %>%
   as.data.frame() %>%
   select(-condsd) %>%
   pivot_wider(names_from = term, values_from = condval) %>%
@@ -203,22 +211,20 @@ randslope_npp_coral<- random.effects(model7npp_coral) %>%
          r_slope = centre_temp)
 
 npp_joined_coral<- left_join(randslope_npp_coral,npp_coral_df, by="study_id") %>%
-  mutate(c_intercept=case_when(cnidarian_type == "hermatypic coral" & depth_broad == "shallow" ~ -17.74629,
-                               cnidarian_type == "hermatypic coral" & depth_broad == "deep" ~ -17.74629+-8.84861,
-                               cnidarian_type == "brooding coral" & depth_broad == "deep" ~ -17.74629+-4.02401+-8.84861,
-                               cnidarian_type == "brooding coral" & depth_broad == "shallow" ~ -17.74629+-4.02401),
-         latitudeii=abs(latitude)*-0.03814, 
+  mutate(c_intercept=case_when(depth_broad == "shallow" ~ -19.85209,
+                               depth_broad == "deep" ~ -19.85209+-8.18040),
+         latitudeii=abs(latitude)*-0.03817, 
          f_intercept=r_intercept+c_intercept+latitudeii, 
-         f_slope=r_slope) %>%
+         f_slope=r_slope+0.30833) %>%
   as.data.frame()
 
 
 
 npp_coral_plot<- ggplot(data=npp_coral, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="#abbb80")+
   geom_point(colour="#abbb80", alpha=0.3, size=4)+
-  #scale_x_reverse(limits=c(2, -2.5))+
+  scale_x_reverse(limits=c(4, -4.5))+
   geom_abline(data=npp_joined_coral, aes(slope=r_slope, intercept=f_intercept), colour="#abbb80", size=1, alpha=0.5)+
-  geom_abline(aes(slope=0, intercept=-18.95686), colour="#99a873", size=2)+
+  geom_abline(aes(slope=-0.201, intercept=-20.21535), colour="#99a873", size=2)+
   #geom_hline(yintercept=-9.1055, size=1.5)+  
   xlab("Temperature (1/kT)")+
   theme_bw()+
@@ -231,14 +237,16 @@ npp_coral_plot<- ggplot(data=npp_coral, aes(x=centre_temp, y=log(abs(mol_grammin
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
   ggtitle("NPP")+
   ylab("")+
-  xlab("Temperature (1/kT)")
-  #add_phylopic(uuid = "32eeaa29-2e90-40b5-92fb-eb8d7fcab9ab", x=2.5, y=-25, ysize=1.2, alpha=1,fill = "#abbb80")
+  xlab("Temperature (1/kT)")+
+  ylim(-55,-5)+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=-3.7, y=-50, ysize=8, alpha=1,fill = "#abbb80")
+
   
 
-r_coral_df<- count(r_coral, study_id, cnidarian_type)
+r_coral_df<- count(r_coral, study_id, broad_coral, depth_broad, latitude)
 
 
-randslope_r_coral<- random.effects(model5r_coral) %>%
+randslope_r_coral<- random.effects(model6r_coral) %>%
   as.data.frame() %>%
   select(-condsd) %>%
   pivot_wider(names_from = term, values_from = condval) %>%
@@ -248,22 +256,27 @@ randslope_r_coral<- random.effects(model5r_coral) %>%
 
 r_joined_coral<- left_join(randslope_r_coral,r_coral_df, by="study_id") %>%
   as.data.frame() %>%
-  mutate(c_intercept=case_when(cnidarian_type == "hermatypic coral"~ -22.2736,
-                               cnidarian_type == "soft coral" ~ -22.2736 +0.5680,
-                               cnidarian_type == "brooding coral" ~ -22.2736+-1.0658), 
-         f_intercept=r_intercept+c_intercept, 
-         c_slope = case_when(cnidarian_type == "hermatypic coral"~ -0.7772,
-                             cnidarian_type == "soft coral" ~ -0.7772 + 0.2312,
-                             cnidarian_type == "brooding coral" ~ -0.7772+0.5261), 
-         f_slope=r_slope+c_slope) %>%
+  mutate(c_intercept=case_when(broad_coral == "hard" & depth_broad == "shallow" ~ -20.721147,
+                               broad_coral == "soft" & depth_broad == "shallow"~ -20.721147 +0.571205,
+                               broad_coral == "hard" & depth_broad == "deep"~ -20.721147 +-2.57398 ,
+                               broad_coral == "soft" & depth_broad == "deep"~ -20.721147 +0.571205+-2.57398), 
+         latitudeii=abs(latitude)*-0.02755, 
+         f_intercept=r_intercept+c_intercept+latitudeii, 
+         f_slope=r_slope+-0.552273) %>%
   as.data.frame() 
 
 #double check the math on these
+
+r_coral <- r_coral %>%
+  mutate(temp_plus = temp+40, 
+         inv_T_plus=(1/((8.617333262145*10^-5)*(temp_plus+273.15))),
+    centre_temp_plus = I(inv_T_plus-mean(inv_T_plus)))
+  
 r_coral_plot <- ggplot(data=r_coral, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="grey")+
+  scale_x_reverse(limits=c(4, -4.5))+
   geom_point(colour="grey", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(3.5, -2.5))+
-  geom_abline(data=r_joined_coral, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=0.7772, intercept = -22.2736, size=2.5, colour="grey65")+  
+  geom_abline(data=r_joined_coral, aes(slope=f_slope, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
+  geom_abline(slope=-0.552273, intercept = -20.721147, size=2.5, colour="grey65")+  
   xlab("Temperature (1/kT)")+
   ylab("")+
   theme_bw()+
@@ -274,18 +287,41 @@ r_coral_plot <- ggplot(data=r_coral, aes(x=centre_temp, y=log(abs(mol_grammin)))
         # The new stuff
         strip.text = element_text(size = 20), 
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("R")
+  ggtitle("R")+
+  ylim(-55,-5)+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=-3.7, y=-50, ysize=8, alpha=1,fill = "grey")
   #add_phylopic(uuid = "32eeaa29-2e90-40b5-92fb-eb8d7fcab9ab", x=2.5, y=-40, ysize=1.2, alpha=1,fill = "grey")
 #scale_x_continuous(sec.axis = sec_axis(~.*(1/(8.61*10^-5))-273.15), name = "Temperature (°C)")
 #scale_x_continuous(sec.axis = sec_axis(~ . * 20, name = "Temperature (°C)"))
 
 
+gpp_coral_df<- count(gpp_comb_coral, study_id, depth_broad, latitude) %>% mutate(latitude=abs(latitude))
 
-gpp_coral_plot <- ggplot(data=gpp_coral, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="grey")+
+
+randslope_gpp_coral<- random.effects(model6gpp_coral) %>%
+  as.data.frame() %>%
+  select(-condsd) %>%
+  pivot_wider(names_from = term, values_from = condval) %>%
+  rename(r_intercept = `(Intercept)`, 
+         study_id= grp, 
+         r_slope=centre_temp)
+
+gpp_joined_coral<- left_join(randslope_gpp_coral,gpp_coral_df, by="study_id") %>%
+  as.data.frame() %>%
+  mutate(c_intercept=case_when(depth_broad == "shallow" ~ -26.194494,
+                               depth_broad == "deep"~ -26.194494 +5.190041),
+         latitudeii=abs(latitude)*-0.044934,
+         f_intercept=r_intercept+c_intercept+latitudeii, 
+         f_slope=r_slope) %>%
+  as.data.frame() 
+
+gpp_comb_coral$gmpred <- predict(model4gpp_coral)
+
+gpp_coral_plot <- ggplot(data=gpp_comb_coral, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="olivedrab2")+
   geom_point(colour="olivedrab1", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(2, -2.5))+
-  #geom_abline(data=respiration_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=-1.1397, intercept = -24.2411, size=2.5, colour="olivedrab2")+  
+  scale_x_reverse(limits=c(4, -4.5))+
+  geom_abline(data=gpp_joined_coral, aes(slope=f_slope*-1, intercept=f_intercept), colour="olivedrab2", size=1, alpha=0.5)+
+  geom_abline(slope=0, intercept = -26.194494, size=2.5, colour="olivedrab2")+  
   xlab("Temperature (1/kT)")+
   ylab("")+
   theme_bw()+
@@ -297,23 +333,19 @@ gpp_coral_plot <- ggplot(data=gpp_coral, aes(x=centre_temp, y=log(abs(mol_grammi
         strip.text = element_text(size = 20), 
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
   ggtitle("GPP")+
-  ylab("Metabolic rate (log(mmol O2 /mg / min))")
-  #add_phylopic(uuid = "32eeaa29-2e90-40b5-92fb-eb8d7fcab9ab", x=2.5, y=-50, ysize=1.2, alpha=1,fill = "olivedrab2")
+  ylab("Metabolic rate (log(mol O2 /mg / min))")+
+  ylim(-55,-5)+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=-3.7, y=-50, ysize=8, alpha=1,fill = "olivedrab2")
 
 
 
-gpp_coral_plot + npp_coral_plot + r_coral_plot
+coral_plots <- (gpp_coral_plot + npp_coral_plot + r_coral_plot)
 
-
-install.packages("remotes")
-remotes::install_github("palaeoverse/rphylopic")
-library(rphylopic)
-#code to get the uuid's for the phylopic pngs
-uuid <- rphylopic::get_uuid(name = "Acropora palmata")
+fig_c<- coral_plots + plot_layout(ncol=3) 
 
 
 
-
+ggsave(fig_c, filename = "./figures/fig_c.png", dpi=700, width=16, height=5.5)
 
 
 
@@ -321,171 +353,285 @@ uuid <- rphylopic::get_uuid(name = "Acropora palmata")
 
 
 
+######## 
+View(count(coral, study_id, metabolic_category))
 
 
-###### ISOLATED ALGAE ANALYSIS
-isolated_algae <- read_csv("extraction/coral dataset/isolated algae/isolated_algae.csv") %>%
-  unite("gas_units", gas_unit, gas) %>%
-  mutate(inv_T=1/((8.617333262145*10^-5)*(temp+273.15)),
-         mol = case_when(gas_units %in% c("ug_o2") ~ response_value*(1/32000000),
-                         gas_units %in% c("nmol_o2") ~ response_value*(1/10^9),
-                         gas_units %in% c("umol_o2") ~ response_value*(1/10^6),
-                         gas_units %in% c("mmol_o2") ~ response_value*(1/10^3),
-                         gas_units %in% c("fmol_o2") ~ response_value*(1/10^15),
-                         gas_units %in% c("pmol_o2") ~ response_value*(1/10^12),
-                         gas_units %in% c("pg_c") ~ response_value*(1/(1.2011*10^13)),
-                         gas_units %in% c("ug_C") ~ response_value*(1/(1.2011*10^6)),
-                         gas_units %in% c("ug_o2") ~ response_value*(3.1999*10^-7)),
-         gram = case_when(`mass/area` %in% c("cell") ~ 1, 
-                          `mass/area` %in% c("mg chla") ~ 10^3,
-                          `mass/area` %in% c("ug chl a") ~ 10^6,
-                          `mass/area` %in% c("ug chla") ~ 10^6,
-                          `mass/area` %in% c("cell x10^6") ~ 10^6,
-                          `mass/area` %in% c("cell x10^9") ~ 10^9,
-                          `mass/area` %in% c("cell x 10^9") ~ 10^9),
-         min = case_when(time %in% c("hr") ~ 60, 
-                         time %in% c("min") ~ 1, 
-                         time %in% c("day") ~ 1440),
+#npp_and_r <- coral %>% 
+  #filter(study_id %in% c("bahar2018", "godefroid2023", 
+      #                  "hadjioannou2019", "hill2014", "howe2001", 
+      #                  "jiang2021", "juillet-leclerc2014", "rodolfo-metalpa2006", 
+      #                  "samiel2015"))
+
+#write_csv(npp_and_r, "extraction/coral dataset/coral/gpp_arithmetic_coral1jun2024.csv")
+
+
+gpp_arithmetic_coral <- read_csv("extraction/coral dataset/coral/gpp_arithmetic_coral1jun2024.csv") %>%
+  mutate(r_value = abs(r_value)*-1,
+         gpp = npp_value + r_value) %>%
+  mutate(mol = case_when(gas_units %in% c("mg_o2") ~ gpp*(1/32000), 
+                         gas_units %in% c("mmol_o2") ~ gpp*(1/10^9), 
+                         gas_units %in% c("ug_o2") ~ gpp*(1/32000000),
+                         gas_units %in% c("umol_o2") ~ gpp*(1/10^6)),
+         gram = case_when(`mass/area` %in% c("468 mm^2") ~ 10^3/(468), 
+                          `mass/area` %in% c("l") ~ 1/1000, 
+                          `mass/area` %in% c("cm^2") ~ 1000, 
+                          `mass/area` %in% c("chla") ~ 1, 
+                          `mass/area` %in% c("g CaCO3") ~ 1),
+         min = case_when(time %in% c("hr") ~ 60,
+                         time %in% c("sec") ~ 1/60),
          mol_grammin= mol/(gram*min),
          abs_molco2_g_min = abs(mol_grammin), 
-         log=log(abs_molco2_g_min),
-         centre_temp = I(inv_T-mean(inv_T)), 
+         log=log(abs_molco2_g_min), 
          centre_celsius = I(temp-mean(temp)), 
-         cnidarian_type = as.factor(cnidarian_type))
+         depth_broad = case_when(avg_depth_m < 20 ~ "shallow", 
+                                 TRUE ~ "deep"), 
+         depth_broad = as.factor(depth_broad), 
+         cnidarian_type = as.factor(cnidarian_type), 
+         broad_coral = case_when(cnidarian_type == "soft coral" ~ "soft", 
+                                 TRUE ~ "hard"), 
+         broad_coral =as.factor(broad_coral))%>% 
+  select(study_id, temp, broad_coral, depth_broad, latitude, species, mol_grammin)
 
 
-npp_algae <- isolated_algae %>%
-  filter(metabolic_category == "npp") %>%
-  filter_all(all_vars(!is.infinite(.)))
-
-r_algae <- isolated_algae %>%
-  filter(metabolic_category == "r") %>%
-  filter_all(all_vars(!is.infinite(.)))
-
-gpp_algae <- isolated_algae %>%
-  filter(metabolic_category == "gpp")
+gpp_coral_collect <- gpp_coral %>% select(study_id, temp, broad_coral, depth_broad, latitude, species, mol_grammin)
 
 
-
-npp_algae$cnidarian_type<- relevel(npp_algae$cnidarian_type, "anemone")
-r_algae$cnidarian_type<- relevel(r_algae$cnidarian_type, "anemone")
-gpp_algae$cnidarian_type<- relevel(gpp_algae$cnidarian_type, "hermatypic coral")
-
-
-#random effects for npp -- these are all singular fits except for model 1, 2
-model00npp_algae<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp + (1+centre_temp|species), data=npp_algae, REML=FALSE)
-model0npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=npp_algae, REML=FALSE)
-model1npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)   +cnidarian_type*centre_temp + (1|study_id) , data=npp_algae, REML=FALSE)
-model2npp_algae <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp, data=npp_algae, na.action=na.exclude)
-model.sel(model00npp_algae, model0npp_algae, model1npp_algae, model2npp_algae)
-#random effects for respiration
-#this one is a singular fit
-model00r_algae<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp + (1+centre_temp|species), data=r_algae, REML=FALSE)
-model0r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_algae, REML=FALSE)
-model1r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)   +cnidarian_type*centre_temp + (1|study_id) , data=r_algae, REML=FALSE)
-model2r_algae <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp, data=r_algae, na.action=na.exclude)
-model.sel(model00r_algae, model0r_algae, model1r_algae, model2r_algae)
-#model 0 is best
+gpp_comb_coral <- rbind(gpp_coral_collect, gpp_arithmetic_coral) %>%
+  filter(study_id != "becker2021") %>% 
+  mutate(inv_T=(1/((8.617333262145*10^-5)*(temp+273.15))), 
+                centre_temp = I(inv_T-mean(inv_T))) %>%
+  filter(case_when(study_id %in% c("banc-prandi2022", "hill2014") ~ inv_T < 38.5, 
+                   study_id %in% c("castillohelmuth2005") ~ inv_T < 38, 
+                   study_id %in% c("higuchi2015") ~ inv_T < 40, 
+                   study_id %in% c("howe2001", "kemp2011") ~ inv_T < 40.5, 
+                   study_id %in% c("jiang2021", "jones1998") ~ inv_T < 38.25, 
+                   study_id %in% c("juillet-leclerc2014") ~ inv_T < 39, 
+                   TRUE ~ inv_T < 50))
 
 
-#random effects for gpp
-#these are all singular fits except for model 1,2
-model00gpp_algae<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp + (1+centre_temp|species), data=gpp_algae, REML=FALSE)
-model0gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=gpp_algae, REML=FALSE)
-model1gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude)   +cnidarian_type*centre_temp + (1|study_id) , data=gpp_algae, REML=FALSE)
-model2gpp_algae <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude)  +cnidarian_type*centre_temp, data=gpp_algae, na.action=na.exclude)
-model.sel(model00gpp_algae, model0gpp_algae, model1gpp_algae, model2gpp_algae)
 
-#model selection for npp
+gpp_comb_coral$depth_broad<- relevel(gpp_comb_coral$depth_broad, "shallow")
+
+model00gpp<- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +depth_broad + (1+centre_temp|species) , data=gpp_comb_coral, REML=FALSE)
+model0gpp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +depth_broad + (1+centre_temp|study_id) , data=gpp_comb_coral, REML=FALSE)
+model1gpp <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +depth_broad + (1|study_id) , data=gpp_comb_coral, REML=FALSE)
+model2gpp <- gls(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +depth_broad, data=gpp_comb_coral, na.action=na.exclude)
+
+model.sel(model00gpp, model0gpp, model1gpp, model2gpp)
+
+#model0gpp is best by more than 2 AIC
+
+
+model3gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +depth_broad + (1+centre_temp|study_id), data=gpp_comb_coral)
 #missing latitude
-model4npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp +cnidarian_type*centre_temp + (1|study_id) , data=npp_algae)
-#missing interaction between lichen type + centre temp
-model6npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type + (1|study_id), data=npp_algae)
+model4gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp + depth_broad + (1+centre_temp|study_id) , data=gpp_comb_coral)
+#missing both latitude and elevation
+model5gpp_coral <- lmer(log(abs(mol_grammin)) ~centre_temp  + (1+centre_temp|study_id), data=gpp_comb_coral)
 #missing temp
-model7npp_algae <- lmer(log(abs(mol_grammin)) ~abs(latitude) +cnidarian_type + (1|study_id), data=npp_algae)
-#missing cnidarian type
-model8npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1|study_id), data=npp_algae)
-#full model
-model9npp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1|study_id) , data=npp_algae, REML=FALSE)
-model.sel(model4npp_algae, model6npp_algae, model7npp_algae, model8npp_algae, model9npp_algae)
+model6gpp_coral <- lmer(log(abs(mol_grammin)) ~abs(latitude) + depth_broad + (1+centre_temp|study_id), data=gpp_comb_coral)
+model.sel(model3gpp_coral, model4gpp_coral, model5gpp_coral, model6gpp_coral)
 
-#model9npp_algae is best
+#model6gpp_coral is tied w 3, going w/ 6
+summary(model6gpp_coral)
+confint(model6gpp_coral)
 
-#model selection for respiration
+
+
+
+
+#creating the friedmann and sun figure 
+
+
+
+#has npp, gpp, and r
+#all_coral <- coral %>%
+  #filter(study_id %in% c("nakamura2003","jiang2021", "castillohelmuth2005", 
+                        # "silbiger2019", "hadjioannou2019")) 
+#write_csv(all_coral, "f+s_npp_gpp_r.csv")
+
+#has npp and r
+#npp_and_r_coral <- coral %>%
+  #filter(study_id %in% c("bahr2018", "godefroid2023", "hill2014", "howe2001", 
+                         #"juillet-leclerc2014", "rodolfo-metalpa2006", "samiel2015"))
+#write_csv(npp_and_r_coral, "f+s_npp_r.csv")
+  
+
+#has gpp and r 
+#omitting banc-prandi for now because their gpp data literally makes no fucking sense
+#gpp_and_r_coral <- coral %>%
+  #filter(study_id %in% c("higuchi2015", "kemp2011"))
+#write_csv(gpp_and_r_coral, "f+s_gpp_r.csv")
+
+
+
+f_s_1 <- read_csv("f+s_coral_gpp_r.csv") %>% 
+  mutate(inv_T=(1/((8.617333262145*10^-5)*(temp+273.15))),
+         npp_mol = case_when(gas_units %in% c("mg_o2") ~ npp*(1/32000),
+                         gas_units %in% c("nmol_o2") ~ npp*(1/10^9),
+                         gas_units %in% c("umol_o2") ~ npp*(1/10^6)),
+         r_mol = case_when(gas_units %in% c("mg_o2") ~ r*(1/32000),
+                             gas_units %in% c("nmol_o2") ~ r*(1/10^9),
+                             gas_units %in% c("umol_o2") ~ r*(1/10^6)),
+         gpp_mol = case_when(gas_units %in% c("mg_o2") ~ gpp*(1/32000),
+                             gas_units %in% c("nmol_o2") ~ gpp*(1/10^9),
+                             gas_units %in% c("umol_o2") ~ gpp*(1/10^6)),
+         gram = case_when(`mass/area` %in% c("cm^2") ~ 1),
+         min = case_when(time %in% c("hr") ~ 60, 
+                         time %in% c("min") ~ 1),
+         npp_mol_grammin= npp_mol/(gram*min),
+         r_mol_grammin= r_mol/(gram*min),
+         gpp_mol_grammin= gpp_mol/(gram*min),
+         depth_broad = case_when(avg_depth_m < 20 ~ "shallow", 
+                                 TRUE ~ "deep"), 
+         depth_broad = as.factor(depth_broad), 
+         cnidarian_type = as.factor(cnidarian_type), 
+         broad_coral = case_when(cnidarian_type == "soft coral" ~ "soft", 
+                                 TRUE ~ "hard"), 
+         broad_coral =as.factor(broad_coral)) %>%
+  select(study_id, inv_T, broad_coral, depth_broad, latitude, species, npp_mol_grammin, gpp_mol_grammin, r_mol_grammin)
+  
+  
+f_s_2 <- read_csv("f+s_coral_npp_gpp_r.csv")%>%
+  mutate(inv_T=(1/((8.617333262145*10^-5)*(temp+273.15))),
+         npp_mol = case_when(gas_units %in% c("ug_o2") ~ npp*(1/32000000),
+                         gas_units %in% c("nmol_o2") ~ npp*(1/10^9),
+                         gas_units %in% c("umol_o2") ~ npp*(1/10^6)),
+         r_mol = case_when(gas_units %in% c("ug_o2") ~ r*(1/32000000),
+                           gas_units %in% c("nmol_o2") ~ r*(1/10^9),
+                           gas_units %in% c("umol_o2") ~ r*(1/10^6)), 
+         gpp_mol = case_when(gas_units %in% c("ug_o2") ~ gpp*(1/32000000),
+                             gas_units %in% c("nmol_o2") ~ gpp*(1/10^9),
+                             gas_units %in% c("umol_o2") ~ gpp*(1/10^6)),
+         gram = case_when(`mass/area` %in% c("cm^2") ~ 1, 
+                          `mass/area` %in% c("larvae^-1") ~ 1),
+         min = case_when(time %in% c("hr") ~ 60, 
+                         time %in% c("min") ~ 1),
+         npp_mol_grammin= npp_mol/(gram*min),
+         r_mol_grammin= r_mol/(gram*min), 
+         gpp_mol_grammin=gpp_mol/(gram*min),
+         depth_broad = case_when(avg_depth_m < 20 ~ "shallow", 
+                                 TRUE ~ "deep"), 
+         depth_broad = as.factor(depth_broad), 
+         cnidarian_type = as.factor(cnidarian_type), 
+         broad_coral = case_when(cnidarian_type == "soft coral" ~ "soft", 
+                                 TRUE ~ "hard"), 
+         broad_coral =as.factor(broad_coral)) %>%
+  select(study_id, inv_T, broad_coral, depth_broad, latitude, species, npp_mol_grammin, gpp_mol_grammin, r_mol_grammin)
+
+
+
+f_s_3 <- read_csv("f+s_coral_npp_r.csv") %>%
+  mutate(inv_T=(1/((8.617333262145*10^-5)*(temp+273.15))),
+         npp_mol = case_when(gas_units %in% c("mg_o2") ~ npp*(1/32000),
+                         gas_units %in% c("ug_o2") ~ npp*(1/32000000),
+                         gas_units %in% c("umol_o2") ~ npp*(1/10^6), 
+                         gas_units %in% c("mmol_o2") ~ (npp*(10^3))*(1/10^3)),
+         r_mol = case_when(gas_units %in% c("mg_o2") ~ r*(1/32000),
+                             gas_units %in% c("ug_o2") ~ r*(1/32000000),
+                             gas_units %in% c("umol_o2") ~ r*(1/10^6), 
+                             gas_units %in% c("mmol_o2") ~ r*(1/10^3)),
+         gpp_mol = case_when(gas_units %in% c("mg_o2") ~ gpp*(1/32000),
+                             gas_units %in% c("ug_o2") ~ gpp*(1/32000000),
+                             gas_units %in% c("umol_o2") ~ gpp*(1/10^6), 
+                             gas_units %in% c("mmol_o2") ~ gpp*(1/10^3)),
+         gram = case_when(`mass/area` %in% c("g") ~ 1, 
+                          `mass/area` %in% c("468 mm^2") ~ 0.002136752, 
+                          `mass/area` %in% c("l") ~ 1/1000, 
+                          `mass/area` %in% c("cm^2") ~ 1, 
+                          `mass/area` %in% c("chla") ~ 1,   
+                          `mass/area` %in% c("g CaCO3") ~ 1),
+         min = case_when(time %in% c("hr") ~ 60,
+                         time %in% c("sec") ~ 1/60),
+         npp_mol_grammin= npp_mol/(gram*min),
+         r_mol_grammin = r_mol/(gram*min),
+         gpp_mol_grammin = gpp_mol/(gram*min),
+         depth_broad = case_when(avg_depth_m < 20 ~ "shallow", 
+                                 TRUE ~ "deep"), 
+         depth_broad = as.factor(depth_broad), 
+         cnidarian_type = as.factor(cnidarian_type), 
+         broad_coral = case_when(cnidarian_type == "soft coral" ~ "soft", 
+                                 TRUE ~ "hard"), 
+         broad_coral =as.factor(broad_coral)) %>%
+  select(study_id, inv_T, broad_coral, depth_broad, latitude, species, npp_mol_grammin, gpp_mol_grammin, r_mol_grammin)
+
+f_s_comb <- rbind(f_s_1, f_s_2, f_s_3) 
+
+f_s_comb_long <- f_s_comb %>%
+  pivot_longer(cols=c(npp_mol_grammin, gpp_mol_grammin, r_mol_grammin), names_to = "metabolic_category", 
+               values_to = "response") %>%
+  mutate(centre_temp = I(inv_T -mean(inv_T))) %>%
+  mutate(latitude=as.numeric(latitude)) %>%
+  mutate(response_add = response+1)
+  
+
+f_s_comb_long %>%
+  ggplot(aes(x=response))+
+  geom_histogram()+
+  facet_wrap(~study_id)
+
+
+hist(f_s_comb_long$response)
+max(f_s_comb_long$response)
+
+min(f_s_comb_long$response)
+
+f_s_comb_long %>%
+  ggplot()+
+  geom_point(aes(y=log(abs(response)), x=centre_temp,  colour=metabolic_category), alpha=0.5)+
+  facet_wrap(~metabolic_category)+
+  geom_abline(aes(intercept=i, slope=s, colour=metabolic_category), 
+            data=data.frame(metabolic_category=c("gpp_mol_grammin","npp_mol_grammin", 
+                                                 "r_mol_grammin"), i=c(-15.28187, -15.28187+-0.61731, -15.28187+-0.50402), 
+                            s=c(-0.26077, 0.25232+-0.26077, -0.50402+-0.14885)))+
+  theme_bw() + 
+  theme(aspect.ratio = 1)
+
+
+
+
+
+
+model00fs<- lmer(log(response_add) ~centre_temp*metabolic_category + abs(latitude)  + (1+centre_temp|species) , data=f_s_comb_long, REML=FALSE)
+model0fs <- lmer(log(response_add) ~centre_temp*metabolic_category + abs(latitude)   + (1+centre_temp|study_id) , data=f_s_comb_long, REML=FALSE)
+model1fs <- lmer(log(response_add) ~centre_temp*metabolic_category + abs(latitude)  + (1|study_id) , data=f_s_comb_long, REML=FALSE)
+model2fs <- gls(log(response_add) ~centre_temp*metabolic_category + abs(latitude) , data=f_s_comb_long, na.action=na.exclude)
+
+model.sel(model00fs, model0fs, model1fs, model2fs)
+
+#model0fs is best by more than 2 AIC
+
+#missing metabolic category
+model3fs_coral <- lmer(log(abs(response)) ~centre_temp + abs(latitude) +depth_broad + (1+centre_temp|study_id), data=f_s_comb_long)
 #missing latitude
-model4r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_algae)
-#missing interaction between lichen type + centre temp
-model6r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type + (1+centre_temp|study_id), data=r_algae)
+model4fs_coral <- lmer(log(abs(response)) ~centre_temp + depth_broad + (1+centre_temp|study_id) , data=f_s_comb_long)
+#missing both latitude and depth
+model5fs_coral <- lmer(log(abs(response)) ~centre_temp  + (1+centre_temp|study_id), data=f_s_comb_long)
 #missing temp
-model7r_algae <- lmer(log(abs(mol_grammin)) ~abs(latitude) +cnidarian_type + (1+centre_temp|study_id), data=r_algae)
-#missing cnidarian type
-model8r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1+centre_temp|study_id), data=r_algae)
+model6fs_coral <- lmer(log(abs(response)) ~metabolic_category + depth_broad + abs(latitude)  + (1+centre_temp|study_id) , data=f_s_comb_long)
+#missing interaction between temp and metabolic category
+model7fs_coral <- lmer(log(abs(response)) ~centre_temp + metabolic_category + abs(latitude) + depth_broad + (1+centre_temp|study_id), data=f_s_comb_long)
 #full model
-model9r_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1+centre_temp|study_id) , data=r_algae, REML=FALSE)
-model.sel(model4r_algae, model6r_algae, model7r_algae, model8r_algae, model9r_algae)
+model8fs_coral <- lmer(log(abs(response)) ~centre_temp*metabolic_category + abs(latitude) + depth_broad + (1+centre_temp|study_id), data=f_s_comb_long)
 
-#model9r_algae is best
+model.sel(model3fs_coral, model4fs_coral, model5fs_coral, model6fs_coral, model7fs_coral, model8fs_coral)
 
+#model8fs is best > 2 AIC 
+summary(model8fs_coral)
 
-#model selection for gpp
-#these are all singular fits
-#missing latitude
-model4gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp +cnidarian_type*centre_temp + (1|study_id) , data=gpp_algae)
-#missing interaction between lichen type + centre temp
-model6gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type + (1|study_id), data=gpp_algae)
-#missing temp
-model7gpp_algae <- lmer(log(abs(mol_grammin)) ~abs(latitude) +cnidarian_type + (1|study_id), data=gpp_algae)
-#missing cnidarian type
-model8gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) + (1|study_id), data=gpp_algae)
-#full model
-model9gpp_algae <- lmer(log(abs(mol_grammin)) ~centre_temp + abs(latitude) +cnidarian_type*centre_temp + (1|study_id) , data=gpp_algae, REML=FALSE)
-model.sel(model4gpp_algae, model6gpp_algae, model7gpp_algae, model8gpp_algae, model9gpp_algae)
+###
+#gpp = -0.260772
+#npp = -0.008454
+#r = -0.40
 
-
-#model 6 and 4 are tied
-model.avg(model4gpp_algae, model6gpp_algae)
-
-
-
-
-
-npp_algae_df<- count(npp_algae, study_id, latitude, cnidarian_type)
-
-randslope_npp_algae<- random.effects(model9npp_algae) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp)
-
-npp_joined_algae<- left_join(randslope_npp_algae, npp_algae_df, by="study_id") %>%
-  mutate(c_intercept=case_when(cnidarian_type == "anemone" ~ -28.379141,
-                               cnidarian_type == "bivalve" ~ -1.141867+-28.379141,
-                               cnidarian_type == "free-living" ~ 0.081163+-28.379141,
-                               cnidarian_type == "hermatypic coral"~ -0.273064+-28.379141,
-                               cnidarian_type == "jellyfish"  ~ -1.180844+-28.379141, 
-                               cnidarian_type == "octocoral"  ~ -0.160391 +-28.379141),
-         latitudeii=abs(latitude)*-0.007744, 
-         f_intercept=r_intercept+c_intercept+latitudeii, 
-         f_slope= case_when(cnidarian_type == "anemone" ~ 0.038349,
-                            cnidarian_type == "bivalve" ~ 0.038349+1.642649,
-                            cnidarian_type == "free-living" ~ 0.038349+-0.101801,
-                            cnidarian_type == "hermatypic coral"~ 0.038349+-0.086094,
-                            cnidarian_type == "jellyfish"  ~ 0.038349+0.630880, 
-                            cnidarian_type == "octocoral"  ~ 0.038349 +-0.460304)) %>%
-  as.data.frame()
-
-
-
-
-
-npp_algae_plot<- ggplot(data=npp_algae, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="#abbb80")+
-  geom_point(colour="#abbb80", alpha=0.3, size=4)+
-  #scale_x_reverse(limits=c(2, -2.5))+
-  geom_abline(data=npp_joined_algae, aes(slope=f_slope*-1, intercept=f_intercept), colour="#abbb80", size=1, alpha=0.5)+
-  geom_abline(aes(slope=-0.038349, intercept=-28.379141), colour="#99a873", size=2)+
-  #geom_hline(yintercept=-9.1055, size=1.5)+  
+expectations<-ggplot() +
+  geom_function(fun = ~ 0.3^.x, colour="olivedrab1", size=2) +
+  geom_function(fun = ~ -0.6^.x, color = "grey", size=2) +
+  geom_function(fun = ~ -0.3^.x, colour="#abbb80", size=2) +
+  xlim(5,0)+
+  ggtitle("Expectations")+
   xlab("Temperature (1/kT)")+
+  ylab("Metabolic rate")+
   theme_bw()+
   theme(axis.text=element_text(size=20),
         axis.title=element_text(size=20,face="bold"),
@@ -493,71 +639,28 @@ npp_algae_plot<- ggplot(data=npp_algae, aes(x=centre_temp, y=log(abs(mol_grammin
         legend.position="none",
         # The new stuff
         strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("NPP")+
-  ylab("")+
-  xlab("Temperature (1/kT)")
-#add_phylopic(uuid = "32eeaa29-2e90-40b5-92fb-eb8d7fcab9ab", x=2.5, y=-25, ysize=1.2, alpha=1,fill = "#abbb80")
-
-
-r_algae_df<- count(r_algae, study_id, latitude, cnidarian_type)
-
-
-randslope_r_algae<- random.effects(model9r_algae) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=centre_temp)
-
-
-r_joined_algae<- left_join(randslope_r_algae, r_algae_df, by="study_id") %>%
-  mutate(c_intercept=case_when(cnidarian_type == "anemone" ~ -30.626787,
-                               cnidarian_type == "bivalve" ~ 1.763309+-30.626787,
-                               cnidarian_type == "free-living" ~ 0.011017+-30.626787,
-                               cnidarian_type == "hermatypic coral"~ -0.370946+-30.626787,
-                               cnidarian_type == "jellyfish"  ~ -0.846593+-30.626787, 
-                               cnidarian_type == "octocoral"  ~ -0.483789  +-30.626787),
-         latitudeii=abs(latitude)*-0.002289, 
-         f_intercept=r_intercept+c_intercept+latitudeii, 
-         c_slope= case_when(cnidarian_type == "anemone" ~ -0.041305,
-                            cnidarian_type == "bivalve" ~ -0.041305+0.420322,
-                            cnidarian_type == "free-living" ~ -0.041305+-0.080356,
-                            cnidarian_type == "hermatypic coral"~ -0.041305+0.021492,
-                            cnidarian_type == "jellyfish"  ~ -0.041305+0.309925, 
-                            cnidarian_type == "octocoral"  ~ -0.041305 +0.019730), 
-         f_slope=r_slope+c_slope) %>%
-  as.data.frame()
-
-
-
-
-
-#double check the math on these
-r_algae_plot <- ggplot(data=r_algae, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="grey")+
-  geom_point(colour="grey", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(3.5, -2.5))+
-  geom_abline(data=r_joined_algae, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=0.041305, intercept = -30.626787, size=2.5, colour="grey65")+  
+        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))
+  
+  coral<- ggplot() +
+    geom_function(fun = ~ 0.260772^.x, colour="olivedrab1", size=2) +
+    geom_function(fun = ~ -0.40^.x, color = "grey", size=2) +
+    geom_function(fun = ~ -0.008454^.x, colour="#abbb80", size=2) +
+    xlim(5,0)+
+    ggtitle("Coral")+
   xlab("Temperature (1/kT)")+
-  ylab("")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("R")
+    ylab("Metabolic rate")+
+    theme_bw()+
+    theme(axis.text=element_text(size=20),
+          axis.title=element_text(size=20,face="bold"),
+          axis.text.x = element_text( size = 20),
+          legend.position="none",
+          # The new stuff
+          strip.text = element_text(size = 20), 
+          plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))
+  
+  
+expectations+ coral
 
-
-
-
-full_plot <- (p_plot + r_plot) / (npp_coral_plot + r_coral_plot) / (npp_algae_plot + r_algae_plot)
-
-ggsave(filename = "fullplot.png", plot=full_plot, width = 10, height = 12, dpi = 300)
 
 
 
