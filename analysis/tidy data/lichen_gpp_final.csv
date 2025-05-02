@@ -1,0 +1,639 @@
+tpc_grp,lichen_type,elevation_broad,latitude,species,mol_gCmin,inv_T,temp,metabolic_category,study_id,paper_unit
+1_zotz2003,green algae,neutral,9,endosulphureum,7.35638298e-7,40.9836416088657,10,gpp,zotz2003,1
+1_zotz2003,green algae,neutral,9,endosulphureum,9.590425536e-7,40.27249044438772,15,gpp,zotz2003,1
+1_zotz2003,green algae,neutral,9,endosulphureum,1.5510638280000001e-6,39.58559823145258,20,gpp,zotz2003,1
+1_zotz2003,green algae,neutral,9,endosulphureum,1.4952127680000003e-6,38.92174449622782,25,gpp,zotz2003,1
+1_zotz2003,green algae,neutral,9,endosulphureum,1.316489364e-6,38.27978928434875,30,gpp,zotz2003,1
+1_zotz2003,green algae,neutral,9,endosulphureum,1.0707446808e-6,37.65866662842876,35,gpp,zotz2003,1
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.0103978490516129,42.17524303670842,2,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.01456933339548387,41.42251694288889,7,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.013097104529032257,41.42251694288889,7,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.01726833504,40.696188397511214,12,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.016354664729032256,40.696188397511214,12,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.018850600321935484,39.99489271601007,17,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.018495234733548388,39.99489271601007,17,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.018190635658064516,39.99489271601007,17,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.019671367916129032,39.31735768778696,22,gpp,lange2002florai,3
+3_lange2002florai,green algae,neutral,49.9174,muralis,0.019070673154838704,38.66239587389746,27,gpp,lange2002florai,3
+2_green1998,green algae,neutral,-77.01,aprina,0.030734316735483866,42.4840495022893,0,gpp,green1998,2
+2_green1998,green algae,neutral,-77.01,aprina,0.04318366023870967,41.720359955241136,5,gpp,green1998,2
+2_green1998,green algae,neutral,-77.01,aprina,0.05952342356129031,40.9836416088657,10,gpp,green1998,2
+2_green1998,green algae,neutral,-77.01,aprina,0.058745339593548385,40.27249044438772,15,gpp,green1998,2
+2_green1998,green algae,neutral,-77.01,aprina,0.055243961748387096,39.58559823145258,20,gpp,green1998,2
+1_aubert_2007,green algae,high,44.6008723,elegans,8.4137923e-7,42.17524303670842,2,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,1.37684956876e-6,41.720359955241136,5,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,1.8630777610000001e-6,40.9836416088657,10,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,2.0185135144000002e-6,40.27249044438772,15,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,2.1948447976e-6,39.58559823145258,20,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,2.2179852328e-6,38.92174449622782,25,gpp,aubert_2007,1
+1_aubert_2007,green algae,high,44.6008723,elegans,2.11923021824e-6,38.27978928434875,30,gpp,aubert_2007,1
+1_colesie2018,cyanobacteria,neutral,-62,alpinum,3.238783176e-4,41.720359955241136,5,gpp,colesie2018,1
+1_colesie2018,cyanobacteria,neutral,-62,alpinum,4.897235687999999e-4,40.27249044438772,15,gpp,colesie2018,1
+1_colesie2018,cyanobacteria,neutral,-62,alpinum,5.263064376000001e-4,39.18459605453426,23,gpp,colesie2018,1
+2_colesie2018,green algae,neutral,-62,aurantiaco-atra,1.387414908e-4,41.720359955241136,5,gpp,colesie2018,2
+2_colesie2018,green algae,neutral,-62,aurantiaco-atra,2.286206436e-4,40.27249044438772,15,gpp,colesie2018,2
+2_colesie2018,green algae,neutral,-62,aurantiaco-atra,2.752604519999999e-4,39.18459605453426,23,gpp,colesie2018,2
+3_colesie2018,cyanobacteria,neutral,-62,contortuplicata,2.565578544e-4,41.720359955241136,5,gpp,colesie2018,3
+3_colesie2018,cyanobacteria,neutral,-62,contortuplicata,6.041839188e-4,40.27249044438772,15,gpp,colesie2018,3
+3_colesie2018,cyanobacteria,neutral,-62,contortuplicata,6.016168944e-4,39.18459605453426,23,gpp,colesie2018,3
+1_delprado_1995,green algae,neutral,36.834,lacunosus,4.849281314399999e-7,42.4840495022893,0,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,7.9540041072e-7,41.720359955241136,5,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,1.1354414784e-6,40.9836416088657,10,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,1.5434907597599998e-6,40.27249044438772,15,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,1.8628336757999998e-6,39.58559823145258,20,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,1.8983162218799999e-6,38.92174449622782,25,gpp,delprado_1995,1
+1_delprado_1995,green algae,neutral,36.834,lacunosus,1.5908008213199997e-6,38.27978928434875,30,gpp,delprado_1995,1
+9_delprado_1995,green algae,neutral,36.834,bourgeana,2.564585466e-7,42.4840495022893,0,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,5.040736948799999e-7,41.720359955241136,5,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,1.1673285568799997e-6,40.9836416088657,10,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,1.50337768692e-6,40.27249044438772,15,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,1.43557830096e-6,39.58559823145258,20,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,1.33240532244e-6,38.92174449622782,25,gpp,delprado_1995,9
+9_delprado_1995,green algae,neutral,36.834,bourgeana,1.52696008188e-6,38.27978928434875,30,gpp,delprado_1995,9
+1_domaschke_2013,green algae,neutral,49.58,aculeata,2.4955974839999993e-7,42.4840495022893,0,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,5.353459119599999e-7,41.720359955241136,5,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,1.01031446544e-6,40.9836416088657,10,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,9.096855345599998e-7,40.27249044438772,15,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,1.3846540880399998e-6,39.58559823145258,20,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,1.41283018872e-6,38.92174449622782,25,gpp,domaschke_2013,1
+1_domaschke_2013,green algae,neutral,49.58,aculeata,8.291823898799998e-7,38.27978928434875,30,gpp,domaschke_2013,1
+2_domaschke_2013,green algae,neutral,41.39,aculeata,2.1735849059999995e-7,42.4840495022893,0,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,3.9044025167999996e-7,41.720359955241136,5,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,7.688050315199999e-7,40.9836416088657,10,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,6.681761006399998e-7,40.27249044438772,15,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,8.573584905599999e-7,39.58559823145258,20,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,8.171069181599998e-7,38.92174449622782,25,gpp,domaschke_2013,2
+2_domaschke_2013,green algae,neutral,41.39,aculeata,5.8767295596e-7,38.27978928434875,30,gpp,domaschke_2013,2
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,9.257861639999999e-8,42.4840495022893,0,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,1.4088050303999997e-7,41.720359955241136,5,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,2.495597484e-7,40.9836416088657,10,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,2.374842768e-7,40.27249044438772,15,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,2.9786163527999997e-7,39.58559823145258,20,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,2.696855346e-7,38.92174449622782,25,gpp,domaschke_2013,3
+3_domaschke_2013,green algae,neutral,-62.24,aculeata,2.0930817612e-7,38.27978928434875,30,gpp,domaschke_2013,3
+4_domaschke_2013,green algae,neutral,78.1,aculeata,9.660377364e-8,42.4840495022893,0,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,2.0528301887999998e-7,41.720359955241136,5,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,2.495597484e-7,40.9836416088657,10,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,2.4150943391999997e-7,40.27249044438772,15,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,3.2603773584e-7,39.58559823145258,20,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,2.7773584907999996e-7,38.92174449622782,25,gpp,domaschke_2013,4
+4_domaschke_2013,green algae,neutral,78.1,aculeata,3.0993710687999996e-7,38.27978928434875,30,gpp,domaschke_2013,4
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0015376486129199999,40.55396862327563,13,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0025838837519999995,39.7210957437971,19,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.00330515191548,39.857524030741274,18,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0044385733152,39.31735768778696,22,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0047397622188000005,38.92174449622782,25,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0033130779388800004,38.40648062733848,29,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.004517833554,37.17609521560251,39,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0040264200792,37.05737864138695,40,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.004914134741999999,36.70573500411299,43,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0049379128128,36.360702245183525,46,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.0043513870536,35.910623925577354,50,gpp,lange2000,1
+1_lange2000,cyanobacteria,high,8,phyllocarpum,0.00340026420048,35.910623925577354,50,gpp,lange2000,1
+1_lange2004,cyanobacteria,high,8,aurata,1.8882119210400002e-6,40.9836416088657,10,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,1.6879470195600003e-6,40.55396862327563,13,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.4532450334400004e-6,40.27249044438772,15,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.37456953688e-6,40.1332115564597,16,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.5033112582400002e-6,39.857524030741274,18,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.87523178824e-6,39.857524030741274,18,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.2185430460000003e-6,39.7210957437971,19,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.7321854304000005e-6,39.451022000851,21,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.8609271527200003e-6,39.451022000851,21,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.29006622552e-6,39.31735768778696,22,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.8466225164800004e-6,39.052727987717724,24,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.99682119208e-6,39.18459605453426,23,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.1899337752000005e-6,38.92174449622782,25,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.71072847712e-6,38.79163670917708,26,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.9181456957600002e-6,38.66239587389746,27,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.0111258276000005e-6,38.66239587389746,27,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.0683443705200004e-6,38.27978928434875,30,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,3.1041059604000004e-6,37.9046811090979,33,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.43894039696e-6,38.40648062733848,29,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.70357615912e-6,38.27978928434875,30,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.3459602650000002e-6,37.53685305369666,36,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.2100662257600003e-6,36.93941786264626,41,gpp,lange2004,1
+1_lange2004,cyanobacteria,high,8,aurata,2.34596026524e-6,36.822205684754316,42,gpp,lange2004,1
+1_reiter2000,green algae,high,47.0004,islandica,2.411489521199999e-7,42.17524303670842,2,gpp,reiter2000,1
+1_reiter2000,green algae,high,47.0004,islandica,5.338421909999999e-7,40.9836416088657,10,gpp,reiter2000,1
+1_reiter2000,green algae,high,47.0004,islandica,7.280527309199999e-7,39.58559823145258,20,gpp,reiter2000,1
+1_reiter2000,green algae,high,47.0004,islandica,5.591061452399999e-7,38.27978928434875,30,gpp,reiter2000,1
+3_reiter2000,green algae,high,47.0004,nivalis,2.6635838159999993e-7,42.17524303670842,2,gpp,reiter2000,3
+3_reiter2000,green algae,high,47.0004,nivalis,5.6275862064e-7,40.9836416088657,10,gpp,reiter2000,3
+3_reiter2000,green algae,high,47.0004,nivalis,6.233043478799999e-7,39.58559823145258,20,gpp,reiter2000,3
+3_reiter2000,green algae,high,47.0004,nivalis,6.344347824e-7,38.27978928434875,30,gpp,reiter2000,3
+1_sancho1997,green algae,high,40.8509,grisea,5.792914286399999e-7,42.4840495022893,0,gpp,sancho1997,1
+1_sancho1997,green algae,high,40.8509,grisea,9.259885713599999e-7,41.42251694288889,7,gpp,sancho1997,1
+1_sancho1997,green algae,high,40.8509,grisea,1.2419657142e-6,40.41273940989142,14,gpp,sancho1997,1
+1_sancho1997,green algae,high,40.8509,grisea,1.2309942857999998e-6,39.451022000851,21,gpp,sancho1997,1
+1_sancho1997,green algae,high,40.8509,grisea,1.3911771428399998e-6,38.53401335397749,28,gpp,sancho1997,1
+1_sancho1997,green algae,high,40.8509,grisea,1.34948571432e-6,37.65866662842876,35,gpp,sancho1997,1
+6_sancho1997,green algae,high,40.8509,grisea,8.705178366e-7,42.4840495022893,0,gpp,sancho1997,6
+6_sancho1997,green algae,high,40.8509,grisea,1.3168239356399998e-6,41.42251694288889,7,gpp,sancho1997,6
+6_sancho1997,green algae,high,40.8509,grisea,1.43834292288e-6,40.41273940989142,14,gpp,sancho1997,6
+6_sancho1997,green algae,high,40.8509,grisea,1.6239355581599997e-6,39.451022000851,21,gpp,sancho1997,6
+6_sancho1997,green algae,high,40.8509,grisea,1.5863751437999996e-6,38.53401335397749,28,gpp,sancho1997,6
+6_sancho1997,green algae,high,40.8509,grisea,1.5532336018799997e-6,37.65866662842876,35,gpp,sancho1997,6
+1_schroeter1995,green algae,neutral,-77,aprina,2.3920265759999998e-8,43.765861291911456,-8,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,8.611295687999998e-8,43.42195742394882,-5.9,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,1.7102990027999997e-7,43.11543050919681,-4,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,2.7747508308e-7,42.79741147538382,-2,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,4.4611295675999993e-7,42.4840495022893,0,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,5.2026578076e-7,42.17524303670842,2,gpp,schroeter1995,1
+1_schroeter1995,green algae,neutral,-77,aprina,5.932225914e-7,41.87089345679351,4,gpp,schroeter1995,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,4.394589459e-6,38.92174449622782,25,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,4.760916091666666e-6,38.92174449622782,25,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,4.720912091333334e-6,39.58559823145258,20,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,4.384278427666667e-6,39.58559823145258,20,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,4.226122612333332e-6,40.27249044438772,15,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,3.7706770676666663e-6,40.27249044438772,15,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,3.6518251823333333e-6,40.9836416088657,10,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,2.938653865233333e-6,41.720359955241136,5,gpp,smith2001,1
+1_smith2001,green algae,neutral,-46.8964,complicatulum,2.701890189133333e-6,42.329083062375794,1,gpp,smith2001,1
+1_uchida2006,green algae,neutral,79,delisei,1.7459284253578732e-7,41.87089345679351,4,gpp,uchida2006,1
+1_uchida2006,green algae,neutral,79,delisei,1.778540937665682e-7,41.42251694288889,7,gpp,uchida2006,1
+1_uchida2006,green algae,neutral,79,delisei,1.8522066954480043e-7,40.696188397511214,12,gpp,uchida2006,1
+1_uchida2006,green algae,neutral,79,delisei,1.814459365295766e-7,40.27249044438772,15,gpp,uchida2006,1
+1_uchida2006,green algae,neutral,79,delisei,1.8446761342119214e-7,39.58559823145258,20,gpp,uchida2006,1
+1_sundberg1997,cyanobacteria + green algae,neutral,64.14,pulmonaria,0.0034484475096774186,40.55396862327563,13,gpp,sundberg1997,1
+1_sundberg1997,cyanobacteria + green algae,neutral,64.14,pulmonaria,0.0040032719999999996,40.1332115564597,16,gpp,sundberg1997,1
+1_sundberg1997,cyanobacteria + green algae,neutral,64.14,pulmonaria,0.004378845619354838,39.7210957437971,19,gpp,sundberg1997,1
+1_sundberg1997,cyanobacteria + green algae,neutral,64.14,pulmonaria,0.004856848083870968,39.31735768778696,22,gpp,sundberg1997,1
+1_sundberg1997,cyanobacteria + green algae,neutral,64.14,pulmonaria,0.005129992432258064,38.92174449622782,25,gpp,sundberg1997,1
+2_sundberg1997,green algae,neutral,64.14,glauca,5.804316774193548e-4,41.570904967043965,6,gpp,sundberg1997,2
+2_sundberg1997,green algae,neutral,64.14,glauca,8.023616516129032e-4,40.839409190745464,11,gpp,sundberg1997,2
+2_sundberg1997,green algae,neutral,64.14,glauca,0.0010925774516129033,40.1332115564597,16,gpp,sundberg1997,2
+2_sundberg1997,green algae,neutral,64.14,glauca,0.001212078077419355,39.451022000851,21,gpp,sundberg1997,2
+1_tretiach1997,green algae,neutral,45.39,baldensis,6.444253374193548e-4,41.720359955241136,5,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,6.808093083870968e-4,41.720359955241136,5,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,8.419396916129031e-4,41.720359955241136,5,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,8.085668767741934e-4,41.570904967043965,6,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,8.632871361290322e-4,41.570904967043965,6,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,6.810882967741935e-4,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,6.871587038709677e-4,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.844199251612902e-4,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,9.485326045161289e-4,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,9.606926612903226e-4,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0010033298264516127,41.42251694288889,7,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,9.180362574193548e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,9.84887713548387e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.416576987096773e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,6.626461838709677e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.234560929032257e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.233791283870966e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,8.449508458064515e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,9.178630916129031e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,8.934948735483869e-4,40.9836416088657,10,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.111517303225808e-4,40.839409190745464,11,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,7.172894806451612e-4,40.839409190745464,11,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013072254445161292,40.1332115564597,16,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0012829149503225806,40.1332115564597,16,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001264612333548387,40.1332115564597,16,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001210137389032258,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013681796593548387,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013863668341935482,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013681892787096772,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.00141068214,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0014045924883870967,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013803685761290322,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0012952674135483868,39.99489271601007,17,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0011552247232258063,39.58559823145258,20,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0011734936722580646,39.58559823145258,20,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001185596007096774,39.58559823145258,20,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0016415500703225807,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001538179960645161,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0015321865141935485,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0014106436587096776,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001337721791612903,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.001264761447096774,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0013010973154838708,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0012889661187096774,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0012098584006451612,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0011916952761290322,39.451022000851,21,gpp,tretiach1997,1
+1_tretiach1997,green algae,neutral,45.39,baldensis,0.0011430358064516129,39.451022000851,21,gpp,tretiach1997,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,3.9140103780281695e-7,40.696188397511214,12,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,6.760563380281691e-7,40.41273940989142,14,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.06745737571831e-6,40.1332115564597,16,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.1089696071549298e-6,39.857524030741274,18,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.3876945885070425e-6,39.58559823145258,20,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.6723498890704228e-6,39.31735768778696,22,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.6130467011830986e-6,39.052727987717724,24,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.660489251267606e-6,38.79163670917708,26,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.7613046704225356e-6,38.53401335397749,28,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,1.915492957746479e-6,38.27978928434875,30,gpp,zotz1998,1
+1_zotz1998,cyanobacteria,high,8,tomentosa,2.128984432676057e-6,38.028897661970575,32,gpp,zotz1998,1
+1_kappen_2000,green algae,neutral,-72.18,frigida,4.664060251458002e-7,43.13348055188322,-4.112631045,gpp,kappen_2000,1
+1_kappen_2000,green algae,neutral,-72.18,frigida,1.6827878732106338e-6,40.31719190669667,14.68051529,gpp,kappen_2000,1
+1_kappen_2000,green algae,neutral,-72.18,frigida,1.0699821881390594e-6,42.35809546941839,0.812225944,gpp,kappen_2000,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,1.0092554114400001e-6,41.87089345679351,4,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,1.3996588417200002e-6,41.275184497778135,8,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,1.69053743436e-6,40.696188397511214,12,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,2.2503268120800003e-6,40.27249044438772,15,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,2.56865192124e-6,39.58559823145258,20,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,2.7616856115600003e-6,38.92174449622782,25,gpp,lange_1991,1
+1_lange_1991,green algae,neutral,53.728189,portentosa,2.80822436988e-6,38.27978928434875,30,gpp,lange_1991,1
+2_coxson_2003,green algae,neutral,53.37,sarmentosa,5.907748239036583e-7,42.4840495022893,0,gpp,coxson_2003,2
+2_coxson_2003,green algae,neutral,53.37,sarmentosa,1.0527910323411345e-6,41.720359955241136,5,gpp,coxson_2003,2
+2_coxson_2003,green algae,neutral,53.37,sarmentosa,1.3633265167007497e-6,40.27249044438772,15,gpp,coxson_2003,2
+2_coxson_2003,green algae,neutral,53.37,sarmentosa,1.401196697720215e-6,38.92174449622782,25,gpp,coxson_2003,2
+4_coxson_2003,green algae,neutral,53.37,sarmentosa,9.391804892827387e-7,41.720359955241136,5,gpp,coxson_2003,4
+4_coxson_2003,green algae,neutral,53.37,sarmentosa,1.5602514580019691e-6,40.27249044438772,15,gpp,coxson_2003,4
+4_coxson_2003,green algae,neutral,53.37,sarmentosa,2.098008028478376e-6,38.92174449622782,25,gpp,coxson_2003,4
+6_coxson_2003,green algae,neutral,53.37,spp,5.756267514958721e-7,42.4840495022893,0,gpp,coxson_2003,6
+6_coxson_2003,green algae,neutral,53.37,spp,1.3557524804968568e-6,41.720359955241136,5,gpp,coxson_2003,6
+6_coxson_2003,green algae,neutral,53.37,spp,1.6132697114292204e-6,40.27249044438772,15,gpp,coxson_2003,6
+6_coxson_2003,green algae,neutral,53.37,spp,1.5905476028175415e-6,38.92174449622782,25,gpp,coxson_2003,6
+8_coxson_2003,green algae,neutral,53.37,spp,1.3330303718851775e-6,41.720359955241136,5,gpp,coxson_2003,8
+8_coxson_2003,green algae,neutral,53.37,spp,2.211618571536772e-6,40.27249044438772,15,gpp,coxson_2003,8
+8_coxson_2003,green algae,neutral,53.37,spp,1.8783609785654775e-6,38.92174449622782,25,gpp,coxson_2003,8
+2_lange_1980,green algae,neutral,30.7141,maciformis,1.0756625107930014e-6,38.92174449622782,25,gpp,lange_1980,2
+2_lange_1980,green algae,neutral,30.7141,maciformis,8.164684783761267e-7,40.27249044438772,15,gpp,lange_1980,2
+2_lange_1980,green algae,neutral,30.7141,maciformis,6.654738241308793e-7,41.720359955241136,5,gpp,lange_1980,2
+1_lange_1980,green algae,neutral,30.7141,maciformis,NA,38.92174449622782,25,gpp,lange_1980,1
+1_lange_1980,green algae,neutral,30.7141,maciformis,NA,40.27249044438772,15,gpp,lange_1980,1
+1_lange_1980,green algae,neutral,30.7141,maciformis,NA,41.720359955241136,5,gpp,lange_1980,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,1.0888708475346511e-7,42.4840495022893,0,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,2.1887470877830798e-7,42.17524303670842,2,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,2.9806816481102783e-7,41.720359955241136,5,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,3.8232197455123836e-7,41.42251694288889,7,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,4.386241392107854e-7,40.9836416088657,10,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,4.906267643717337e-7,40.696188397511214,12,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.451333356055442e-7,40.27249044438772,15,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.741568401120957e-7,39.99489271601007,17,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.815056593198516e-7,39.58559823145258,20,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.671952525941074e-7,39.31735768778696,22,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.584004112701658e-7,38.92174449622782,25,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.357260228735894e-7,38.66239587389746,27,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.343578815420738e-7,38.27978928434875,30,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.329127274104369e-7,38.028897661970575,32,gpp,adams_1971,1
+1_adams_1971,green algae,neutral,44.0197,rangiferina,5.248634340680148e-7,37.65866662842876,35,gpp,adams_1971,1
+1_brownkershaw1984,green algae,neutral,58.7679,rufescens,1.3938521775354086e-6,41.720359955241136,5,gpp,brownkershaw1984,1
+1_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.303185277588427e-6,40.27249044438772,15,gpp,brownkershaw1984,1
+1_brownkershaw1984,green algae,neutral,58.7679,rufescens,3.9642973203059906e-6,38.92174449622782,25,gpp,brownkershaw1984,1
+1_brownkershaw1984,green algae,neutral,58.7679,rufescens,4.680603409073695e-6,37.65866662842876,35,gpp,brownkershaw1984,1
+1_brownkershaw1984,green algae,neutral,58.7679,rufescens,4.1193645323032645e-6,36.47499016674626,45,gpp,brownkershaw1984,1
+3_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.104893515867606e-6,41.720359955241136,5,gpp,brownkershaw1984,3
+3_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.730835710065894e-6,40.27249044438772,15,gpp,brownkershaw1984,3
+3_brownkershaw1984,green algae,neutral,58.7679,rufescens,3.9642973203059906e-6,38.92174449622782,25,gpp,brownkershaw1984,3
+3_brownkershaw1984,green algae,neutral,58.7679,rufescens,4.680603409073695e-6,37.65866662842876,35,gpp,brownkershaw1984,3
+3_brownkershaw1984,green algae,neutral,58.7679,rufescens,4.437474052866773e-6,36.47499016674626,45,gpp,brownkershaw1984,3
+5_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.2641846436415963e-6,40.27249044438772,15,gpp,brownkershaw1984,5
+5_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.884205780504431e-6,38.92174449622782,25,gpp,brownkershaw1984,5
+5_brownkershaw1984,green algae,neutral,58.7679,rufescens,4.808792921305764e-6,37.65866662842876,35,gpp,brownkershaw1984,5
+5_brownkershaw1984,green algae,neutral,58.7679,rufescens,2.8724389934105888e-6,36.47499016674626,45,gpp,brownkershaw1984,5
+7_brownkershaw1984,green algae,neutral,45.1166,rufescens,1.7883141036128153e-6,41.720359955241136,5,gpp,brownkershaw1984,7
+7_brownkershaw1984,green algae,neutral,45.1166,rufescens,2.8460014829962886e-6,40.27249044438772,15,gpp,brownkershaw1984,7
+7_brownkershaw1984,green algae,neutral,45.1166,rufescens,6.724826084223283e-6,38.92174449622782,25,gpp,brownkershaw1984,7
+7_brownkershaw1984,green algae,neutral,45.1166,rufescens,6.321260013633265e-6,37.65866662842876,35,gpp,brownkershaw1984,7
+7_brownkershaw1984,green algae,neutral,45.1166,rufescens,6.376726440202984e-6,36.47499016674626,45,gpp,brownkershaw1984,7
+9_brownkershaw1984,green algae,neutral,45.1166,rufescens,1.4057870226463684e-6,41.720359955241136,5,gpp,brownkershaw1984,9
+9_brownkershaw1984,green algae,neutral,45.1166,rufescens,4.911647720215103e-6,40.27249044438772,15,gpp,brownkershaw1984,9
+9_brownkershaw1984,green algae,neutral,45.1166,rufescens,5.19663039536469e-6,38.92174449622782,25,gpp,brownkershaw1984,9
+9_brownkershaw1984,green algae,neutral,45.1166,rufescens,9.993519987881542e-6,37.65866662842876,35,gpp,brownkershaw1984,9
+9_brownkershaw1984,green algae,neutral,45.1166,rufescens,7.600813099295615e-6,36.47499016674626,45,gpp,brownkershaw1984,9
+11_brownkershaw1984,green algae,neutral,45.1166,rufescens,1.7883141036128153e-6,41.720359955241136,5,gpp,brownkershaw1984,11
+11_brownkershaw1984,green algae,neutral,45.1166,rufescens,3.4580448125426035e-6,40.27249044438772,15,gpp,brownkershaw1984,11
+11_brownkershaw1984,green algae,neutral,45.1166,rufescens,7.184814898886616e-6,38.92174449622782,25,gpp,brownkershaw1984,11
+11_brownkershaw1984,green algae,neutral,45.1166,rufescens,8.616422499431947e-6,37.65866662842876,35,gpp,brownkershaw1984,11
+11_brownkershaw1984,green algae,neutral,45.1166,rufescens,8.901405174581535e-6,36.47499016674626,45,gpp,brownkershaw1984,11
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,1.1812598273119744e-7,42.4840495022893,0,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,1.5678539574339165e-7,42.17524303670842,2,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,1.9329706278876012e-7,41.720359955241136,5,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,2.201826925698705e-7,41.42251694288889,7,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,2.792327463455275e-7,40.9836416088657,10,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.307656911308036e-7,40.696188397511214,12,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.554647602817541e-7,40.27249044438772,15,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.737335325304855e-7,39.99489271601007,17,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,4.016283428008786e-7,39.58559823145258,20,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,4.1130613421192156e-7,39.31735768778696,22,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,4.112802575172309e-7,38.92174449622782,25,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,4.059367711883662e-7,38.66239587389746,27,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.8231157464212676e-7,38.27978928434875,30,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.5546476028175417e-7,38.028897661970575,32,gpp,eickmeieradams1973,1
+1_eickmeieradams1973,green algae,high,39.6636,ecmocyna,3.3397437021888966e-7,37.65866662842876,35,gpp,eickmeieradams1973,1
+1_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,2.150494832992502e-6,41.720359955241136,5,gpp,kershaw1977,1
+1_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,4.526498703325002e-6,40.27249044438772,15,gpp,kershaw1977,1
+1_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,5.914061421646595e-6,38.92174449622782,25,gpp,kershaw1977,1
+1_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,4.472863398470045e-6,37.65866662842876,35,gpp,kershaw1977,1
+3_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,1.989990181019465e-6,41.720359955241136,5,gpp,kershaw1977,3
+3_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,2.5782397311217148e-6,40.27249044438772,15,gpp,kershaw1977,3
+3_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,5.2525147466484884e-06,38.92174449622782,25,gpp,kershaw1977,3
+3_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,3.883410062864501e-6,37.65866662842876,35,gpp,kershaw1977,3
+5_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,1.7107120858895708e-6,41.720359955241136,5,gpp,kershaw1977,5
+5_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,3.9066832371430735e-6,40.27249044438772,15,gpp,kershaw1977,5
+5_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,4.394884888282966e-6,38.92174449622782,25,gpp,kershaw1977,5
+5_kershaw1977,cyanobacteria,neutral,43.3247,polydactyla,6.139302950844504e-6,37.65866662842876,35,gpp,kershaw1977,5
+7_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,3.913562195713095e-6,41.720359955241136,5,gpp,kershaw1977,7
+7_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,5.8112769764447474e-6,40.27249044438772,15,gpp,kershaw1977,7
+7_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,7.010468360221162e-6,38.92174449622782,25,gpp,kershaw1977,7
+7_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,6.468264136938575e-6,37.65866662842876,35,gpp,kershaw1977,7
+9_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,1.9082104976141786e-6,41.720359955241136,5,gpp,kershaw1977,9
+9_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,6.55178323865788e-6,40.27249044438772,15,gpp,kershaw1977,9
+9_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,5.073450472619858e-6,38.92174449622782,25,gpp,kershaw1977,9
+9_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.162332996288722e-6,37.65866662842876,35,gpp,kershaw1977,9
+11_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,2.679533968037567e-6,41.720359955241136,5,gpp,kershaw1977,11
+11_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.2717564189956826e-6,40.27249044438772,15,gpp,kershaw1977,11
+11_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,3.965370836931001e-6,38.92174449622782,25,gpp,kershaw1977,11
+11_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.722848894948118e-6,37.65866662842876,35,gpp,kershaw1977,11
+13_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,3.044874210406726e-6,41.720359955241136,5,gpp,kershaw1977,13
+13_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,5.7800131417102175e-6,40.27249044438772,15,gpp,kershaw1977,13
+13_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,7.072102778156479e-6,38.92174449622782,25,gpp,kershaw1977,13
+13_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,7.210110277967128e-6,37.65866662842876,35,gpp,kershaw1977,13
+15_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.433435108687419e-6,40.27249044438772,15,gpp,kershaw1977,15
+15_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.224860666515185e-6,38.92174449622782,25,gpp,kershaw1977,15
+15_kershaw1977,cyanobacteria,neutral,43.3247,canina var. praetextata,4.936112911459516e-6,37.65866662842876,35,gpp,kershaw1977,15
+1_kershaw1983,green algae,neutral,47.9885,stellaris,5.083269317579337e-7,41.720359955241136,5,gpp,kershaw1983,1
+1_kershaw1983,green algae,neutral,47.9885,stellaris,9.417395046580323e-7,40.27249044438772,15,gpp,kershaw1983,1
+1_kershaw1983,green algae,neutral,47.9885,stellaris,9.629158070135574e-7,38.92174449622782,25,gpp,kershaw1983,1
+1_kershaw1983,green algae,neutral,47.9885,stellaris,1.8045462569113083e-6,37.65866662842876,35,gpp,kershaw1983,1
+3_kershaw1983,green algae,neutral,47.9885,stellaris,7.500046709081268e-7,41.720359955241136,5,gpp,kershaw1983,3
+3_kershaw1983,green algae,neutral,47.9885,stellaris,1.5020185397258198e-6,40.27249044438772,15,gpp,kershaw1983,3
+3_kershaw1983,green algae,neutral,47.9885,stellaris,1.6933068855563129e-6,38.92174449622782,25,gpp,kershaw1983,3
+5_kershaw1983,green algae,neutral,47.9885,stellaris,9.20563202302507e-7,41.720359955241136,5,gpp,kershaw1983,5
+5_kershaw1983,green algae,neutral,47.9885,stellaris,1.6248666068317805e-6,40.27249044438772,15,gpp,kershaw1983,5
+5_kershaw1983,green algae,neutral,47.9885,stellaris,2.060958110277967e-6,38.92174449622782,25,gpp,kershaw1983,5
+5_kershaw1983,green algae,neutral,47.9885,stellaris,2.2887947125653258e-6,37.65866662842876,35,gpp,kershaw1983,5
+7_kershaw1983,green algae,neutral,47.9885,stellaris,9.94361340604408e-7,41.720359955241136,5,gpp,kershaw1983,7
+7_kershaw1983,green algae,neutral,47.9885,stellaris,1.81928037037037e-6,40.27249044438772,15,gpp,kershaw1983,7
+7_kershaw1983,green algae,neutral,47.9885,stellaris,2.4921382420661967e-6,38.92174449622782,25,gpp,kershaw1983,7
+9_kershaw1983,green algae,neutral,47.9885,stellaris,9.489158509429675e-7,41.720359955241136,5,gpp,kershaw1983,9
+9_kershaw1983,green algae,neutral,47.9885,stellaris,1.5027789949253958e-6,40.27249044438772,15,gpp,kershaw1983,9
+9_kershaw1983,green algae,neutral,47.9885,stellaris,2.614452051049004e-6,38.92174449622782,25,gpp,kershaw1983,9
+9_kershaw1983,green algae,neutral,47.9885,stellaris,1.5944943709762934e-6,37.65866662842876,35,gpp,kershaw1983,9
+11_kershaw1983,green algae,neutral,47.9885,stellaris,9.485399681890479e-7,41.720359955241136,5,gpp,kershaw1983,11
+11_kershaw1983,green algae,neutral,47.9885,stellaris,2.0848333401499657e-6,40.27249044438772,15,gpp,kershaw1983,11
+11_kershaw1983,green algae,neutral,47.9885,stellaris,2.494545472241157e-6,38.92174449622782,25,gpp,kershaw1983,11
+13_kershaw1983,green algae,neutral,47.9885,stellaris,1.151516620465046e-6,41.720359955241136,5,gpp,kershaw1983,13
+13_kershaw1983,green algae,neutral,47.9885,stellaris,2.3175047254411876e-6,40.27249044438772,15,gpp,kershaw1983,13
+13_kershaw1983,green algae,neutral,47.9885,stellaris,3.630650902825115e-6,38.92174449622782,25,gpp,kershaw1983,13
+13_kershaw1983,green algae,neutral,47.9885,stellaris,2.498680181776869e-6,37.65866662842876,35,gpp,kershaw1983,13
+15_kershaw1983,green algae,neutral,47.9885,stellaris,1.2389093463606757e-6,41.720359955241136,5,gpp,kershaw1983,15
+15_kershaw1983,green algae,neutral,47.9885,stellaris,3.1933113928652575e-6,40.27249044438772,15,gpp,kershaw1983,15
+15_kershaw1983,green algae,neutral,47.9885,stellaris,4.0551164311141414e-6,38.92174449622782,25,gpp,kershaw1983,15
+15_kershaw1983,green algae,neutral,47.9885,stellaris,3.2136090585473e-6,37.65866662842876,35,gpp,kershaw1983,15
+1_larson1980,green algae,neutral,44.55,vellea,1.3879011285313944e-7,42.4840495022893,0,gpp,larson1980,1
+1_larson1980,green algae,neutral,44.55,vellea,3.258807892145724e-7,40.41273940989142,14,gpp,larson1980,1
+1_larson1980,green algae,neutral,44.55,vellea,7.022709566007724e-7,38.53401335397749,28,gpp,larson1980,1
+3_larson1980,green algae,neutral,44.55,vellea,4.974062962962962e-7,42.4840495022893,0,gpp,larson1980,3
+3_larson1980,green algae,neutral,44.55,vellea,3.81657093084905e-7,40.41273940989142,14,gpp,larson1980,3
+3_larson1980,green algae,neutral,44.55,vellea,1.9455293054608805e-6,38.53401335397749,28,gpp,larson1980,3
+5_larson1980,green algae,neutral,44.55,mammulata,2.5700514807240774e-7,42.4840495022893,0,gpp,larson1980,5
+5_larson1980,green algae,neutral,44.55,mammulata,7.065038763917291e-7,40.41273940989142,14,gpp,larson1980,5
+5_larson1980,green algae,neutral,44.55,mammulata,1.7485219003256834e-6,38.53401335397749,28,gpp,larson1980,5
+7_larson1980,green algae,neutral,44.55,mammulata,2.765938385215481e-7,42.4840495022893,0,gpp,larson1980,7
+7_larson1980,green algae,neutral,44.55,mammulata,6.604241831401955e-7,40.41273940989142,14,gpp,larson1980,7
+7_larson1980,green algae,neutral,44.55,mammulata,9.296144224797395e-7,38.53401335397749,28,gpp,larson1980,7
+9_larson1980,green algae,neutral,44.55,papulosa,1.2806146481860185e-7,42.4840495022893,0,gpp,larson1980,9
+9_larson1980,green algae,neutral,44.55,papulosa,8.046858895705521e-7,40.41273940989142,14,gpp,larson1980,9
+9_larson1980,green algae,neutral,44.55,papulosa,1.3186266113762023e-6,38.53401335397749,28,gpp,larson1980,9
+11_larson1980,green algae,neutral,44.55,papulosa,1.4782057335454065e-7,42.4840495022893,0,gpp,larson1980,11
+11_larson1980,green algae,neutral,44.55,papulosa,8.2487141634477e-7,40.41273940989142,14,gpp,larson1980,11
+11_larson1980,green algae,neutral,44.55,papulosa,1.4076890896008483e-6,38.53401335397749,28,gpp,larson1980,11
+13_larson1980,green algae,neutral,44.55,muhlenbergii,1.5154086874195257e-7,42.4840495022893,0,gpp,larson1980,13
+13_larson1980,green algae,neutral,44.55,muhlenbergii,3.28014026357646e-7,40.41273940989142,14,gpp,larson1980,13
+13_larson1980,green algae,neutral,44.55,muhlenbergii,9.735128508672272e-7,38.53401335397749,28,gpp,larson1980,13
+15_larson1980,green algae,neutral,44.55,muhlenbergii,1.6112276603802167e-7,42.4840495022893,0,gpp,larson1980,15
+15_larson1980,green algae,neutral,44.55,muhlenbergii,4.1236365901689006e-07,40.41273940989142,14,gpp,larson1980,15
+15_larson1980,green algae,neutral,44.55,muhlenbergii,8.33635316973415e-7,38.53401335397749,28,gpp,larson1980,15
+17_larson1980,green algae,neutral,44.55,deusta,6.547866568204195e-7,42.4840495022893,0,gpp,larson1980,17
+17_larson1980,green algae,neutral,44.55,deusta,1.7021847428614707e-6,40.41273940989142,14,gpp,larson1980,17
+17_larson1980,green algae,neutral,44.55,deusta,1.7022613799893963e-6,38.53401335397749,28,gpp,larson1980,17
+19_larson1980,green algae,neutral,44.55,deusta,4.67792340377187e-7,42.4840495022893,0,gpp,larson1980,19
+19_larson1980,green algae,neutral,44.55,deusta,1.3098032257820192e-6,40.41273940989142,14,gpp,larson1980,19
+19_larson1980,green algae,neutral,44.55,deusta,1.4873711898810874e-6,38.53401335397749,28,gpp,larson1980,19
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,1.0429449140346891e-7,42.17524303670842,2,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,4.365753389381201e-7,41.12889640811739,9,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,5.755686351586761e-7,40.27249044438772,15,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,6.124560917973187e-7,39.99489271601007,17,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,7.357616443232599e-7,39.58559823145258,20,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,9.678772604711049e-7,39.18459605453426,23,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,9.257764750435506e-7,38.92174449622782,25,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,8.523483178065591e-7,38.27978928434875,30,gpp,lechowicz1973,1
+1_lechowicz1973,green algae,neutral,43.8673,uncialis,5.516288404150571e-7,37.53685305369666,36,gpp,lechowicz1973,1
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,2.2646777626297053e-7,42.022517188304626,3,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,6.892864053624177e-7,41.12889640811739,9,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.1775115042035898e-6,40.27249044438772,15,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.53429529500871e-6,39.857524030741274,18,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.762667627054457e-6,39.58559823145258,20,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.9448734545179126e-6,39.31735768778696,22,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.9354125047337725e-6,38.92174449622782,25,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.8423071718548813e-6,38.27978928434875,30,gpp,lechowicz1973,2
+2_lechowicz1973,green algae,neutral,43.8673,rangiferina,1.0423744898886615e-6,37.65866662842876,35,gpp,lechowicz1973,2
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.0998562372188138e-7,41.87089345679351,4,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,3.6280150571839734e-7,41.12889640811739,9,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,7.880951238354918e-7,40.41273940989142,14,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.0691875710065893e-6,39.857524030741274,18,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.2302495758539725e-6,39.58559823145258,20,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.1031828478376125e-6,39.18459605453426,23,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.3192447572521397e-6,38.92174449622782,25,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,1.302481458001969e-6,38.15393102597508,31,gpp,lechowicz1973,3
+3_lechowicz1973,green algae,neutral,43.8673,mitis,8.618689987124139e-7,37.53685305369666,36,gpp,lechowicz1973,3
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,7.228353480269635e-8,41.720359955241136,5,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,3.8817283268954026e-7,40.9836416088657,10,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,6.324691729152466e-7,40.27249044438772,15,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,8.902666681814738e-7,39.857524030741274,18,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,1.022029521320912e-6,39.58559823145258,20,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,1.132590345376051e-6,39.18459605453426,23,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,1.264395838067106e-6,38.92174449622782,25,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,1.313158645762327e-6,38.27978928434875,30,gpp,lechowicz1973,4
+4_lechowicz1973,green algae,neutral,43.8673,caroliniana,1.221968260243884e-6,37.53685305369666,36,gpp,lechowicz1973,4
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,4.312384170264334e-7,40.9836416088657,10,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,5.837001211845793e-7,40.27249044438772,15,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,6.316400219647049e-7,39.857524030741274,18,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,7.634403620389304e-7,39.58559823145258,20,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,9.88280059834886e-7,39.31735768778696,22,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,9.47059373627206e-7,38.79163670917708,26,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,8.774091161099749e-7,38.15393102597508,31,gpp,lechowiczadams1974,9
+9_lechowiczadams1974,green algae,neutral,43.7972,uncialis,5.839543565856245e-7,37.4158249929077,37,gpp,lechowiczadams1974,9
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.2511321593577217e-7,41.87089345679351,4,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,6.988829622055592e-7,41.12889640811739,9,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.1900666727258957e-6,40.27249044438772,15,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.5429817352116943e-6,39.857524030741274,18,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.775271023252291e-6,39.451022000851,21,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.95832402711505e-6,39.18459605453426,23,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.9565868840415058e-6,38.79163670917708,26,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.8707822691812465e-6,38.15393102597508,31,gpp,lechowiczadams1974,10
+10_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.0681988033022796e-6,37.53685305369666,36,gpp,lechowiczadams1974,10
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.1125160569567522e-7,41.570904967043965,6,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,3.8268407937589947e-7,40.9836416088657,10,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,7.939026107702795e-7,40.27249044438772,15,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.0807574255850943e-6,39.857524030741274,18,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.2468328857077937e-6,39.451022000851,21,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.119934636824964e-6,39.18459605453426,23,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.3442924577747483e-6,38.79163670917708,26,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.3241068901007346e-6,38.028897661970575,32,gpp,lechowiczadams1974,11
+11_lechowiczadams1974,green algae,neutral,43.7972,mitis,8.977010694539121e-7,37.4158249929077,37,gpp,lechowiczadams1974,11
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,5.02487376353859e-7,41.720359955241136,5,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,6.232209202453988e-7,40.9836416088657,10,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,9.236841149738696e-7,40.27249044438772,15,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.1362553586306142e-6,39.99489271601007,17,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.1727009459971218e-6,39.58559823145258,20,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.2062238256456863e-6,39.31735768778696,22,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.1968859281981366e-6,38.92174449622782,25,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.1221200605922896e-6,38.27978928434875,30,gpp,lechowiczadams1974,12
+12_lechowiczadams1974,green algae,neutral,43.7972,uncialis,9.111666068317807e-7,37.65866662842876,35,gpp,lechowiczadams1974,12
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,8.629009437249109e-7,41.720359955241136,5,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.1576829682647882e-6,40.9836416088657,10,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.7763242376732559e-6,40.41273940989142,14,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.0415823880936146e-6,39.99489271601007,17,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.2438276255396504e-6,39.7210957437971,19,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.2458154851170188e-6,39.31735768778696,22,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.3876920162084373e-6,38.92174449622782,25,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.2197191729152464e-6,38.27978928434875,30,gpp,lechowiczadams1974,13
+13_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.933547130955086e-6,37.65866662842876,35,gpp,lechowiczadams1974,13
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,5.512324055138983e-7,41.87089345679351,4,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,9.541661243656745e-7,40.9836416088657,10,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.3157969484208135e-6,40.41273940989142,14,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.8063091509505418e-6,39.99489271601007,17,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.0721060137847457e-6,39.58559823145258,20,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.1467492524426265e-6,39.31735768778696,22,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.111558630614254e-6,38.92174449622782,25,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.2091773695372268e-6,38.27978928434875,30,gpp,lechowiczadams1974,14
+14_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.7659499333484815e-6,37.65866662842876,35,gpp,lechowiczadams1974,14
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.5869802241914714e-7,41.87089345679351,4,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,5.679614027115049e-7,40.9836416088657,10,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,9.539186359160797e-7,40.27249044438772,15,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.1591885760811935e-6,39.99489271601007,17,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.2339779822767552e-6,39.58559823145258,20,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.3432643505263956e-6,39.31735768778696,22,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.3923726372794063e-6,38.92174449622782,25,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.3194376050897524e-6,38.27978928434875,30,gpp,lechowiczadams1974,15
+15_lechowiczadams1974,green algae,neutral,43.7972,uncialis,1.0250758532151787e-6,37.53685305369666,36,gpp,lechowiczadams1974,15
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,3.269919495569189e-7,42.022517188304626,3,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,7.14792881163372e-7,41.12889640811739,9,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.2527844535332878e-6,40.27249044438772,15,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.6070949594789064e-6,39.857524030741274,18,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.006564746648489e-6,39.58559823145258,20,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.172413739301674e-6,39.18459605453426,23,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.3086026069832614e-6,38.92174449622782,25,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,2.0416412633492392e-6,38.27978928434875,30,gpp,lechowiczadams1974,16
+16_lechowiczadams1974,green algae,neutral,43.7972,rangiferina,1.5527780390820265e-6,37.65866662842876,35,gpp,lechowiczadams1974,16
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,3.9487486934787545e-7,41.720359955241136,5,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,7.109934590623344e-7,40.9836416088657,10,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.1747123244717111e-6,40.27249044438772,15,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.4320794811785203e-6,39.99489271601007,17,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.703271829129743e-6,39.58559823145258,20,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.8777936302355527e-6,39.18459605453426,23,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.0186206013784743e-6,38.92174449622782,25,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,2.0823489108535938e-6,38.15393102597508,31,gpp,lechowiczadams1974,17
+17_lechowiczadams1974,green algae,neutral,43.7972,mitis,1.8139701272438083e-6,37.65866662842876,35,gpp,lechowiczadams1974,17
+1_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.5668665651745817e-6,41.720359955241136,5,gpp,macfarlane1983,1
+1_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.8985290926304627e-6,40.27249044438772,15,gpp,macfarlane1983,1
+1_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.9552164894342192e-6,38.92174449622782,25,gpp,macfarlane1983,1
+1_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.35561875104143e-6,37.65866662842876,35,gpp,macfarlane1983,1
+3_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.2678313739301675e-6,41.720359955241136,5,gpp,macfarlane1983,3
+3_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.696056717412709e-6,40.27249044438772,15,gpp,macfarlane1983,3
+3_macfarlane1983,green algae,neutral,45.1166,rangiferina,3.0334578247368028e-6,38.92174449622782,25,gpp,macfarlane1983,3
+5_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.908639704612588e-6,41.720359955241136,5,gpp,macfarlane1983,5
+5_macfarlane1983,green algae,neutral,45.1166,rangiferina,4.2818546375823675e-6,38.92174449622782,25,gpp,macfarlane1983,5
+5_macfarlane1983,green algae,neutral,45.1166,rangiferina,3.406599166098614e-6,37.65866662842876,35,gpp,macfarlane1983,5
+7_macfarlane1983,green algae,neutral,45.1166,rangiferina,5.1151203756721955e-6,38.92174449622782,25,gpp,macfarlane1983,7
+9_macfarlane1983,green algae,neutral,45.1166,rangiferina,4.061645804741347e-6,40.27249044438772,15,gpp,macfarlane1983,9
+9_macfarlane1983,green algae,neutral,45.1166,rangiferina,3.566535870635462e-6,38.92174449622782,25,gpp,macfarlane1983,9
+9_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.5132182859956073e-6,37.65866662842876,35,gpp,macfarlane1983,9
+11_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.3730919616753768e-6,41.720359955241136,5,gpp,macfarlane1983,11
+11_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.21029921760206e-6,40.27249044438772,15,gpp,macfarlane1983,11
+11_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.9849462697871698e-6,38.92174449622782,25,gpp,macfarlane1983,11
+11_macfarlane1983,green algae,neutral,45.1166,rangiferina,3.2689121472392634e-6,37.65866662842876,35,gpp,macfarlane1983,11
+13_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.2094550609709918e-6,41.720359955241136,5,gpp,macfarlane1983,13
+13_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.7406704711050518e-6,40.27249044438772,15,gpp,macfarlane1983,13
+13_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.514823383321972e-6,38.92174449622782,25,gpp,macfarlane1983,13
+13_macfarlane1983,green algae,neutral,45.1166,rangiferina,1.98912517155192e-6,37.65866662842876,35,gpp,macfarlane1983,13
+15_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.627322626675755e-6,41.720359955241136,5,gpp,macfarlane1983,15
+15_macfarlane1983,green algae,neutral,45.1166,rangiferina,3.281574488373854e-6,40.27249044438772,15,gpp,macfarlane1983,15
+15_macfarlane1983,green algae,neutral,45.1166,rangiferina,6.066816073619631e-6,38.92174449622782,25,gpp,macfarlane1983,15
+15_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.955441985154889e-6,37.65866662842876,35,gpp,macfarlane1983,15
+17_macfarlane1983,green algae,neutral,45.1166,rangiferina,6.6246282488828295e-6,40.27249044438772,15,gpp,macfarlane1983,17
+17_macfarlane1983,green algae,neutral,45.1166,rangiferina,4.655263536317503e-6,38.92174449622782,25,gpp,macfarlane1983,17
+17_macfarlane1983,green algae,neutral,45.1166,rangiferina,5.880123745360902e-6,37.65866662842876,35,gpp,macfarlane1983,17
+19_macfarlane1983,green algae,neutral,45.1166,rangiferina,2.4718126009240322e-6,41.720359955241136,5,gpp,macfarlane1983,19
+19_macfarlane1983,green algae,neutral,45.1166,rangiferina,4.326330905097327e-6,40.27249044438772,15,gpp,macfarlane1983,19
+19_macfarlane1983,green algae,neutral,45.1166,rangiferina,5.542049520563508e-6,38.92174449622782,25,gpp,macfarlane1983,19
+19_macfarlane1983,green algae,neutral,45.1166,rangiferina,4.051856637127926e-6,37.65866662842876,35,gpp,macfarlane1983,19
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.311989547830037e-8,43.276218987694655,-5,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,1.5495304551995758e-7,42.955832395152036,-3,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,4.3736154434598197e-7,42.4840495022893,0,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,7.016986965083693e-7,41.570904967043965,6,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.787032803150798e-7,40.9836416088657,10,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.928455654018026e-7,40.27249044438772,15,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.028327751268652e-7,39.58559823145258,20,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.346966386427326e-7,39.052727987717724,24,gpp,sanchokappen1989,1
+1_sanchokappen1989,green algae,high,40.2997,decussata,9.774907513443915e-7,38.79163670917708,26,gpp,sanchokappen1989,1
+3_sanchokappen1989,green algae,high,40.2997,subglabra,8.47444611073241e-8,43.276218987694655,-5,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,4.237223047792169e-7,42.640154773287975,-1,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,6.744246693933197e-7,41.720359955241136,5,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,8.015413602969022e-7,40.9836416088657,10,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,8.227274755737332e-7,40.41273940989142,14,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,9.780923206846928e-7,39.7210957437971,19,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,9.392511095963038e-7,39.052727987717724,24,gpp,sanchokappen1989,3
+3_sanchokappen1989,green algae,high,40.2997,subglabra,9.533751859425889e-7,38.53401335397749,28,gpp,sanchokappen1989,3
+5_sanchokappen1989,green algae,high,40.2997,havaasii,6.718425357873212e-8,43.276218987694655,-5,gpp,sanchokappen1989,5
+5_sanchokappen1989,green algae,high,40.2997,havaasii,1.9779557449064608e-7,42.640154773287975,-1,gpp,sanchokappen1989,5
+5_sanchokappen1989,green algae,high,40.2997,havaasii,4.515300257517231e-7,41.12889640811739,9,gpp,sanchokappen1989,5
+5_sanchokappen1989,green algae,high,40.2997,havaasii,5.597160486253123e-7,40.41273940989142,14,gpp,sanchokappen1989,5
+5_sanchokappen1989,green algae,high,40.2997,havaasii,6.45568413996819e-7,39.7210957437971,19,gpp,sanchokappen1989,5
+5_sanchokappen1989,green algae,high,40.2997,havaasii,7.519151170188593e-7,39.052727987717724,24,gpp,sanchokappen1989,5
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,2.2432286601529957e-8,43.11543050919681,-4,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,7.888973869575097e-8,42.4840495022893,0,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.275481042187382e-7,41.570904967043965,6,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.3885016965841097e-7,40.839409190745464,11,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.6506303037188516e-7,40.1332115564597,16,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.6887004241460275e-7,39.58559823145258,20,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.952283094751193e-7,38.92174449622782,25,gpp,sanchokappen1989,7
+7_sanchokappen1989,green algae,high,40.2997,cinereorufescens,1.6132211315610085e-7,38.15393102597508,31,gpp,sanchokappen1989,7
+9_sanchokappen1989,green algae,high,40.5926,pustulata,4.576154177080966e-7,42.4840495022893,0,gpp,sanchokappen1989,9
+9_sanchokappen1989,green algae,high,40.5926,pustulata,8.384048890403695e-7,41.720359955241136,5,gpp,sanchokappen1989,9
+9_sanchokappen1989,green algae,high,40.5926,pustulata,1.1323476399303188e-6,40.839409190745464,11,gpp,sanchokappen1989,9
+9_sanchokappen1989,green algae,high,40.5926,pustulata,1.2258748784367187e-6,40.27249044438772,15,gpp,sanchokappen1989,9
+9_sanchokappen1989,green algae,high,40.5926,pustulata,1.4296306483374993e-6,39.58559823145258,20,gpp,sanchokappen1989,9
+9_sanchokappen1989,green algae,high,40.5926,pustulata,1.4095890971748843e-6,38.92174449622782,25,gpp,sanchokappen1989,9
+11_sanchokappen1989,green algae,high,40.5926,hispanica,4.3185294175566156e-7,42.4840495022893,0,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,6.743549776565933e-7,41.570904967043965,6,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,9.06891177005226e-7,40.9836416088657,10,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,1.0862762447928503e-6,40.41273940989142,14,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,1.2955588245095812e-6,39.58559823145258,20,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,1.1161737559645535e-6,38.92174449622782,25,gpp,sanchokappen1989,11
+11_sanchokappen1989,green algae,high,40.5926,hispanica,7.075744345981973e-7,38.27978928434875,30,gpp,sanchokappen1989,11
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,3.162969567522533e-7,42.4840495022893,0,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,6.431722737256684e-7,41.720359955241136,5,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,9.173596659850035e-7,40.9836416088657,10,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,8.856992463833977e-7,40.27249044438772,15,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,9.66593256078164e-7,39.451022000851,21,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,1.1352267719457699e-6,38.92174449622782,25,gpp,sanchokappen1989,13
+13_sanchokappen1989,green algae,high,40.2997,spodochroa,9.278547542225251e-7,38.27978928434875,30,gpp,sanchokappen1989,13
+15_sanchokappen1989,green algae,high,40.2997,grisea,2.2068366128910098e-7,42.4840495022893,0,gpp,sanchokappen1989,15
+15_sanchokappen1989,green algae,high,40.2997,grisea,4.201682784215708e-7,41.87089345679351,4,gpp,sanchokappen1989,15
+15_sanchokappen1989,green algae,high,40.2997,grisea,8.897397470271908e-7,40.1332115564597,16,gpp,sanchokappen1989,15
+15_sanchokappen1989,green algae,high,40.2997,grisea,9.738239309247898e-7,39.58559823145258,20,gpp,sanchokappen1989,15
+15_sanchokappen1989,green algae,high,40.2997,grisea,1.110400440808907e-6,38.79163670917708,26,gpp,sanchokappen1989,15
+15_sanchokappen1989,green algae,high,40.2997,grisea,8.52825159433462e-7,38.27978928434875,30,gpp,sanchokappen1989,15
+1_sonesson1989,green algae,neutral,68.2,olivacea,8.305330379459213e-8,43.276218987694655,-5,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,5.751207354389154e-7,42.4840495022893,0,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,7.731709210028023e-7,41.720359955241136,5,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,1.02899219874271e-6,40.9836416088657,10,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,1.201487521775354e-6,40.27249044438772,15,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,1.770355867605847e-6,39.58559823145258,20,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,1.3484279815193515e-6,38.92174449622782,25,gpp,sonesson1989,1
+1_sonesson1989,green algae,neutral,68.2,olivacea,9.202477073392411e-7,38.27978928434875,30,gpp,sonesson1989,1
+2_sonesson1989,green algae,neutral,68.2,ambigua,7.652826175869121e-8,43.276218987694655,-5,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,3.580407278648791e-7,42.4840495022893,0,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,4.6012385366962054e-7,41.720359955241136,5,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,5.497021987427099e-7,40.9836416088657,10,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,1.2080125630538512e-6,40.27249044438772,15,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,1.2463448572294176e-6,39.58559823145258,20,gpp,sonesson1989,2
+2_sonesson1989,green algae,neutral,68.2,ambigua,6.135893554495191e-7,38.92174449622782,25,gpp,sonesson1989,2
+1_kappen1983,green algae,neutral,-70.47,sulphurea,1.6851380661458716e-7,42.640154773287975,-1,gpp,kappen1983,1
+1_kappen1983,green algae,neutral,-70.47,sulphurea,3.8098773681753224e-7,41.570904967043965,6,gpp,kappen1983,1
+1_kappen1983,green algae,neutral,-70.47,sulphurea,5.040760820826394e-7,40.839409190745464,11,gpp,kappen1983,1
+1_kappen1983,green algae,neutral,-70.47,sulphurea,8.557570700783255e-7,39.857524030741274,18,gpp,kappen1983,1
+1_kappen1983,green algae,neutral,-70.47,sulphurea,7.590447981128204e-7,39.7210957437971,19,gpp,kappen1983,1
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.0834338759970259e-7,43.4382111980173,-6,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.9585150835330852e-7,43.11543050919681,-4,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,6.083897919060222e-7,41.87089345679351,4,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.1042691428431227e-6,41.275184497778135,8,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.2980371245118214e-6,41.12889640811739,9,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.4167981455345723e-6,40.839409190745464,11,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.5751461735649069e-6,40.55396862327563,13,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.6897401412184383e-6,40.27249044438772,15,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.8043341088719701e-6,39.99489271601007,17,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.879341069517918e-6,39.7210957437971,19,gpp,kappen1983,3
+3_kappen1983,green algae,neutral,-70.47,sulphurea,1.891842229625576e-6,39.451022000851,21,gpp,kappen1983,3

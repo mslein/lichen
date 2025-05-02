@@ -13,23 +13,23 @@ pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork, tidyverse)
 ## and the plos one figure 1....
 
 
-#i actually think i forgot to differentiate the molar mass shit fuck between co2 and o2
+
 
 library(tidyverse)
 lichen <- read_csv("extraction/lichen dataset/lichen_data.csv") %>%
   unite("gas_units", gas_unit, gas) %>%
   mutate(inv_T=1/((8.617333262145*10^-5)*(temp+273.15)),
-         mol = case_when(gas_units %in% c("mg_co2") ~ response_value*(1/44010), 
+         mol_o2 = case_when(gas_units %in% c("mg_co2") ~ response_value*(1/44010), 
                          gas_units %in% c("mg_o2") ~ response_value*(1/32000), 
                          gas_units %in% c("nmol_co2") ~ response_value*(1/10^9), 
                          gas_units %in% c("nmol_o2") ~ response_value*(1/10^9),
                          gas_units %in% c("umol_co2") ~ response_value*(1/10^6)),
-         gram = case_when(`mass/area` %in% c("g") ~ 1, 
-                          `mass/area` %in% c("kg") ~ 1000, 
-                          `mass/area` %in% c("m") ~ 1000, 
-                          `mass/area` %in% c("mg") ~ 1/1000, 
-                          `mass/area` %in% c("mg chla") ~ 1/1000, 
-                          `mass/area` %in% c("mg chl") ~ 1/1000),
+         gC = case_when(`mass/area` %in% c("g") ~ 1*0.5, 
+                          `mass/area` %in% c("kg") ~ 1000*0.5, 
+                          `mass/area` %in% c("m") ~ 0.062*0.5,
+                          `mass/area` %in% c("mg") ~ (1/1000)*0.5, 
+                          `mass/area` %in% c("mg chla") ~ 6.72*10^-4, 
+                          `mass/area` %in% c("mg chl") ~ 6.72*10^-4),
          min = case_when(time %in% c("hr") ~ 60, 
                          time %in% c("min") ~ 1, 
                          time %in% c("sec") ~ 1/60),
@@ -41,7 +41,6 @@ lichen <- read_csv("extraction/lichen dataset/lichen_data.csv") %>%
          lichen_type=as.factor(lichen_type), 
          centre_temp = I(inv_T-mean(inv_T)), 
          centre_celsius = I(temp-mean(temp)))
-
 
 
 lichen_max_ppfd <- lichen %>%
