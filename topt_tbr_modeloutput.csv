@@ -1,0 +1,13 @@
+﻿dataset,metabolic_category,estimate,se,response
+Coral,npp,6.018029,0.9264161,tbr
+Coral,gpp,6.466876,0.6377291,tbr
+Coral,r,6.148158,0.6352932,tbr
+Lichen,npp,15.798122,1.1731308,tbr
+Lichen,gpp,16.246969,0.910951,tbr
+Lichen,r,7.26942,1.6569401,tbr
+Coral,npp,25.017285,1.3168135,topt
+Coral,gpp,26.636674,0.567954,topt
+Coral,r,28.78662,0.5687442,topt
+Lichen,npp,19.890124,1.645847,topt
+Lichen,gpp,33.734696,0.8228366,topt
+Lichen,r,22.221057,1.6431851,topt

@@ -1,54 +1,52 @@
 library(revtools)
 library(tidyverse)
-pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork, tidyverse)
-
+pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork, tidyverse, ggh4x, dplyr, purrr, broom)
 
 lichen_tpc_Eas <- read_csv("analysis/tidy data/lichen_tpc_Eas.csv")
 lichen_raw_npp <- read_csv("analysis/tidy data/lichen_npp_final.csv") %>% select(tpc_grp, elevation_broad, lichen_type, latitude, species, inv_T, mol_gCmin)
 lichen_raw_gpp <- read_csv("analysis/tidy data/lichen_gpp_final.csv") %>% select(tpc_grp, elevation_broad, lichen_type, latitude, species, inv_T, mol_gCmin)
 lichen_raw_r <- read_csv("analysis/tidy data/lichen_r_final.csv") %>% select(tpc_grp, elevation_broad, lichen_type, latitude, species, inv_T, mol_gCmin)
 
-gpp_lichen_all <- lichen_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
-  left_join(lichen_raw_gpp, by="tpc_grp") %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
-npp_lichen_all <- lichen_tpc_Eas %>% filter(metabolic_category == "npp") %>%
-  left_join(lichen_raw_npp, by="tpc_grp")  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
-r_lichen_all <- lichen_tpc_Eas %>% filter(metabolic_category == "r") %>%
-  left_join(lichen_raw_r, by="tpc_grp")  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
+gpp_lichen_Eas <- lichen_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
+  left_join(lichen_raw_gpp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2))
+npp_lichen_Eas <- lichen_tpc_Eas %>% filter(metabolic_category == "npp")  %>%
+  left_join(lichen_raw_npp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e)
+r_lichen_Eas <- lichen_tpc_Eas %>% filter(metabolic_category == "r")  %>%
+  left_join(lichen_raw_r, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2))
 
 
-#full model --> assessing collinearity 
-all_lichen_mod <- lmer(e ~ abs(latitude) +lichen_type + elevation_broad  +(1|study_id), data=npp_lichen_all,  REML=FALSE) 
-car::vif(all_lichen_mod) #removing lichen type as this is causing problems
-
-#model selection for photosynthesis
-#missing elevation
-model3npp_lichen_final <- lmer(e~ abs(latitude) +(1|study_id), data=npp_lichen_all, REML=FALSE)
-#missing latitude
-model4npp_lichen_final <- lmer(e ~ elevation_broad  +(1|study_id), data=npp_lichen_all, REML=FALSE)
-#missing both latitude and elevation
-model5npp_lichen_final <- lmer(e ~ 1 +(1|study_id), data=npp_lichen_all, REML=FALSE) 
-#missing interaction between lichen type + centre temp
-model6npp_lichen_final <- lmer(e ~ abs(latitude)+ elevation_broad +(1|study_id), data=npp_lichen_all,  REML=FALSE)
-model.sel(model3npp_lichen_final, model4npp_lichen_final, model5npp_lichen_final, model6npp_lichen_final)
-#model6npp, model3npp are tied, going with model5npp to describe overall temperature dependence
-summary(model5npp_lichen_final) #Ea= 0.42304
-confint(model5npp_lichen_final) #0.34816037 0.49782240
 
 
-#model selection for respiration
-#missing elevation
-model3r_lichen_final <- lmer(e~ abs(latitude) +(1|study_id), data=r_lichen_all, REML=FALSE)
-#missing latitude
-model4r_lichen_final <- lmer(e ~ elevation_broad  +(1|study_id), data=r_lichen_all, REML=FALSE)
-#missing both latitude and elevation
-model5r_lichen_final <- lmer(e ~ 1 +(1|study_id), data=r_lichen_all, REML=FALSE) 
-#missing interaction between lichen type + centre temp
-model6r_lichen_final <- lmer(e ~ abs(latitude)+ elevation_broad +(1|study_id), data=r_lichen_all,  REML=FALSE)
-model.sel(model3r_lichen_final, model4r_lichen_final, model5r_lichen_final, model6r_lichen_final)
-#model6r is best going with model5r to describe overall temperature dependence
-summary(model5r_lichen_final) #Ea= 0.5720
-confint(model5r_lichen_final) #0.45030538 0.6936945
 
+
+#### lichen 
+
+#model selection for NPP
+lichen_npp <- lme(e ~ abs(latitude) +lichen_type + elevation_broad +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=npp_lichen_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(lichen_npp)
+
+lichen_npp_model_set <- dredge(lichen_npp, trace = TRUE)
+subset(lichen_npp_model_set, delta < 2) #tied w/ 2 best, simplest model includes only breadth
+
+best_lichen_npp_model <- get.models(lichen_npp_model_set, 2)[[1]]
+best_lichen_npp_model <- update(best_lichen_npp_model, method = "REML")
+summary(best_lichen_npp_model) #0.3926778
+intervals(best_lichen_npp_model) #0.34549059 0.43986506
+
+#model selection for GPP
+lichen_gpp <- lme(e ~ abs(latitude) +lichen_type + elevation_broad +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=gpp_lichen_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(lichen_gpp)
+
+lichen_gpp_model_set <- dredge(lichen_gpp, trace = TRUE)
+subset(lichen_gpp_model_set, delta < 2) #best simplest model has breadth and topt
+
+best_lichen_gpp_model <- get.models(lichen_gpp_model_set, 1)[[1]]
+best_lichen_gpp_model <- update(best_lichen_gpp_model, method = "REML")
+summary(best_lichen_gpp_model) #0.538573046
+intervals(best_lichen_gpp_model) #0.379509242 0.6976368495
 
 
 #arrhenius modelling for respiration
@@ -62,58 +60,49 @@ lichen_r_linear <- read_csv("analysis/tidy data/lichen_r_final.csv") %>%
   mutate(max_temp = temp[which.max(mol_gCmin)]) %>%
   # Step 2: Keep only temperatures below or equal to that max point
   filter(temp <= max_temp) %>%
-  filter(mol_gCmin > 0)
-
-lichen_r_linear$elevation_broad<- relevel(lichen_r_linear$elevation_broad, "neutral")
-lichen_r_linear$lichen_type<- relevel(lichen_r_linear$lichen_type, "green algae")
+  filter(mol_gCmin > 0) 
 
 
-all_lichen_mod <- lmer(log(mol_gCmin) ~inv_T + abs(latitude) +inv_T*lichen_type + elevation_broad  +(1+inv_T|study_id:response_id), data=lichen_r_linear,  REML=FALSE) 
-car::vif(all_lichen_mod) #removing lichen type
+# Nest data by group
+nested <- lichen_r_linear %>%
+  group_by(tpc_grp) %>%
+  nest()
 
-optCtrl <- lme4::glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e5))
-
-
-#model selection for respiration
-#missing elevation
-model3r_lichen_final <- lmer(log(mol_gCmin) ~inv_T +abs(latitude)+ (1+inv_T|study_id:response_id), data=lichen_r_linear, REML=FALSE, control=lmerControl(optimizer = "bobyqa",
-                                                                                                                                                         optCtrl = list(maxfun = 2e5)))
-#missing latitude
-model4r_lichen_final <- lmer(log(mol_gCmin)  ~inv_T  + elevation_broad + (1+inv_T|study_id:response_id), data=lichen_r_linear, REML=FALSE, control=lmerControl(optimizer = "bobyqa",
-                                                                                                                                                               optCtrl = list(maxfun = 2e5))) 
-#missing both latitude and elevation
-model5r_lichen_final <- lmer(log(mol_gCmin)  ~inv_T + (1+inv_T|study_id:response_id), data=lichen_r_linear, REML=FALSE, control=lmerControl(optimizer = "bobyqa",
-                                                                                                                                           optCtrl = list(maxfun = 2e5)))
-#missing temp
-model6r_lichen_final <- lmer(log(mol_gCmin)  ~abs(latitude)  + elevation_broad +(1+inv_T|study_id:response_id), data=lichen_r_linear, REML=FALSE, control=lmerControl(optimizer = "bobyqa",
-                                                                                                                                                                     optCtrl = list(maxfun = 2e5)))
-#missing lichen type
-model7r_lichen_final <- lmer(log(mol_gCmin) ~inv_T +  abs(latitude) + elevation_broad +(1+inv_T|study_id:response_id), data=lichen_r_linear, REML=FALSE,  control=lmerControl(optimizer = "bobyqa",
-                                                                                                                                                                              optCtrl = list(maxfun = 2e5)))
-#missing interaction between lichen type + centre temp
-model.sel(model3r_lichen_final, model4r_lichen_final, model5r_lichen_final, model6r_lichen_final, model7r_lichen_final)
-#model7r and model3r are tied, model3r is simpler, going w/ that one
-
-summary(model3r_lichen_final) #Ea = -0.51176
-confint(model3r_lichen_final) #-0.551134373 -0.47249748
+# Fit linear model and extract slope + SE
+group_ea <- nested %>%
+  mutate(model = map(data, ~ lm(log(mol_gCmin) ~ inv_T, data = .x)),
+         tidied = map(model, tidy)) %>%
+  unnest(tidied) %>%
+  filter(term == "inv_T") %>%
+  separate(tpc_grp, into = c("response_id","study_id"), sep = "_", remove=FALSE) %>%
+  rename(Ea = estimate, Ea_SE = std.error) %>%
+  select(study_id, response_id, Ea, Ea_SE)
 
 
+group_ea <- left_join(group_ea, lichen_r_linear, by = c("study_id", "response_id"), relationship = "many-to-many") %>%
+  select(-tpc_grp.y) %>% rename(tpc_grp = tpc_grp.x) %>% distinct(Ea, .keep_all = TRUE) %>% drop_na(Ea, Ea_SE) 
+
+
+group_ea$elevation_broad<- relevel(group_ea$elevation_broad, "neutral")
+group_ea$lichen_type<- relevel(group_ea$lichen_type, "green algae")
+# 4: Mixed model with weights
+ea_model <- lme(Ea ~ abs(latitude) + lichen_type + elevation_broad,
+                random = ~1 | study_id,
+                data = group_ea,
+                weights = varFixed(~ Ea_SE^2),
+                method = "ML")
+
+
+lichen_r_model_set <- dredge(ea_model, trace = TRUE)
+subset(lichen_r_model_set, delta < 2) #tied, going with model 5
+
+best_lichen_r_model <- get.models(lichen_r_model_set, 1)[[1]]
+best_lichen_r_model <- update(best_lichen_r_model, method = "REML")
+summary(best_lichen_r_model) #-0.5894234
+intervals(best_lichen_r_model) #-0.6041062 -0.5747406
 
 
 
-#model selection for GPP
-#missing elevation
-model3gpp_lichen_final <- lmer(e~ abs(latitude) +(1|study_id), data=gpp_lichen_all, REML=FALSE)
-#missing latitude
-model4gpp_lichen_final <- lmer(e ~ elevation_broad  +(1|study_id), data=gpp_lichen_all, REML=FALSE)
-#missing both latitude and elevation
-model5gpp_lichen_final <- lmer(e ~ 1 +(1|study_id), data=gpp_lichen_all, REML=FALSE) 
-#missing interaction between lichen type + centre temp
-model6gpp_lichen_final <- lmer(e ~ abs(latitude)+ elevation_broad +(1|study_id), data=gpp_lichen_all,  REML=FALSE)
-model.sel(model3gpp_lichen_final, model4gpp_lichen_final, model5gpp_lichen_final, model6gpp_lichen_final)
-#model6r is best going with model5r to describe overall temperature dependence
-summary(model5gpp_lichen_final) #Ea= 0.34629
-confint(model5gpp_lichen_final) #0.2772515 0.41520588
 
 
 
@@ -122,62 +111,191 @@ confint(model5gpp_lichen_final) #0.2772515 0.41520588
 ################# CORAL ################# 
 
 coral_tpc_Eas <- read_csv("analysis/tidy data/coral_tpc_Eas.csv") 
-coral_raw_npp <- read_csv("analysis/tidy data/coral_npp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species)
-coral_raw_gpp <- read_csv("analysis/tidy data/coral_gpp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species) 
-coral_raw_r <- read_csv("analysis/tidy data/coral_r_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species)
+coral_raw_npp <- read_csv("analysis/tidy data/coral_npp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin)
+coral_raw_gpp <- read_csv("analysis/tidy data/coral_gpp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin) 
+coral_raw_r <- read_csv("analysis/tidy data/coral_r_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin)
 
-gpp_coral_all <- coral_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
-  left_join(coral_raw_gpp, by="tpc_grp") %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
-npp_coral_all <- coral_tpc_Eas %>% filter(metabolic_category == "npp") %>%
-  left_join(coral_raw_npp, by="tpc_grp")  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
-r_coral_all <- coral_tpc_Eas %>% filter(metabolic_category == "r") %>%
-  left_join(coral_raw_r, by="tpc_grp")  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE)
-
-#model selection for npp
-#missing depth
-model3npp_coral_final <- lmer(e ~ abs(latitude) + (1|study_id), data=npp_coral_all, REML=FALSE)
-#missing latitude
-model4npp_coral_final <- lmer(e ~ 1 + (1|study_id), data=npp_coral_all, REML=FALSE)
-model.sel(model3npp_coral_final, model4npp_coral_final)
-#model3npp_coral_final is best
-#using model4npp to describe the overall Ea for NPP
-summary(model4npp_coral_final) # Ea= 0.8669 
-confint(model4npp_coral_final) #0.4336468 1.3065570
-
-#model selection for respiration
-#missing depth
-model3r_coral_final <- lmer(e ~ abs(latitude) +  (1|study_id), data=r_coral_all, REML=FALSE)
-#missing latitude
-model4r_coral_final <- lmer(e ~depth_broad + (1|study_id), data=r_coral_all, REML=FALSE)
-#missing both latitude and depth
-model5r_coral_final <- lmer(e ~1 + (1|study_id), data=r_coral_all, REML=FALSE)
-#missing interaction between lichen type + centre temp
-model6r_coral_final <- lmer(e ~ abs(latitude) + depth_broad + (1|study_id), data=r_coral_all,  REML=FALSE)
-model.sel(model3r_coral_final, model4r_coral_final, model5r_coral_final, model6r_coral_final)
-#model6r_coral_final and model3r are tied
-#using model5r_coral_final to describe the overall Ea for NPP
-
-summary(model5r_coral_final) #e= 1.0218 
-confint(model5r_coral_final) #0.6470683 1.3974794
+gpp_coral_Eas <- coral_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
+  left_join(coral_raw_gpp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
+npp_coral_Eas <- coral_tpc_Eas %>% filter(metabolic_category == "npp") %>%
+  left_join(coral_raw_npp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth,.keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
+r_coral_Eas <- coral_tpc_Eas %>% filter(metabolic_category == "r") %>%
+  left_join(coral_raw_r, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
 
 
 
-#model selection for gpp
-#missing depth
-model3gpp_coral_final <- lmer(e ~abs(latitude) +  (1|study_id), data=gpp_coral_all, REML=FALSE)
-#missing latitude
-model4gpp_coral_final <- lmer(e ~ depth_broad +(1|study_id) , data=gpp_coral_all, REML=FALSE)
-#missing both latitude and depth
-model5gpp_coral_final <- lmer(e ~ 1+  (1|study_id), data=gpp_coral_all, REML=FALSE)
-#missing temp
-model6gpp_coral_final <- lmer(e ~abs(latitude) + depth_broad  + (1|study_id), data=gpp_coral_all, REML=FALSE)
-#missing cnidarian type
-#full model
-model.sel(model3gpp_coral_final, model4gpp_coral_final, model5gpp_coral_final,  model6gpp_coral_final)
-#model3gpp_coral_final, model6gpp_coral_final are tied
-#going with model5gpp_coral_final to understand overal Ea
-summary(model5gpp_coral_final) #e= 0.9210
-confint(model5gpp_coral_final) #e=0.5467659 1.2965725
+
+#model selection for NPP
+coral_npp <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=npp_coral_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(coral_npp)
+
+coral_npp_model_set <- dredge(coral_npp, trace = TRUE)
+subset(coral_npp_model_set, delta < 2) #tied, choosing model includes only breadth
+
+best_coral_npp_model <- get.models(coral_npp_model_set, 2)[[1]]
+best_coral_npp_model <- update(best_coral_npp_model, method = "REML")
+summary(best_coral_npp_model) #0.5937617
+intervals(best_coral_npp_model) #0.2367783 0.77740006
+
+#model selection for GPP
+coral_gpp <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=gpp_coral_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(coral_gpp)
+
+coral_gpp_model_set <- dredge(coral_gpp, trace = TRUE)
+subset(coral_gpp_model_set, delta < 2) 
+
+best_coral_gpp_model <- get.models(coral_gpp_model_set, 1)[[1]]
+best_coral_gpp_model <- update(best_coral_gpp_model, method = "REML")
+summary(best_coral_gpp_model) #0.6564679
+intervals(best_coral_gpp_model) #0.311348240.1.00158748
+
+#model selection for R
+coral_r <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=r_coral_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(coral_r) #removing latitude because of correlation
+coral_r <- lme(e ~ I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=r_coral_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+
+
+
+coral_r_model_set <- dredge(coral_r, trace = TRUE)
+subset(coral_r_model_set, delta < 2) 
+
+best_coral_r_model <- get.models(coral_r_model_set, 1)[[1]]
+best_coral_r_model <- update(best_coral_r_model, method = "REML")
+summary(best_coral_r_model) #0.5758236
+intervals(best_coral_r_model, which = "fixed") #0.5192733   0.632373938
+
+
+#### mary's suggestion 
+
+lme(log(rmax) ~ topt, random= ~1|study_id, data=gpp_coral_Eas, method = "REML") #0.04148732
+lme(log(rmax) ~ topt, random= ~1|study_id, data=npp_coral_Eas, method = "REML") #0.0432332
+lme(log(rmax) ~ topt, random= ~1|study_id, data=r_coral_Eas, method = "REML") #0.0105437
+lme(log(rmax) ~ topt, random= ~1|study_id, data=gpp_lichen_Eas, method = "REML") #0.01736202
+lme(log(rmax) ~ topt, random= ~1|study_id, data=npp_lichen_Eas, method = "REML") #0.06472847 
+
+
+
+
+
+
+##### david's suggestion
+
+npp_lichen_topt  <- npp_lichen_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "npp")
+gpp_lichen_topt  <- gpp_lichen_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "gpp")
+r_lichen_topt <- r_lichen_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "r")
+
+npp_coral_topt  <- npp_coral_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "npp") 
+gpp_coral_topt  <- gpp_coral_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "gpp")
+r_coral_topt  <- r_coral_Eas %>% select(topt, study_id) %>% mutate(metabolic_category = "r")
+
+lichen_topt <- rbind(npp_lichen_topt, gpp_lichen_topt, r_lichen_topt) %>% mutate(dataset="Lichen")
+coral_topt <- rbind(npp_coral_topt, gpp_coral_topt, r_coral_topt) %>% mutate(dataset="Coral")
+
+full_topt <- rbind(coral_topt, lichen_topt) %>% mutate(metabolic_category=as.factor(metabolic_category))
+
+
+full_topt$metabolic_category <- relevel(full_topt$metabolic_category, ref = "npp")
+
+topt_mod <-lme(topt ~ metabolic_category*dataset, random=~1|study_id, data=full_topt, method="REML")
+
+summary(topt_mod)
+intervals(topt_mod)
+
+
+##thermal breadth
+
+npp_lichen_tbr  <- npp_lichen_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "npp")
+gpp_lichen_tbr  <- gpp_lichen_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "gpp")
+r_lichen_tbr <- r_lichen_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "r")
+
+npp_coral_tbr  <- npp_coral_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "npp") 
+gpp_coral_tbr  <- gpp_coral_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "gpp")
+r_coral_tbr  <- r_coral_Eas %>% select(breadth, study_id) %>% mutate(metabolic_category = "r")
+
+lichen_tbr <- rbind(npp_lichen_tbr, gpp_lichen_tbr, r_lichen_tbr) %>% mutate(dataset="Lichen")
+coral_tbr <- rbind(npp_coral_tbr, gpp_coral_tbr, r_coral_tbr) %>% mutate(dataset="Coral")
+
+full_tbr <- rbind(coral_tbr, lichen_tbr) %>% mutate(metabolic_category=as.factor(metabolic_category))
+
+
+full_tbr$metabolic_category <- relevel(full_tbr$metabolic_category, ref = "npp")
+
+tbr_mod <-lme(breadth ~ metabolic_category*dataset, random=~1|study_id, data=full_tbr, method="REML")
+
+summary(tbr_mod)
+intervals(tbr_mod)
+
+
+#isolated algae
+isl_algae_tpc_Eas <- read_csv("analysis/tidy data/isl_alg_tpc_Eas.csv") 
+isl_algae_raw_npp <- read_csv("analysis/tidy data/isl_algae_npp_final.csv") %>% select(tpc_grp, latitude, species, mol_gCmin)
+isl_algae_raw_gpp <- read_csv("analysis/tidy data/isl_algae_gpp_final.csv") %>% select(tpc_grp, latitude, species, mol_gCmin) 
+isl_algae_raw_r <- read_csv("analysis/tidy data/isl_algae_r_final.csv") %>% select(tpc_grp, latitude, species, mol_gCmin)
+
+gpp_isl_algae_Eas <- isl_algae_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
+  left_join(isl_algae_raw_gpp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
+npp_isl_algae_Eas <- isl_algae_tpc_Eas %>% filter(metabolic_category == "npp") %>%
+  left_join(isl_algae_raw_npp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth,.keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
+r_isl_algae_Eas <- isl_algae_tpc_Eas %>% filter(metabolic_category == "r") %>%
+  left_join(isl_algae_raw_r, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
+  mutate(weight = 1 / (e_se^2)) %>% drop_na(e, e_se)
+
+
+
+
+#model selection for NPP
+isl_alg_npp <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=npp_isl_algae_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(coral_npp)
+
+isl_alg_npp_model_set <- dredge(isl_alg_npp, trace = TRUE)
+subset(isl_alg_npp_model_set, delta < 2) #latitude is best by more than 2 AIC
+
+best_isl_alg_npp_model <- get.models(isl_alg_npp_model_set, 1)[[1]]
+best_isl_alg_npp_model <- update(best_isl_alg_npp_model, method = "REML")
+summary(best_isl_alg_npp_model) #1.9009684
+intervals(best_isl_alg_npp_model) #0.27472413 3.52721263
+
+#model selection for GPP
+isl_alg_gpp <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=gpp_isl_algae_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(isl_alg_gpp)
+
+isl_alg_gpp_model_set <- dredge(isl_alg_gpp, trace = TRUE)
+subset(isl_alg_gpp_model_set, delta < 2) # tied, keeping model with latitude, breadth, topt
+
+best_isl_alg_gpp_model <- get.models(isl_alg_gpp_model_set, 1)[[1]]
+best_isl_alg_gpp_model <- update(best_isl_alg_gpp_model, method = "REML")
+summary(best_isl_alg_gpp_model) #0.3808134
+intervals(best_isl_alg_gpp_model, which = "fixed") #0.3221303944 0.439496314
+
+#model selection for R
+isl_alg_r <- lme(e ~ abs(latitude) +I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=r_isl_algae_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+performance::check_collinearity(isl_alg_r) #removing latitude because of correlation
+isl_alg_r <- lme(e ~ I(breadth - mean(breadth, na.rm = TRUE)) +I(topt- mean(topt, na.rm = TRUE)), random= ~1|study_id, data=r_isl_algae_Eas, weights = varFixed(~ e_se^2), method = "ML") 
+
+
+
+isl_alg_r_model_set <- dredge(isl_alg_r, trace = TRUE)
+subset(isl_alg_r_model_set, delta < 2) #best model includes breath and topt 
+
+best_isl_alg_r_model <- get.models(isl_alg_r_model_set, 1)[[1]]
+best_isl_alg_r_model <- update(best_isl_alg_r_model, method = "REML")
+summary(best_isl_alg_r_model) #0.3231435
+intervals(best_isl_alg_r_model, which = "fixed") #0.04542771 0.6008593
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,120 +307,387 @@ pacman::p_load(rphylopic)
 #code to get the uuid's for the phylopic pngs
 uuid <- rphylopic::get_uuid(name = "Hypogymnia physodes")
 
-lichen_randslope_npp<- random.effects(model5npp_lichen_final) %>%
-  as.data.frame() %>%
-  select(-condsd, -grpvar) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp) %>%
-  mutate(f_intercept=r_intercept+0.423)
 
-lichen_npp_plot<- ggplot()+
-  scale_x_reverse(limits=c(0, -5))+
-  scale_y_continuous(limits=c(0,7))+
-  geom_abline(data=lichen_randslope_npp, aes(slope=f_intercept, intercept=0), colour="#abbb80", size=1, alpha=0.25)+
-  geom_abline(aes(slope=0.423, intercept=0), colour="#abbb80", size=3)+
-  #geom_hline(yintercept=-9.1055, size=1.5)+  
-  xlab("Temperature (1/kT)")+
-  ylab("")+
+npp_coral_breadth <-npp_coral_Eas %>%
+  mutate(centred_breadth=I(breadth-mean(breadth))) %>%
+  ggplot(aes(x=as.numeric(centred_breadth), y=e))+
+  geom_point(colour="#abbb80", alpha=0.5, size=2)+
+  geom_abline(slope =-0.0938028, intercept = 0.59, colour="#abbb80")+
   theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("NPP")+
-  xlab("Temperature (1/kT)")+
-  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4.7, y=6, height=2, alpha=1,fill = "#99a873")+
-  geom_text(aes(x=-1, y=6.7,label = "Ea = -0.423±0.07"), size=6)
+  xlab("Centred Breadth")+
+  ylab("Ea")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=13.25, y=3.5, height=0.75, alpha=1,fill = "black")+
+  ylim(-0.2,4)+
+  xlim(-15,15)
 
-
-lichen_randslope_r<- random.effects(model3r_lichen_final) %>%
-  as.data.frame() %>%
-  select(-condsd, -grpvar) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=inv_T) %>%
-  mutate(f_slope=r_slope+-0.51176, 
-         f_intercept=r_intercept+4.79692)
-
-
-
-#not sure how to plot this be
-lichen_r_plot <- ggplot()+
-  scale_x_reverse(limits=c(0, -5))+
-  scale_y_continuous(limits=c(0,7))+
-  geom_abline(data=lichen_randslope_r, aes(slope=f_slope*-1, intercept=f_intercept), colour="grey", size=1, alpha=0.5)+
-  geom_abline(slope=0.51176, intercept = 4.79692, size=2.5, colour="grey65")+  
-  xlab("Temperature (1/kT)")+
-  ylab("")+
+gpp_coral_breadth <-gpp_coral_Eas %>%
+  mutate(centred_breadth=I(breadth-mean(breadth))) %>%
+  ggplot(aes(x=as.numeric(centred_breadth), y=e))+
+  geom_point(colour="olivedrab2", alpha=0.5, size=2)+
+  geom_abline(slope =-0.0493594, intercept = 0.65, colour="olivedrab2")+
   theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("R")+
-  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4.7, y=6, height=2, alpha=1,fill = "grey65")+
-  geom_text(aes(x=-0.8, y=6.4,label = "Ea = -0.51176"), size=8)
+  xlab("Centred Breadth")+
+  ylab("Ea")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=13.25, y=3.5, height=0.75, alpha=1,fill = "black")+
+  ylim(-0.2,4)+
+  xlim(-15,15)
 
-#how do i plot this if this is the centred term?
-
-
-
-gpp_df<- count(gpp_comb, study_id, lichen_type, elevation_broad, centre_temp, latitude)
-
-randslope_gpp<- random.effects(model6gpp) %>%
-  as.data.frame() %>%
-  select(-condsd) %>%
-  pivot_wider(names_from = term, values_from = condval) %>%
-  rename(r_intercept = `(Intercept)`, 
-         study_id= grp, 
-         r_slope=centre_temp)
-
-gpp_joined<- left_join(randslope_gpp,gpp_df, by="study_id") %>%
-  mutate(c_intercept=case_when(lichen_type == "cyanobacteria"  ~-13.19796+1.34267,
-                               lichen_type == "green algae"  ~-13.19796,
-                               lichen_type == "cyanobacteria + green algae" ~-13.19796+0.60857),
-         latitudeii=abs(latitude)*-0.03066,
-         f_intercept=r_intercept+c_intercept+latitudeii,
-         f_slope=r_slope) %>%
-  as.data.frame()
-
-
-gpp_plot <- ggplot(data=gpp_comb, aes(x=centre_temp, y=log(abs(mol_grammin))), colour="olivedrab1")+
-  geom_point(colour="olivedrab1", alpha=0.3, size=4)+
-  scale_x_reverse(limits=c(4, -4.5))+
-  geom_abline(data=gpp_joined, aes(slope=f_slope*-1, intercept=f_intercept), colour="olivedrab1", size=1, alpha=0.5)+
-  geom_abline(slope=0, intercept = -11.71171, size=2.5, colour="olivedrab2")+  
-  xlab("Temperature (1/kT)")+
-  ylab("")+
+r_coral_breadth <-r_coral_Eas %>%
+  mutate(centred_breadth=I(breadth-mean(breadth))) %>%
+  ggplot(aes(x=as.numeric(centred_breadth), y=e))+
+  geom_point(colour="grey", alpha=0.5, size=2)+
+  geom_abline(slope =-0.0636694, intercept = 0.5210243, colour="grey")+
   theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))+
-  ggtitle("GPP")+
-  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=-4, y=-20, ysize=3, alpha=1, fill = "olivedrab2")+
-  ylim(-22,-5)+
-  ylab("Metabolic rate (log(mmol O2 /mg / min))")
-
-lichen_plots <- (gpp_plot + npp_plot + r_plot)
-full_plots <- lichen_plots / coral_plots
-
-full_fig<- full_plots  
+  xlab("Centred Breadth")+
+  ylab("Ea")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=13.25, y=3.5, height=0.75, alpha=1,fill = "black")+
+  ylim(-0.2,4)+
+  xlim(-15,15)
 
 
+npp_lichen_breadth <-npp_lichen_Eas %>%
+  mutate(centred_breadth=I(breadth-mean(breadth))) %>%
+  ggplot(aes(x=as.numeric(centred_breadth), y=e))+
+  geom_point(colour="#abbb80", alpha=0.5, size=2)+
+  geom_abline(slope =-0.0198103, intercept = 0.3926762, colour="#abbb80")+
+  theme_bw()+
+  xlab("Centred Breadth")+
+  ylab("Ea")+
+  ylim(-0.2,4)+
+  xlim(-15,15)+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=13.25, y=3.5, height=1, alpha=1,fill = "black")
 
-ggsave(full_fig, filename = "./figures/fig_c.png", dpi=700, width=20, height=15)
+
+gpp_lichen_breadth <-gpp_lichen_Eas %>%
+  mutate(centred_breadth=I(breadth-mean(breadth))) %>%
+  ggplot(aes(x=as.numeric(centred_breadth), y=e))+
+  geom_point(colour="olivedrab2", alpha=0.5, size=2)+
+  geom_abline(slope =-0.0205494, intercept = 0.5389686, colour="olivedrab2")+
+  theme_bw()+
+  xlab("Centred Breadth")+
+  ylab("Ea")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=13.25, y=3.5, height=1, alpha=1,fill = "black")+
+  ylim(-0.2,4)+
+  xlim(-15,15)
+
+
+(gpp_coral_breadth + gpp_lichen_breadth) / (npp_coral_breadth + npp_lichen_breadth) / (r_coral_breadth + plot_spacer())
+  
+  
+
+
+
+
+#trying to just plot the Eas
+
+npp_lichen_ea  <- npp_lichen_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "npp")
+gpp_lichen_ea  <- gpp_lichen_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "gpp")
+r_lichen_linear_ea  <- random.effects(best_lichen_r_model) %>% as.data.frame() %>% 
+  select(`(Intercept)`) %>% rename(e=`(Intercept)`) %>% mutate(metabolic_category = "r", eh= c(""), topt= c("")) %>%    
+  mutate(E=e+-0.5894235, e=abs(E)) %>% select(-E)
+r_lichen_ea <- r_lichen_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "r")
+
+npp_coral_ea  <- npp_coral_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "npp") 
+gpp_coral_ea  <- gpp_coral_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "gpp")
+r_coral_ea  <- r_coral_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "r")
+
+
+npp_islalg_ea <- npp_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "npp")
+gpp_islalg_ea <- gpp_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "gpp")
+r_islalg_ea <- r_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "r")
+
+
+
+
+lichen_all <- rbind(npp_lichen_ea, gpp_lichen_ea, r_lichen_ea) %>% mutate(dataset="Lichen")
+coral_all <- rbind(npp_coral_ea, gpp_coral_ea, r_coral_ea) %>% mutate(dataset="Coral")
+isl_alg_all <- rbind(npp_islalg_ea, gpp_islalg_ea, r_islalg_ea) %>% mutate(dataset="Algae")
+lit <- data.frame(e=c("", "", ""), eh=c("", "", ""), topt=c("", "", ""), breadth =c("", "", ""), rmax =c("", "", ""), study_id=c("", "", ""), metabolic_category=c("gpp", "r", "npp"), dataset=c("López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"))
+
+full_Ea <- rbind(lichen_all, coral_all, lit, isl_alg_all) %>% mutate(e=as.numeric(e), topt=as.numeric(topt))
+
+
+
+full_topt_breadth <- rbind(lichen_all, coral_all) %>% mutate(e=as.numeric(e), topt=as.numeric(topt), breadth=as.numeric(breadth), 
+                                                             metabolic_category=as.factor(metabolic_category), dataset=as.factor(dataset))
+
+
+mod_npp_l<-coef(summary(best_lichen_npp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Lichen", metabolic_category="npp")  %>% rename(se=`Std.Error`)
+
+mod_r_l<-coef(summary(best_lichen_r_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Lichen", metabolic_category="r", Value=abs(Value)) %>% rename(se=`Std.Error`)
+
+mod_gpp_l<-coef(summary(best_lichen_gpp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+    mutate(dataset="Lichen", metabolic_category="gpp")   %>% rename(se=`Std.Error`)
+  
+mod_npp_c<-coef(summary(best_coral_npp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Coral", metabolic_category="npp")  %>% rename(se=`Std.Error`)
+
+mod_r_c<-coef(summary(best_coral_r_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Coral", metabolic_category="r")  %>% rename(se=`Std.Error`)
+
+mod_gpp_c<-coef(summary(best_coral_gpp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Coral", metabolic_category="gpp") %>% rename(se=`Std.Error`)
+
+mod_npp_i<-coef(summary(best_isl_alg_npp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Algae", metabolic_category="npp")  %>% rename(se=`Std.Error`)
+
+mod_r_i<-coef(summary(best_isl_alg_r_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Algae", metabolic_category="r")  %>% rename(se=`Std.Error`)
+
+mod_gpp_i<-coef(summary(best_isl_alg_gpp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
+  mutate(dataset="Algae", metabolic_category="gpp") %>% rename(se=`Std.Error`)
+
+
+
+mod_lit <- data.frame(Value=c(0.33, 0.56, 0.29), 
+                      metabolic_category=c("gpp", "r", "npp"), 
+                      se=c(0.089,0.024,0.036), 
+                      dataset=c("López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"))
+
+full_mod_Ea <- rbind(mod_npp_l, mod_r_l, mod_gpp_l, mod_npp_c, mod_r_c, mod_gpp_c, mod_npp_i, mod_r_i, mod_gpp_i,
+                     mod_lit)
+
+
+facet_colors <- list(
+  "gpp" = element_rect(fill = "olivedrab2"),
+  "npp" = element_rect(fill = "#abbb80"),
+  "r" = element_rect(fill = "grey")
+)
+
+labels_df <- data.frame(
+  dataset = c("Lichen", "Lichen", "Lichen", "Coral", "Coral", "Coral","López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"),                # match your dataset levels
+  metabolic_category = c("gpp", "npp", "r", "gpp", "npp", "r","gpp", "npp", "r"),
+  y = c(1.85, 1.85, 1.85,1.85, 1.85, 1.85,1.85, 1.85,1.85),                         # manual y-positions
+  label = c("n = 43", "n = 53", "n = 132", "n = 53", "n = 45", "n = 62", "", "", "")
+)
+
+labels_df$x <- as.numeric(factor(labels_df$dataset)) - 0.35
+
+lichen_ea_plot <- full_Ea %>%
+  filter(dataset %in% c("Lichen", "Algae"))
+
+lichen_ea_mod_plot <- full_mod_Ea %>%
+  filter(dataset %in% c("Lichen", "Algae"))
+
+
+ggplot()+
+  geom_jitter(data=lichen_ea_plot, aes(x=metabolic_category, y=e, colour=metabolic_category, shape=dataset), alpha=0.15, position=position_dodge(width = 0.5))+
+  geom_pointrange(data=lichen_ea_mod_plot, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category, shape=dataset), size=1.5, linewidth=2.4,lineend='round', position=position_dodge(width = 0.5))+
+  coord_flip()+
+  #geom_text(data = labels_df,
+            #aes(x = x, y = y, label = label),
+           # color = "black", hjust = 0, vjust=1, size = 2.5) +
+  xlab("")+
+  ylab("Temperature Dependence (Ea)")+
+  scale_shape_manual(values = c(1,16), limits=c("Algae", "Lichen"))+
+  scale_y_continuous(limits = c(0, 3))+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
+  theme_classic()+
+  theme(legend.position="none")+
+  add_phylopic(uuid = "7640137c-747d-4237-901b-0324c8b0b924", x=3, y=2.8, height=0.6, alpha=1)
+  #add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=1, y=2, height=0.5, alpha=1,fill = "black")
+  
+
+ggsave(main_Ea_plot, filename = "./figures/main_Ea_plot.png", dpi=700, width=5, height=6)
+
+coral_ea_plot <- full_Ea %>%
+  filter(dataset %in% c("Coral", "Algae"))
+
+coral_ea_mod_plot <- full_mod_Ea %>%
+  filter(dataset %in% c("Coral", "Algae"))
+
+
+ggplot()+
+  geom_jitter(data=coral_ea_plot, aes(x=metabolic_category, y=e, colour=metabolic_category, shape=dataset), alpha=0.15, position=position_dodge(width = 0.5))+
+  geom_pointrange(data=coral_ea_mod_plot, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category, shape=dataset), size=1.5, linewidth=2.4,lineend='round', position=position_dodge(width = 0.5))+
+  coord_flip()+
+  #geom_text(data = labels_df,
+  #aes(x = x, y = y, label = label),
+  # color = "black", hjust = 0, vjust=1, size = 2.5) +
+  xlab("")+
+  ylab("Temperature Dependence (Ea)")+
+  scale_shape_manual(values = c(1,16), limits=c("Algae", "Coral"))+
+  scale_y_continuous(limits = c(0, 3))+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
+  theme_classic()+
+  theme(legend.position="none")+
+  #add_phylopic(uuid = "7640137c-747d-4237-901b-0324c8b0b924", x=3, y=2, height=0.6, alpha=1)
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=3, y=2.7, height=0.5, alpha=1,fill = "black")
+
+
+
+
+
+
+labels_df2 <- data.frame(
+  dataset = c("Lichen", "Lichen", "Lichen", "Coral", "Coral", "Coral"),           
+  metabolic_category = c("gpp", "npp", "r", "gpp", "npp", "r"),
+  y = c(40, 40, 40,40,40,40),                       
+  label = c("n = 43", "n = 53", "n = 8", "n = 48", "n = 41", "n = 58")
+)
+
+labels_df2$x <- as.numeric(factor(labels_df2$dataset)) - 0.35
+
+######topt/tbr plot
+
+full_tbr <- rbind(coral_tbr, lichen_tbr) %>% mutate(metabolic_category=as.factor(metabolic_category))
+
+
+full_tbr$metabolic_category <- relevel(full_tbr$metabolic_category, ref = "npp")
+full_tbr$dataset <- relevel(full_tbr$dataset, ref = "coral")
+
+tbr_mod <-lme(breadth ~ metabolic_category*dataset, random=~1|study_id, data=full_tbr, method="REML")
+summary(tbr_mod)
+
+full_topt_breadth$metabolic_category <- relevel(full_topt_breadth$metabolic_category, ref = "npp")
+topt_mod <-lme(topt ~ metabolic_category*dataset, random=~1|study_id, data=full_topt_breadth, method="REML")
+summary(topt_mod)
+
+
+
+topt_tbr_modeloutput <- read_csv("topt_tbr_modeloutput.csv")
+topt_mod <- topt_tbr_modeloutput %>% filter(response=="topt")
+tbr_mod <- topt_tbr_modeloutput %>% filter(response=="tbr")
+
+
+main_topt_plot<-ggplot()+
+  geom_jitter(data=full_topt, aes(x=dataset, y=topt, colour=metabolic_category), alpha=0.15, width=0.05)+
+  geom_pointrange(data=topt_mod , aes(x=dataset, y=estimate, ymin=estimate-se, ymax=estimate+se, colour=metabolic_category), size=0.8, linewidth=0.8)+
+  facet_wrap2(~metabolic_category, ncol=1, strip = strip_themed(
+    background_x = facet_colors))+
+  coord_flip()+
+ # geom_text(data = labels_df2,
+          #  aes(x = x, y = y, label = label),
+          #  color = "black", hjust = 0, vjust=1, size = 2.5) +
+  xlab("")+
+  ylab("Thermal optimum (Topt)")+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
+  theme_classic()+
+  theme(legend.position="none")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=2, y=40, height=0.6, alpha=1,fill = "black")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=1, y=40, height=0.5, alpha=1,fill = "black")
+
+
+#ggsave(main_topt_plot, filename = "./figures/main_topt_plot.png", dpi=700, width=5, height=6)
+
+main_tbr_plot<-ggplot()+
+  geom_jitter(data=full_topt, aes(x=dataset, y=breadth, colour=metabolic_category), alpha=0.15, width=0.05)+
+  geom_pointrange(data=tbr_mod , aes(x=dataset, y=estimate, ymin=estimate-se, ymax=estimate+se, colour=metabolic_category), size=0.8, linewidth=0.8)+
+  facet_wrap2(~metabolic_category, ncol=1, strip = strip_themed(
+    background_x = facet_colors))+
+  coord_flip()+
+  # geom_text(data = labels_df2,
+  #  aes(x = x, y = y, label = label),
+  #  color = "black", hjust = 0, vjust=1, size = 2.5) +
+  xlab("")+
+  ylab("Thermal breadth (Tbr)")+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
+  theme_classic()+
+  theme(legend.position="none")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=2, y=30, height=0.6, alpha=1,fill = "black")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=1, y=30, height=0.5, alpha=1,fill = "black")
+
+
+
+
+##### figure 3
+
+
+
+
+lu <- full_mod_Ea %>% filter(dataset=="López-Urrutia et al. 2006") 
+
+fig3a <- ggplot()+
+  #geom_jitter(aes(x=metabolic_category, y=e, colour=metabolic_category), alpha=0.15, width=0.05)+
+  geom_pointrange(data=lu, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category), size=1, linewidth=2.4,lineend='round')+
+  coord_flip()+
+  scale_x_discrete(limits=c("gpp", "npp", "r"), labels=c("GPP", "NPP", "R"))+
+  scale_y_continuous(limits = c(0, 2))+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"), )+
+  labs( x="",
+    y = "Temperature dependence (Ea)",
+    title = "Non-symbiotic") +
+  theme_bw() +
+  theme(legend.position="none",
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold"),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5))
+
+lichen_data <- full_Ea %>% filter(dataset=="Lichen") 
+lichen_mod <- full_mod_Ea %>% filter(dataset=="Lichen") 
+
+labels_df_l <- data.frame(
+  dataset = c("Lichen", "Lichen", "Lichen"),           
+  metabolic_category = c("gpp", "npp", "r"),
+  y = c(1.85, 1.85, 1.85),  
+  x= c(1, 2, 3),
+  label = c("n = 43", "n = 53", "n = 8"))
+
+
+
+fig3b <- ggplot()+
+  geom_jitter(data=lichen_data, aes(x=metabolic_category, y=e, colour=metabolic_category), alpha=0.15, width=0.05)+
+  geom_pointrange(data=lichen_mod, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category), size=1, linewidth=2.4,lineend='round')+
+  coord_flip()+
+  scale_x_discrete(limits=c("gpp", "npp", "r"), labels=c("GPP", "NPP", "R"))+
+  scale_y_continuous(limits = c(0, 2))+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"), )+
+  labs( x="",
+        y = "Temperature dependence (Ea)",
+        title = "Lichen") +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14, face = "bold"),
+        plot.title = element_text(size = 16, face = "bold", hjust = 0.5))+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=3.3, y=1.75, height=0.5, alpha=1)+
+   geom_text(data = labels_df_l,
+   aes(x = x, y = y, label = label),
+   color = "black", hjust = 0, vjust=1, size = 2.5)
+  
+
+coral_data <- full_Ea %>% filter(dataset=="Coral") 
+coral_mod <- full_mod_Ea %>% filter(dataset=="Coral") 
+
+labels_df_c <- data.frame(
+  dataset = c("Coral", "Coral", "Coral"),           
+  metabolic_category = c("gpp", "npp", "r"),
+  y = c(1.85, 1.85, 1.85),  
+  x= c(1, 2, 3),
+  label = c("n = 46", "n = 40", "n = 57"))
+
+
+fig3c <- ggplot()+
+  geom_jitter(data=coral_data, aes(x=metabolic_category, y=e, colour=metabolic_category), alpha=0.15, width=0.05)+
+  geom_pointrange(data=coral_mod, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category), size=1, linewidth=2.4,lineend='round')+
+  coord_flip()+
+  geom_text(data = labels_df_c,
+            aes(x = x, y = y, label = label),
+            color = "black", hjust = 0, vjust=1, size = 2.5)+
+  scale_x_discrete(limits=c("gpp", "npp", "r"), labels=c("GPP", "NPP", "R"))+
+  scale_y_continuous(limits = c(0, 2))+
+  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"), )+
+  labs( x="",
+        y = "Temperature dependence (Ea)",
+        title = "Coral") +
+  theme_bw() +
+  theme(legend.position="none",
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 14, face = "bold"),
+        plot.title = element_text(size = 16, face = "bold", hjust = 0.5))+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=3.3, y=1.75, height=0.5, alpha=1,fill = "black")
+
+
+
+figure3 <- fig3a + fig3b + fig3c 
+
+ggsave(figure3, filename = "./figures/figure3.png", dpi=700, width=11, height=4)
+
+
+
+
 
 
 ### making the friedman and sun figure
@@ -325,27 +710,126 @@ ggplot() +
         plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))
 
 
-ggplot() +
-  geom_function(fun = ~ .x^3/4, colour="black", size=2)+
-  xlim(0,20)
+# Constants
+k <- 8.617e-5  # eV/K
 
-ggplot() +
-  geom_function(fun = ~ .x^-1/4, color = "grey", size=2) +
-  #geom_function(fun = ~ 0.3^.x, colour="#abbb80", size=2) +
-  xlim(0,20)+
-  xlab("Temperature (1/kT)")+
-  ylab("Metabolic rate (mmol CO2 per mg per min)")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))
+# Reference temperature for scaling (e.g. 20°C)
+T_ref <- 20 + 273.15
+
+colors <- c("#abbb80", "olivedrab1", "grey")
+
+# Build the plot
+figure4a <- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
+  # First function (Ea = 0.3)
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.3 / (k * T_ref))
+    - exp(-0.3 / (k * T_K)) / ref_rate
+  }, color = colors[1], size = 1.5, linetype="longdash") +
+  
+  # GPP (Ea = 0.32, positive)
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.32 / (k * T_ref))
+    exp(-0.32 / (k * T_K)) / ref_rate
+  }, color = colors[2], size = 1.5) +
+  
+  # Respiration (Ea = 0.65, negative flux)
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.65 / (k * T_ref))
+    - exp(-0.65 / (k * T_K)) / ref_rate  # negative sign here
+  }, color = colors[3], size = 1.5) +
+  
+  labs(
+    x = "Temperature (°C)",
+    y = "Metabolic rate (normalized at 20°C)",
+    title = "Non-symbiotic"
+  ) +
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold"),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
+  )+
+  ylim(-8,8)
 
 
+# Build the plot
+figure4b<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.0504/ (k * T_ref))  # normalize to 1 at 20°C
+    - exp(-0.0504 / (k * T_K)) / ref_rate
+  }, color = colors[1], size = 1.5, linetype="longdash") +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.3936/ (k * T_ref))  # normalize to 1 at 20°C
+    exp(-0.3936 / (k * T_K)) / ref_rate
+  }, color = colors[1], size = 1.5) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.5390 / (k * T_ref))
+    exp(-0.5390 / (k * T_K)) / ref_rate
+  }, color = colors[2], size = 1.5) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.5894 / (k * T_ref))
+    - exp(-0.5894 / (k * T_K)) / ref_rate
+  }, color = colors[3], size = 1.5) +
+  labs(
+    x = "Temperature (°C)",
+    y = "",
+    title = "Lichen"
+  ) +
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold"),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
+  )+
+  #ylim(0,8)+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=3, y=6.5, height=3.3, alpha=1)+
+  ylim(-8,8)
 
 
+figure4c<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.13/ (k * T_ref))  # normalize to 1 at 20°C
+    exp(-0.13 / (k * T_K)) / ref_rate
+  }, color = colors[1], size = 1.5, linetype="longdash") +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.5947 / (k * T_ref))  # normalize to 1 at 20°C
+    exp(-0.5947 / (k * T_K)) / ref_rate
+  }, color = colors[1], size = 1.5) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.6567 / (k * T_ref))
+    exp(-0.6567 / (k * T_K)) / ref_rate
+  }, color = colors[2], size = 1.5) +
+  stat_function(fun = function(T_C) {
+    T_K <- T_C + 273.15
+    ref_rate <- exp(-0.5210/ (k * T_ref))
+    - exp(-0.5210 / (k * T_K)) / ref_rate
+  }, color = colors[3], size = 1.5) +
+  labs(
+    x = "Temperature (°C)",
+    y = "",
+    title = "Coral"
+  ) +
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14, face = "bold"),
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
+  )+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104",x=5.5, y=6.8, height=3, alpha=1,fill = "black")+
+  ylim(-8,8)
 
+
+figure4 <- figure4a + figure4b + figure4c 
+
+ggsave(figure4, filename = "./figures/figure4.png", dpi=700, width=11, height=4)
 

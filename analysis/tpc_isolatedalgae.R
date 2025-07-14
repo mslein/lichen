@@ -1,8 +1,7 @@
-######lichen tpc 
 pacman::p_load(tidyverse, rTPC, nls.multstart)
-lichen_npp_all <- read_csv("analysis/tidy data/lichen_npp_final.csv") 
-lichen_r_all <- read_csv("analysis/tidy data/lichen_r_final.csv") 
-lichen_gpp_all <- read_csv("analysis/tidy data/lichen_gpp_final.csv") 
+isl_alg_npp_all <- read_csv("analysis/tidy data/isl_algae_npp_final.csv") 
+isl_alg_r_all <- read_csv("analysis/tidy data/isl_algae_r_final.csv") 
+isl_alg_gpp_all <- read_csv("analysis/tidy data/isl_algae_gpp_final.csv") 
 
 fit_and_predict <- function(data) {
   temp_data <- data %>%
@@ -53,7 +52,7 @@ fit_and_predict <- function(data) {
 }
 
 #########NPP#######
-results_npp <- lichen_npp_all %>%
+results_npp <- isl_alg_npp_all %>%
   group_by(as.factor(tpc_grp)) %>%
   group_split() %>%
   lapply(fit_and_predict)
@@ -69,7 +68,7 @@ plot_data_npp <- bind_rows(
 )
 
 
-lichen_npp_plot <- ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tpc_grp)) +
+isl_alg_npp_plot <- ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tpc_grp)) +
   #scale_color_manual(values=c( "#a559aa", "#59a89c", "#f0c571", "#ae282c","#082a54" ))+
   geom_point(data = subset(plot_data_npp, Type == "Observed")) +
   geom_line(data = subset(plot_data_npp, Type == "Fitted"), aes(y=.fitted)) +
@@ -78,10 +77,10 @@ lichen_npp_plot <- ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tp
   #labs(x = 'Temperature (ºC)', y = 'Dispersal rate at leading edge', color = 'Species') +
   theme(legend.position = "none")
 
-ggsave("lichen_npp_plot.png", lichen_npp_plot, height=15, width=20)
+ggsave("isl_agae_npp_plot.png", isl_alg_npp_plot, height=15, width=20)
 
 
-results_r <- lichen_r_all %>%
+results_r <- isl_alg_r_all %>%
   group_by(as.factor(tpc_grp)) %>%
   group_split() %>%
   lapply(fit_and_predict)
@@ -97,7 +96,7 @@ plot_data_r <- bind_rows(
 )
 
 
-lichen_r_plot<-ggplot(plot_data_r, aes(x = Temperature, y = rate, color=tpc_grp)) +
+isl_alg_r_plot<-ggplot(plot_data_r, aes(x = Temperature, y = rate, color=tpc_grp)) +
   #scale_color_manual(values=c( "#a559aa", "#59a89c", "#f0c571", "#ae282c","#082a54" ))+
   geom_point(data = subset(plot_data_r, Type == "Observed")) +
   geom_line(data = subset(plot_data_r, Type == "Fitted"), aes(y=.fitted)) +
@@ -106,11 +105,11 @@ lichen_r_plot<-ggplot(plot_data_r, aes(x = Temperature, y = rate, color=tpc_grp)
   #labs(x = 'Temperature (ºC)', y = 'Dispersal rate at leading edge', color = 'Species') +
   theme(legend.position = "none")
 
-ggsave("lichen_r_plot.png", lichen_r_plot, height=15, width=20)
+ggsave("isl_alg_r_plot.png", isl_alg_r_plot, height=15, width=20)
 
 
 
-results_gpp <- lichen_gpp_all %>%
+results_gpp <- isl_alg_gpp_all %>%
   group_by(as.factor(tpc_grp)) %>%
   group_split() %>%
   lapply(fit_and_predict)
@@ -126,7 +125,7 @@ plot_data_gpp <- bind_rows(
 )
 
 
-lichen_gpp_plot<-ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tpc_grp)) +
+isl_alg_gpp_plot<-ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tpc_grp)) +
   #scale_color_manual(values=c( "#a559aa", "#59a89c", "#f0c571", "#ae282c","#082a54" ))+
   geom_point(data = subset(plot_data_gpp, Type == "Observed")) +
   geom_line(data = subset(plot_data_gpp, Type == "Fitted"), aes(y=.fitted)) +
@@ -135,7 +134,7 @@ lichen_gpp_plot<-ggplot(plot_data_npp, aes(x = Temperature, y = rate, color=tpc_
   #labs(x = 'Temperature (ºC)', y = 'Dispersal rate at leading edge', color = 'Species') +
   theme(legend.position = "none")
 
-ggsave("lichen_gpp_plot.png", lichen_gpp_plot, height=15, width=20)
+ggsave("isl_alg_gpp_plot.png", isl_alg_gpp_plot, height=15, width=20)
 
 
 #exporting version of the estimates w/ parameters of interest
@@ -144,7 +143,7 @@ combined_est_npp = combined_est_npp %>% mutate(metabolic_category="npp")
 combined_est_gpp = combined_est_gpp %>% mutate(metabolic_category="gpp")
 
 tpc_params <- rbind(combined_est_r, combined_est_npp, combined_est_gpp)
-write_csv(tpc_params, "analysis/tidy data/lichen_tpc_Eas.csv")
+write_csv(tpc_params, "analysis/tidy data/isl_alg_tpc_Eas.csv")
 
 
 

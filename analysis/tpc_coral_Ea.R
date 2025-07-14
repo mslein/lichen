@@ -1,9 +1,9 @@
 #coral tpc
 pacman::p_load(rTPC, nls.multstart, broom, tidyverse)
 
-coral_npp_all <- read_csv("analysis/tidy data/coral_npp_final.csv")
+coral_npp_all <- read_csv("analysis/tidy data/coral_npp_final.csv") 
 coral_r_all <- read_csv("analysis/tidy data/coral_r_final.csv")
-coral_gpp_all <- read_csv("analysis/tidy data/coral_gpp_final.csv")
+coral_gpp_all <- read_csv("analysis/tidy data/coral_gpp_final.csv") 
 
 
 fit_and_predict <- function(data) {
@@ -14,15 +14,12 @@ fit_and_predict <- function(data) {
     mutate(Temperature = as.numeric(temp),
            rate = abs(as.numeric(mol_gCmin)))  # ensure positive rates
   
-  # Skip if not enough data
   if (nrow(temp_data) < 4) return(NULL)
   
-  # Get tailored start values and bounds for this curve
   start_vals <- get_start_vals(temp_data$Temperature, temp_data$rate, model_name = 'pawar_2018')
   low_lims   <- get_lower_lims(temp_data$Temperature, temp_data$rate, model_name = 'pawar_2018')
   upper_lims <- get_upper_lims(temp_data$Temperature, temp_data$rate, model_name = 'pawar_2018')
   
-  # Fit TPC model
   fit <- tryCatch({
     nls_multstart(rate ~ pawar_2018(temp = Temperature, r_tref, e, eh, th, tref = 15),
                   data = temp_data,
@@ -34,22 +31,29 @@ fit_and_predict <- function(data) {
                   supp_errors = "Y")
   }, error = function(e) return(NULL))
   
-  # Return NULL if model failed
   if (is.null(fit)) return(NULL)
   
-  # Extract params and make predictions
+  # Extract main params
   est <- calc_params(fit) %>%
     mutate(tpc_grp = unique(temp_data$tpc_grp))
   
+  # Extract SE from model summary
+  fit_summary <- summary(fit)
+  e_se <- fit_summary$coefficients["e", "Std. Error"]
+  
+  # Add Ea_se to est
+  est$e_se <- e_se
+  
+  # Predictions
   new_data <- data.frame(Temperature = seq(min(temp_data$Temperature),
                                            max(temp_data$Temperature),
                                            by = 0.5))
-  
   preds <- broom::augment(fit, newdata = new_data) %>%
     mutate(tpc_grp = unique(temp_data$tpc_grp))
   
   return(list(data = temp_data, preds = preds, est = est))
 }
+
 
 
 #########NPP#######
@@ -136,6 +140,7 @@ coral_gpp_plot<-ggplot(plot_data_gpp, aes(x = Temperature, y = rate, color=tpc_g
   theme_classic() +
   #labs(x = 'Temperature (ºC)', y = 'Dispersal rate at leading edge', color = 'Species') +
   theme(legend.position = "none")
+
 
 
 
