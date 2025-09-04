@@ -7,6 +7,9 @@ lichen_raw_npp <- read_csv("analysis/tidy data/lichen_npp_final.csv") %>% select
 lichen_raw_gpp <- read_csv("analysis/tidy data/lichen_gpp_final.csv") %>% select(tpc_grp, elevation_broad, lichen_type, latitude, species, inv_T, mol_gCmin)
 lichen_raw_r <- read_csv("analysis/tidy data/lichen_r_final.csv") %>% select(tpc_grp, elevation_broad, lichen_type, latitude, species, inv_T, mol_gCmin)
 
+count(lichen_raw_r, species)
+
+
 gpp_lichen_Eas <- lichen_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
   left_join(lichen_raw_gpp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
   mutate(weight = 1 / (e_se^2))
@@ -114,6 +117,8 @@ coral_tpc_Eas <- read_csv("analysis/tidy data/coral_tpc_Eas.csv")
 coral_raw_npp <- read_csv("analysis/tidy data/coral_npp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin)
 coral_raw_gpp <- read_csv("analysis/tidy data/coral_gpp_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin) 
 coral_raw_r <- read_csv("analysis/tidy data/coral_r_final.csv") %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin)
+
+lichen_raw_r %>% left_join(lichen_raw_gpp) %>% left_join(lichen_raw_npp) %>% count(species)
 
 gpp_coral_Eas <- coral_tpc_Eas %>% filter(metabolic_category == "gpp") %>%
   left_join(coral_raw_gpp, by="tpc_grp") %>% distinct(e, tpc_grp, topt, breadth, .keep_all = TRUE)  %>% separate(tpc_grp, into=c("response_id", "study_id"), remove = FALSE) %>%
@@ -392,19 +397,11 @@ gpp_coral_ea  <- gpp_coral_Eas %>% select(e, eh, topt, breadth, rmax, study_id) 
 r_coral_ea  <- r_coral_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "r")
 
 
-npp_islalg_ea <- npp_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "npp")
-gpp_islalg_ea <- gpp_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "gpp")
-r_islalg_ea <- r_isl_algae_Eas %>% select(e, eh, topt, breadth, rmax, study_id) %>% mutate(metabolic_category = "r")
-
-
-
-
 lichen_all <- rbind(npp_lichen_ea, gpp_lichen_ea, r_lichen_ea) %>% mutate(dataset="Lichen")
 coral_all <- rbind(npp_coral_ea, gpp_coral_ea, r_coral_ea) %>% mutate(dataset="Coral")
-isl_alg_all <- rbind(npp_islalg_ea, gpp_islalg_ea, r_islalg_ea) %>% mutate(dataset="Algae")
 lit <- data.frame(e=c("", "", ""), eh=c("", "", ""), topt=c("", "", ""), breadth =c("", "", ""), rmax =c("", "", ""), study_id=c("", "", ""), metabolic_category=c("gpp", "r", "npp"), dataset=c("López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"))
 
-full_Ea <- rbind(lichen_all, coral_all, lit, isl_alg_all) %>% mutate(e=as.numeric(e), topt=as.numeric(topt))
+full_Ea <- rbind(lichen_all, coral_all, lit) %>% mutate(e=as.numeric(e), topt=as.numeric(topt))
 
 
 
@@ -430,15 +427,6 @@ mod_r_c<-coef(summary(best_coral_r_model)) %>% as.data.frame() %>% slice(1) %>% 
 mod_gpp_c<-coef(summary(best_coral_gpp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
   mutate(dataset="Coral", metabolic_category="gpp") %>% rename(se=`Std.Error`)
 
-mod_npp_i<-coef(summary(best_isl_alg_npp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
-  mutate(dataset="Algae", metabolic_category="npp")  %>% rename(se=`Std.Error`)
-
-mod_r_i<-coef(summary(best_isl_alg_r_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
-  mutate(dataset="Algae", metabolic_category="r")  %>% rename(se=`Std.Error`)
-
-mod_gpp_i<-coef(summary(best_isl_alg_gpp_model)) %>% as.data.frame() %>% slice(1) %>% select(Value, `Std.Error`) %>%
-  mutate(dataset="Algae", metabolic_category="gpp") %>% rename(se=`Std.Error`)
-
 
 
 mod_lit <- data.frame(Value=c(0.33, 0.56, 0.29), 
@@ -446,89 +434,12 @@ mod_lit <- data.frame(Value=c(0.33, 0.56, 0.29),
                       se=c(0.089,0.024,0.036), 
                       dataset=c("López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"))
 
-full_mod_Ea <- rbind(mod_npp_l, mod_r_l, mod_gpp_l, mod_npp_c, mod_r_c, mod_gpp_c, mod_npp_i, mod_r_i, mod_gpp_i,
+full_mod_Ea <- rbind(mod_npp_l, mod_r_l, mod_gpp_l, mod_npp_c, mod_r_c, mod_gpp_c,
                      mod_lit)
 
 
-facet_colors <- list(
-  "gpp" = element_rect(fill = "olivedrab2"),
-  "npp" = element_rect(fill = "#abbb80"),
-  "r" = element_rect(fill = "grey")
-)
-
-labels_df <- data.frame(
-  dataset = c("Lichen", "Lichen", "Lichen", "Coral", "Coral", "Coral","López-Urrutia et al. 2006", "López-Urrutia et al. 2006", "López-Urrutia et al. 2006"),                # match your dataset levels
-  metabolic_category = c("gpp", "npp", "r", "gpp", "npp", "r","gpp", "npp", "r"),
-  y = c(1.85, 1.85, 1.85,1.85, 1.85, 1.85,1.85, 1.85,1.85),                         # manual y-positions
-  label = c("n = 43", "n = 53", "n = 132", "n = 53", "n = 45", "n = 62", "", "", "")
-)
-
-labels_df$x <- as.numeric(factor(labels_df$dataset)) - 0.35
-
-lichen_ea_plot <- full_Ea %>%
-  filter(dataset %in% c("Lichen", "Algae"))
-
-lichen_ea_mod_plot <- full_mod_Ea %>%
-  filter(dataset %in% c("Lichen", "Algae"))
 
 
-ggplot()+
-  geom_jitter(data=lichen_ea_plot, aes(x=metabolic_category, y=e, colour=metabolic_category, shape=dataset), alpha=0.15, position=position_dodge(width = 0.5))+
-  geom_pointrange(data=lichen_ea_mod_plot, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category, shape=dataset), size=1.5, linewidth=2.4,lineend='round', position=position_dodge(width = 0.5))+
-  coord_flip()+
-  #geom_text(data = labels_df,
-            #aes(x = x, y = y, label = label),
-           # color = "black", hjust = 0, vjust=1, size = 2.5) +
-  xlab("")+
-  ylab("Temperature Dependence (Ea)")+
-  scale_shape_manual(values = c(1,16), limits=c("Algae", "Lichen"))+
-  scale_y_continuous(limits = c(0, 3))+
-  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
-  theme_classic()+
-  theme(legend.position="none")+
-  add_phylopic(uuid = "7640137c-747d-4237-901b-0324c8b0b924", x=3, y=2.8, height=0.6, alpha=1)
-  #add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=1, y=2, height=0.5, alpha=1,fill = "black")
-  
-
-ggsave(main_Ea_plot, filename = "./figures/main_Ea_plot.png", dpi=700, width=5, height=6)
-
-coral_ea_plot <- full_Ea %>%
-  filter(dataset %in% c("Coral", "Algae"))
-
-coral_ea_mod_plot <- full_mod_Ea %>%
-  filter(dataset %in% c("Coral", "Algae"))
-
-
-ggplot()+
-  geom_jitter(data=coral_ea_plot, aes(x=metabolic_category, y=e, colour=metabolic_category, shape=dataset), alpha=0.15, position=position_dodge(width = 0.5))+
-  geom_pointrange(data=coral_ea_mod_plot, aes(x=metabolic_category, y=Value, ymin=Value-se, ymax=Value+se, colour=metabolic_category, shape=dataset), size=1.5, linewidth=2.4,lineend='round', position=position_dodge(width = 0.5))+
-  coord_flip()+
-  #geom_text(data = labels_df,
-  #aes(x = x, y = y, label = label),
-  # color = "black", hjust = 0, vjust=1, size = 2.5) +
-  xlab("")+
-  ylab("Temperature Dependence (Ea)")+
-  scale_shape_manual(values = c(1,16), limits=c("Algae", "Coral"))+
-  scale_y_continuous(limits = c(0, 3))+
-  scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"))+
-  theme_classic()+
-  theme(legend.position="none")+
-  #add_phylopic(uuid = "7640137c-747d-4237-901b-0324c8b0b924", x=3, y=2, height=0.6, alpha=1)
-  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104", x=3, y=2.7, height=0.5, alpha=1,fill = "black")
-
-
-
-
-
-
-labels_df2 <- data.frame(
-  dataset = c("Lichen", "Lichen", "Lichen", "Coral", "Coral", "Coral"),           
-  metabolic_category = c("gpp", "npp", "r", "gpp", "npp", "r"),
-  y = c(40, 40, 40,40,40,40),                       
-  label = c("n = 43", "n = 53", "n = 8", "n = 48", "n = 41", "n = 58")
-)
-
-labels_df2$x <- as.numeric(factor(labels_df2$dataset)) - 0.35
 
 ######topt/tbr plot
 
@@ -621,7 +532,7 @@ lichen_mod <- full_mod_Ea %>% filter(dataset=="Lichen")
 labels_df_l <- data.frame(
   dataset = c("Lichen", "Lichen", "Lichen"),           
   metabolic_category = c("gpp", "npp", "r"),
-  y = c(1.85, 1.85, 1.85),  
+  y = c(1.75, 1.75, 1.75),  
   x= c(1, 2, 3),
   label = c("n = 43", "n = 53", "n = 8"))
 
@@ -645,7 +556,7 @@ fig3b <- ggplot()+
   add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=3.3, y=1.75, height=0.5, alpha=1)+
    geom_text(data = labels_df_l,
    aes(x = x, y = y, label = label),
-   color = "black", hjust = 0, vjust=1, size = 2.5)
+   color = "black", hjust = 0, vjust=1, size = 4)
   
 
 coral_data <- full_Ea %>% filter(dataset=="Coral") 
@@ -654,7 +565,7 @@ coral_mod <- full_mod_Ea %>% filter(dataset=="Coral")
 labels_df_c <- data.frame(
   dataset = c("Coral", "Coral", "Coral"),           
   metabolic_category = c("gpp", "npp", "r"),
-  y = c(1.85, 1.85, 1.85),  
+  y = c(1.75, 1.75, 1.75),  
   x= c(1, 2, 3),
   label = c("n = 46", "n = 40", "n = 57"))
 
@@ -665,7 +576,7 @@ fig3c <- ggplot()+
   coord_flip()+
   geom_text(data = labels_df_c,
             aes(x = x, y = y, label = label),
-            color = "black", hjust = 0, vjust=1, size = 2.5)+
+            color = "black", hjust = 0, vjust=1, size = 4)+
   scale_x_discrete(limits=c("gpp", "npp", "r"), labels=c("GPP", "NPP", "R"))+
   scale_y_continuous(limits = c(0, 2))+
   scale_colour_manual(values=c("olivedrab2","#abbb80", "grey"), )+
@@ -683,7 +594,7 @@ fig3c <- ggplot()+
 
 figure3 <- fig3a + fig3b + fig3c 
 
-ggsave(figure3, filename = "./figures/figure3.png", dpi=700, width=11, height=4)
+ggsave(figure3, filename = "./figures/figure3.png", dpi=700, width=12, height=4)
 
 
 
@@ -693,22 +604,6 @@ ggsave(figure3, filename = "./figures/figure3.png", dpi=700, width=11, height=4)
 ### making the friedman and sun figure
 
 
-ggplot() +
-  geom_function(fun = ~ -0.3^.x, colour="olivedrab1", size=2) +
-  geom_function(fun = ~ 0.6^.x, color = "grey", size=2) +
-  geom_function(fun = ~ 0.3^.x, colour="#abbb80", size=2) +
-  xlim(2.5,-2.5)+
-  xlab("Temperature (1/kT)")+
-  ylab("Metabolic rate (mmol CO2 per mg per min)")+
-  theme_bw()+
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"),
-        axis.text.x = element_text( size = 20),
-        legend.position="none",
-        # The new stuff
-        strip.text = element_text(size = 20), 
-        plot.title = element_text(hjust = 0.5, size = 30, face = "bold"))
-
 
 # Constants
 k <- 8.617e-5  # eV/K
@@ -716,7 +611,14 @@ k <- 8.617e-5  # eV/K
 # Reference temperature for scaling (e.g. 20°C)
 T_ref <- 20 + 273.15
 
-colors <- c("#abbb80", "olivedrab1", "grey")
+my_colours <- c("#abbb80", "olivedrab1", "grey")
+
+labels_df_4a <- data.frame(          
+  metabolic_category = c("gpp", "npp", "r"),
+  y = c(-7.9, -6.9, -5.9),  
+  x= c(0, 0, 0),
+  label = c("Ea = 0.32", "Ea = 0.36", "Ea = 0.65"),
+  my_colours=  c("olivedrab1","#abbb80", "grey"))
 
 # Build the plot
 figure4a <- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
@@ -725,21 +627,21 @@ figure4a <- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.3 / (k * T_ref))
     - exp(-0.3 / (k * T_K)) / ref_rate
-  }, color = colors[1], size = 1.5, linetype="longdash") +
+  }, color = my_colours[1], size = 1.5, linetype="longdash") +
   
   # GPP (Ea = 0.32, positive)
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.32 / (k * T_ref))
     exp(-0.32 / (k * T_K)) / ref_rate
-  }, color = colors[2], size = 1.5) +
+  }, color = my_colours[2], size = 1.5) +
   
   # Respiration (Ea = 0.65, negative flux)
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.65 / (k * T_ref))
     - exp(-0.65 / (k * T_K)) / ref_rate  # negative sign here
-  }, color = colors[3], size = 1.5) +
+  }, color = my_colours[3], size = 1.5) +
   
   labs(
     x = "Temperature (°C)",
@@ -752,31 +654,49 @@ figure4a <- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
     axis.title = element_text(size = 14, face = "bold"),
     plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
   )+
-  ylim(-8,8)
+  ylim(-8,8)+
+  geom_text(data = labels_df_4a, aes(x = x, y = y, label = label, color = my_colours),
+            hjust = 0, vjust = 1, size = 4, show.legend = FALSE, fontface = "bold") +
+  scale_color_identity()
+
+
+
+
+
 
 
 # Build the plot
+
+labels_df_4b <- data.frame(          
+  metabolic_category = c("gpp", "npp", "r"),
+  y = c(-7.9, -6.9, -5.9),  
+  x= c(0, 0, 0),
+  label = c("Ea = 0.54", "Ea = 0.39", "Ea = 0.59"),
+  my_colours=  c("olivedrab1","#abbb80", "grey"))
+
+
+
 figure4b<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.0504/ (k * T_ref))  # normalize to 1 at 20°C
     - exp(-0.0504 / (k * T_K)) / ref_rate
-  }, color = colors[1], size = 1.5, linetype="longdash") +
+  }, color = my_colours[1], size = 1.5, linetype="longdash") +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.3936/ (k * T_ref))  # normalize to 1 at 20°C
     exp(-0.3936 / (k * T_K)) / ref_rate
-  }, color = colors[1], size = 1.5) +
+  }, color = my_colours[1], size = 1.5) +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.5390 / (k * T_ref))
     exp(-0.5390 / (k * T_K)) / ref_rate
-  }, color = colors[2], size = 1.5) +
+  }, color = my_colours[2], size = 1.5) +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.5894 / (k * T_ref))
     - exp(-0.5894 / (k * T_K)) / ref_rate
-  }, color = colors[3], size = 1.5) +
+  }, color = my_colours[3], size = 1.5) +
   labs(
     x = "Temperature (°C)",
     y = "",
@@ -790,7 +710,20 @@ figure4b<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
   )+
   #ylim(0,8)+
   add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76", x=3, y=6.5, height=3.3, alpha=1)+
-  ylim(-8,8)
+  ylim(-8,8)+
+  geom_text(data = labels_df_4b, aes(x = x, y = y, label = label, color = my_colours),
+            hjust = 0, vjust = 1, size = 4, show.legend = FALSE, fontface = "bold") +
+  scale_color_identity()
+
+
+
+labels_df_4c <- data.frame(          
+  metabolic_category = c("gpp", "npp", "r"),
+  y = c(-7.9, -6.9, -5.9),  
+  x= c(0, 0, 0),
+  label = c("Ea = 0.66", "Ea = 0.59", "Ea = 0.58"),
+  my_colours=  c("olivedrab1","#abbb80", "grey"))
+
 
 
 figure4c<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
@@ -798,22 +731,22 @@ figure4c<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.13/ (k * T_ref))  # normalize to 1 at 20°C
     exp(-0.13 / (k * T_K)) / ref_rate
-  }, color = colors[1], size = 1.5, linetype="longdash") +
+  }, color = my_colours[1], size = 1.5, linetype="longdash") +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.5947 / (k * T_ref))  # normalize to 1 at 20°C
     exp(-0.5947 / (k * T_K)) / ref_rate
-  }, color = colors[1], size = 1.5) +
+  }, color = my_colours[1], size = 1.5) +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.6567 / (k * T_ref))
     exp(-0.6567 / (k * T_K)) / ref_rate
-  }, color = colors[2], size = 1.5) +
+  }, color = my_colours[2], size = 1.5) +
   stat_function(fun = function(T_C) {
     T_K <- T_C + 273.15
     ref_rate <- exp(-0.5210/ (k * T_ref))
     - exp(-0.5210 / (k * T_K)) / ref_rate
-  }, color = colors[3], size = 1.5) +
+  }, color = my_colours[3], size = 1.5) +
   labs(
     x = "Temperature (°C)",
     y = "",
@@ -826,10 +759,59 @@ figure4c<- ggplot(data.frame(T_C = c(0, 45)), aes(x = T_C)) +
     plot.title = element_text(size = 16, face = "bold", hjust = 0.5)
   )+
   add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104",x=5.5, y=6.8, height=3, alpha=1,fill = "black")+
-  ylim(-8,8)
+  ylim(-8,8)+
+  geom_text(data = labels_df_4c, aes(x = x, y = y, label = label, color = my_colours),
+            hjust = 0, vjust = 1, size = 4, show.legend = FALSE, fontface = "bold") +
+  scale_color_identity()
+
 
 
 figure4 <- figure4a + figure4b + figure4c 
 
 ggsave(figure4, filename = "./figures/figure4.png", dpi=700, width=11, height=4)
+
+
+
+#topt vs Ea
+
+lichen_topt_ea<- full_Ea %>%
+  filter(dataset == "Lichen") %>%
+  ggplot(aes(x = topt, y = e, colour = metabolic_category)) +
+  geom_point() +
+  theme_bw()+
+  geom_smooth(method="lm")+
+  scale_colour_manual(values=c("olivedrab1","#abbb80", "grey"))+
+  facet_wrap(~metabolic_category)+
+  theme(legend.position="none")+
+  add_phylopic(uuid = "a208bba4-f4bf-4810-bcc9-c5868836fc76",x=40, y=0.8, height=0.2, alpha=1,fill = "black")+
+  xlab("Thermal optimum")+
+  ylab("Ea")
+
+
+
+
+
+
+coral_topt_ea<- full_Ea %>%
+  filter(dataset == "Coral") %>%
+  ggplot(aes(x = topt, y = e, colour = metabolic_category)) +
+  geom_point() +
+  scale_colour_manual(values=c("olivedrab1","#abbb80", "grey"))+
+  theme_bw()+
+  geom_smooth(method="lm")+
+  facet_wrap(~metabolic_category) +
+  theme(legend.position="none")+
+  add_phylopic(uuid = "f6a243aa-5cb1-41a2-a52c-c8d4c4300104",x=35, y=3, height=0.5, alpha=1,fill = "black")+
+  xlab("Thermal optimum")+
+  ylab("Ea")
+  
+
+
+
+lichen_topt_ea / coral_topt_ea
+
+
+
+
+
 
