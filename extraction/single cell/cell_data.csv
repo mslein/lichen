@@ -1,0 +1,351 @@
+﻿paper_unit,paper_id,study_id,source,org_level,genus,species,temp,temp_units,response_def,response_value,response_units ,gas,gas_unit,mass/area,time,error,error_type,sample_size,realm,exp_design,time_point,time_units,add_trt,add_value,ppfd,avg_ppfd,ppfd_units,metabolic_category,latitude,latitude_broad,avg_depth_m,depth_m
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,5,C,net photosynthesis,0.227360584,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,10,C,net photosynthesis,-0.224497101,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,10,C,net photosynthesis,0.430524733,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,net photosynthesis,1.681509056,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,net photosynthesis,1.026487222,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,net photosynthesis,0.436967571,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,17,C,net photosynthesis,0.83320209,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,net photosynthesis,1.426157921,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,net photosynthesis,2.605197222,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,net photosynthesis,3.260219056,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,net photosynthesis,5.487293292,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,22,C,net photosynthesis,6.014532178,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,9.292862768,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,7.262295082,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,6.803779798,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,6.279762331,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,5.10072303,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,net photosynthesis,4.314696829,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,net photosynthesis,13.09843224,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,net photosynthesis,11.26437111,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,net photosynthesis,9.430309972,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,net photosynthesis,8.840790321,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,net photosynthesis,7.203235736,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,net photosynthesis,9.371465388,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,net photosynthesis,8.192426086,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,net photosynthesis,7.209893335,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,net photosynthesis,5.244827833,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,37,C,net photosynthesis,-0.516142888,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,40,C,net photosynthesis,1.321354428,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,40,C,net photosynthesis,-0.643711075,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,45,C,net photosynthesis,-2.995346839,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+1,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,5,C,respiration,-0.174672489,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,10,C,respiration,-0.109170306,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,10,C,respiration,-0.76419214,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,respiration,0.087336245,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,respiration,-0.174672489,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,15,C,respiration,-0.698689956,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,17,C,respiration,-1.091703057,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,respiration,-0.56768559,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,respiration,-0.76419214,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,respiration,-1.812227074,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,20,C,respiration,-3.056768559,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,23,C,respiration,-2.205240175,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-1.091703057,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-1.550218341,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-1.746724891,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-2.270742358,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-2.532751092,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,25,C,respiration,-3.187772926,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,respiration,-1.615720524,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,respiration,-2.074235808,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,respiration,-3.84279476,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,30,C,respiration,-6.004366812,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,respiration,-0.96069869,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,respiration,-1.222707424,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,35,C,respiration,-2.336244541,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,37,C,respiration,-2.008733624,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,40,C,respiration,-1.222707424,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,40,C,respiration,-2.663755459,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+2,fujita2014,fujita2014,figure 1,,Baculogypsina,sphaerulata,45,C,respiration,-0.305676856,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,5,C,net photosynthesis,-0.042553191,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,10,C,net photosynthesis,0.340425532,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,10,C,net photosynthesis,0.212765957,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,net photosynthesis,0.85106383,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,net photosynthesis,0.595744681,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,net photosynthesis,0.212765957,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,18,C,net photosynthesis,0.978723404,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,net photosynthesis,2.829787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,net photosynthesis,1.744680851,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,net photosynthesis,1.489361702,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,net photosynthesis,1.106382979,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,net photosynthesis,0.723404255,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,23,C,net photosynthesis,3.085106383,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,net photosynthesis,5.446808511,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,net photosynthesis,4.425531915,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,net photosynthesis,3.914893617,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,net photosynthesis,3.404255319,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,net photosynthesis,2.893617021,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,net photosynthesis,6.276595745,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,net photosynthesis,5.446808511,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,net photosynthesis,4.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,net photosynthesis,4.680851064,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,net photosynthesis,5.893617021,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,net photosynthesis,3.914893617,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,net photosynthesis,2.765957447,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,38,C,net photosynthesis,-1.446808511,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,40,C,net photosynthesis,-0.489361702,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,40,C,net photosynthesis,-1.255319149,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+3,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,45,C,net photosynthesis,-1.70212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,5,C,respiration,-0.106382979,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,10,C,respiration,-0.106382979,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,10,C,respiration,-0.744680851,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,respiration,-0.170212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,respiration,-0.425531915,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,15,C,respiration,-0.617021277,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,18,C,respiration,-1.127659574,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,respiration,-0.680851064,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,respiration,-1,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,20,C,respiration,-1.382978723,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,22,C,respiration,-1.382978723,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,respiration,-0.744680851,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,respiration,-1.127659574,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,respiration,-1.510638298,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,25,C,respiration,-1.765957447,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,respiration,-1.063829787,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,respiration,-1.319148936,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,respiration,-1.893617021,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,30,C,respiration,-2.595744681,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,respiration,-0.106382979,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,respiration,-0.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,respiration,-1.382978723,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,35,C,respiration,-1.70212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,38,C,respiration,-1.063829787,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,40,C,respiration,-1.446808511,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,40,C,respiration,-1.957446809,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+4,fujita2014,fujita2014,figure 1,,Calcarina,gaudichaudii,45,C,respiration,-0.872340426,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.4,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,5,C,net photosynthesis,0.978723404,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,10,C,net photosynthesis,1.29787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,10,C,net photosynthesis,3.595744681,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,13,C,net photosynthesis,3.978723404,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,4.425531915,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,3.914893617,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,2.191489362,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,6.978723404,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,8.063829787,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,net photosynthesis,9.404255319,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,18,C,net photosynthesis,7.042553191,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,7.425531915,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,7.872340426,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,8.510638298,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,10.29787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,23,C,net photosynthesis,10.93617021,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,11.57446809,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,9.531914894,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,8.70212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,7.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,7.680851064,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,15.08510638,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,net photosynthesis,19.74468085,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,14.95744681,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,20.12765957,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,net photosynthesis,18.9787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,net photosynthesis,18.9787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,net photosynthesis,16.55319149,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,net photosynthesis,15.91489362,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,net photosynthesis,12.08510638,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,net photosynthesis,9.85106383,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,12.72340426,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,12.08510638,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,10.87234043,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,10.4893617,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,7.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,net photosynthesis,4.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,38,C,net photosynthesis,-2.914893617,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,40,C,net photosynthesis,-2.531914894,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,40,C,net photosynthesis,-4,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+5,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,45,C,net photosynthesis,-8.340425532,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,500,umol m^-2  s^-1,npp,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,5,C,respiration,-1.191489362,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,10,C,respiration,-1.957446809,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,10,C,respiration,-1.191489362,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,10,C,respiration,0.276595745,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,13,C,respiration,0.404255319,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,respiration,-0.170212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,respiration,-0.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,respiration,-1.063829787,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,respiration,-2.468085106,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,15,C,respiration,-2.723404255,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,18,C,respiration,-1.319148936,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,respiration,-3.425531915,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,respiration,-0.744680851,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,respiration,-4.574468085,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,respiration,-5.340425532,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,20,C,respiration,-6.042553191,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,23,C,respiration,-2.276595745,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-1.255319149,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-1.574468085,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-2.276595745,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-2.531914894,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-3.29787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-4.574468085,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-5.659574468,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,25,C,respiration,-7.510638298,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-2.021276596,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-2.85106383,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-3.042553191,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-4.765957447,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-6.29787234,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,30,C,respiration,-7.127659574,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-2.85106383,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-3.936170213,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-6.170212766,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-6.872340426,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-7.893617021,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,35,C,respiration,-8.659574468,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,38,C,respiration,-2.978723404,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,40,C,respiration,-0.680851064,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,40,C,respiration,-4.255319149,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+6,fujita2014,fujita2014,figure 1,,Amphisorus,kudakajimensis,45,C,respiration,-2.723404255,nmol O2 mg^-1 dry weight hr^-1,O2,nmol,mg,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,26.2,,1,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,15,C,respiration,0.385638487,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,15,C,respiration,0.328937724,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,20,C,respiration,0.646939625,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,20,C,respiration,0.605702706,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,20,C,respiration,0.569620403,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,24,C,respiration,1.279443964,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,24,C,respiration,1.166042438,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,24,C,respiration,0.779446328,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,29,C,respiration,2.040600867,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,29,C,respiration,1.989054719,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+1,lombard2009,lombard2009,figure 2a,,Orbulina,universa,29,C,respiration,1.705562728,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,0,umol m^-2  s^-1,r,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,15,C,net photosynthesis,2.684824903,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,15,C,net photosynthesis,2.295719844,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,20,C,net photosynthesis,7.081712062,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,20,C,net photosynthesis,8.171206226,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,20,C,net photosynthesis,8.404669261,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,24,C,net photosynthesis,10.15564202,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,24,C,net photosynthesis,9.766536965,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,24,C,net photosynthesis,9.299610895,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,29,C,net photosynthesis,15.56420233,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+2,lombard2009,lombard2009,figure 3a,,Orbulina,universa,29,C,net photosynthesis,15.21400778,nmol O2 indiv^-1 hr^-1,O2,nmol,indiv,hr,,,,M,,,,,,,250,umol m^-2  s^-1,npp,29.5035,,0,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,15,C,gross photosynthesis,9.50E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,2.295E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,19,C,gross photosynthesis,1.40E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,0.000000017,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,23,C,gross photosynthesis,1.43E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,3.15E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,27,C,gross photosynthesis,1.04E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,4.285E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,31,C,gross photosynthesis,8.03E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.34E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+1,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,35,C,gross photosynthesis,-4.02E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.004E-07,SD,,M,,,,,,,35,umol m^-2  s^-1,gpp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,17,C,net photosynthesis,1.08E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.849E-07,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,21,C,net photosynthesis,1.67E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.058E-07,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,25,C,net photosynthesis,1.69E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,0.000000054,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,29,C,net photosynthesis,1.52E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,0.000000103,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,33,C,net photosynthesis,1.29E-07,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,0.000000018,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+2,palme2025,palme2025,figure 4 ,, Amphistegina , lobifera ,37,C,net photosynthesis,4.22E-09,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.58E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,npp,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,15,C,respiration,1.65E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,3.29E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,19,C,respiration,2.67E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.33E-08,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,23,C,respiration,1.88E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,6.85E-09,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,27,C,respiration,4.67E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,1.95E-09,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,31,C,respiration,4.00E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,7.4E-09,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+3,palme2025,palme2025,figure 2,, Amphistegina , lobifera ,35,C,respiration,3.71E-08,nmol O2 um^-3 hr^-1,O2,nmol,um^3,hr,6.85E-09,SD,,M,,,,,,,35,umol m^-2  s^-1,r,35.2401,,9,
+1,pinko2020,pinko2020,figure 3b,,Sorites ,orbiculus,25,C,net photosynthesis,26.7104916,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,3.92523364,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+1,pinko2020,pinko2020,figure 3b,,Sorites ,orbiculus,30,C,net photosynthesis,12.8158826,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,1.40186916,SEM,3,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+1,pinko2020,pinko2020,figure 3b,,Sorites ,orbiculus,32,C,net photosynthesis,17.4264745,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,2.05607477,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+1,pinko2020,pinko2020,figure 3b,,Sorites ,orbiculus,35,C,net photosynthesis,-4.1316859,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,2.42990654,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+2,pinko2020,pinko2020,figure 4b,,Amphistegina ,lobifera,25,C,net photosynthesis,33.6538462,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,7.69230769,SEM,3,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+2,pinko2020,pinko2020,figure 4b,,Amphistegina ,lobifera,30,C,net photosynthesis,23.0769231,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,9.80769231,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+2,pinko2020,pinko2020,figure 4b,,Amphistegina ,lobifera,32,C,net photosynthesis,25,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,1.15384615,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+2,pinko2020,pinko2020,figure 4b,,Amphistegina ,lobifera,35,C,net photosynthesis,-15.192308,ug L^-1 O2 indiv^-1,O2,ug L^-1,indiv,week,4.13461538,SEM,4,M,,,,,,,30,umol m^-2  s^-1,npp,32.82,,0,
+1,titelboim2021,titelboim2021,figure 3 right,,Amphistegina ,lobifera,15,C,net photosynthesis,2.006590558,ug mL^-1 O2 indiv^-1,O2,ug  mL^-1,indiv,week,0.3960217,SEM,5,M,,,,,,,25,umol m^-2  s^-1,npp,32.82,,0,
+1,titelboim2021,titelboim2021,figure 3 right,,Amphistegina ,lobifera,25,C,net photosynthesis,1.70551646,ug mL^-1 O2 indiv^-1,O2,ug  mL^-1,indiv,week,0.252260398,SEM,5,M,,,,,,,25,umol m^-2  s^-1,npp,32.82,,0,
+1,titelboim2021,titelboim2021,figure 3 right,,Amphistegina ,lobifera,32,C,net photosynthesis,1.409033966,ug mL^-1 O2 indiv^-1,O2,ug  mL^-1,indiv,week,0.162748644,SEM,5,M,,,,,,,25,umol m^-2  s^-1,npp,32.82,,0,
+1,titelboim2021,titelboim2021,figure 3 right,,Amphistegina ,lobifera,35,C,net photosynthesis,-0.299004336,ug mL^-1 O2 indiv^-1,O2,ug  mL^-1,indiv,week,0.151896011,SEM,5,M,,,,,,,25,umol m^-2  s^-1,npp,32.82,,0,
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,6,C,respiration,20.45454545,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,4.626623377,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,12,C,respiration,24.35064935,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,1.136363636,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,18,C,respiration,40.90909091,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,8.116883117,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,24,C,respiration,55.68181818,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,6.655844156,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,30,C,respiration,42.04545455,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,10.22727273,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+1,deldicq2025,deldicq2025,figure 5a,,Haynesina,germanica,36,C,respiration,48.37662338,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,4.058441558,SEM,3,M,,,,,,,170,umol m^-2  s^-1,r,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,6,C,gross photosynthesis,53.31051015,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,13.70309951,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,12,C,gross photosynthesis,51.28782483,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,5.628058728,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,18,C,gross photosynthesis,57.74724475,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,15.57911909,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,24,C,gross photosynthesis,76.93250312,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,7.993474715,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,30,C,gross photosynthesis,24.01105929,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,7.340946166,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+2,deldicq2025,deldicq2025,figure 5b,,Haynesina,germanica,36,C,gross photosynthesis,18.72573122,pmol O2 indiv^-1 hr^-1,O2,pmol,indiv,hr,1.141924959,SEM,3,M,,,,,,,170,umol m^-2  s^-1,gpp,50.3722,,0,0
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,2.358169363,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.819606555,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,2.318404919,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.309949571,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.46983921,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.645501647,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.043105492,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.232995645,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.303726977,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.409026961,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,0.608744114,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,0.760930142,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.624667285,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.968714474,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.701780469,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.395302492,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,0.553716126,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,27.8,C,net photosynthesis,1.107182474,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.065947279,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.942658164,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.398627384,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.25159883,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.786889787,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.165320356,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.30890785,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-0.11327214,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-1.340282519,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-1.087915524,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,-1.501539491,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.9,C,net photosynthesis,0.17565523,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.877786321,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.7589535,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.317314606,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.417123224,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.319545506,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.619067455,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.651898647,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.593782509,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,-0.211473321,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,0.02029511,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,-0.54,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+1,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.5,C,net photosynthesis,-0.393535342,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,PNG,,12.7,umol m^-2  day^-1,npp,-9.5221,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.67556539,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.301973853,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,2.105637869,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.251949496,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,2.105158456,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,2.293805011,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.391708875,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,0.434569828,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.468052724,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,1.214444054,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,0.292588762,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,26.1,C,net photosynthesis,0.400817581,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,1.17257479,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.855105053,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,1.112454919,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.579372442,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.894373144,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.589792646,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.331994863,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.029656315,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.533149215,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.533180596,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,25.8,C,net photosynthesis,0.450280976,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.503919655,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.841630732,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.54120594,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.322883295,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.609221717,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.462218184,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.686391992,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.357926296,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.619479482,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.489672038,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,1.013356251,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.2,C,net photosynthesis,2.156682108,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.710490387,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.8670171,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.341719271,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.921026842,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,3.110060936,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.749508132,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.97011479,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.519549133,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,3.184487382,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,1.917140503,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.275193133,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2
+2,uthicke2012,uthicke2012,figure 2,,Marginopora ,vertebralis,29.3,C,net photosynthesis,2.481229311,ug O2 mm^-2 day^-1,O2,ug,mm^2,day,,,,M,,,,location,GBR,,12.7,umol m^-2  day^-1,npp,-18.2871,,1,0-2

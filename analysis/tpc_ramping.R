@@ -19,14 +19,14 @@ ramping <- read_csv("extraction/coral dataset/ramping/ramping_data.csv") %>%
                                  TRUE ~ "hard"), 
          broad_coral =as.factor(broad_coral)) %>%
   unite("tpc_grp", c(paper_unit, study_id), remove=FALSE) %>%
-  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id, metabolic_category)
+  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id, metabolic_category, error, error_type, sample_size)
 
 #breaking up metabolic categories
 npp <- ramping %>% filter(metabolic_category == "npp") %>%
 filter(ramp_rate_per_day != 0) #omitting studies that have zeros (controls)
 r <- ramping %>% filter(metabolic_category == "r") %>%  
   mutate(mol_gCmin=abs(mol_gCmin)) %>%
-  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id, metabolic_category) %>%
+  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id, metabolic_category,  error, error_type, sample_size) %>%
   filter(ramp_rate_per_day != 0) #omitting studies that have zeros (controls)
 gpp <- ramping %>% filter(metabolic_category == "gpp") %>%
 filter(ramp_rate_per_day != 0) #omitting studies that have zeros (controls)
@@ -54,9 +54,9 @@ gpp_calcs <-  read_csv("extraction/coral dataset/ramping/ramping_mrcalcs24mar25.
                                  TRUE ~ "hard"), 
          broad_coral =as.factor(broad_coral)) %>%
   unite("tpc_grp", c(paper_unit, study_id), remove = FALSE) %>%
-  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id)
+  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id,  error, error_type, sample_size)
 
-gpp_collect <- gpp %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id)
+gpp_collect <- gpp %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id,  error, error_type, sample_size)
 gpp_all <- rbind(gpp_collect, gpp_calcs)
 
 #npp
@@ -81,9 +81,9 @@ npp_calcs <-  read_csv("extraction/coral dataset/ramping/ramping_mrcalcs24mar25.
                                  TRUE ~ "hard"), 
          broad_coral =as.factor(broad_coral)) %>%
   unite("tpc_grp", c(paper_unit, study_id), remove=FALSE) %>%
-  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id)
+  select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id,  error, error_type, sample_size)
 
-npp_collect <- npp %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id)
+npp_collect <- npp %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, ramp_rate_per_day, cnidarian_type, study_id,  error, error_type, sample_size)
 npp_all <- rbind(npp_collect, npp_calcs)
 
 
@@ -318,8 +318,8 @@ gpp_export <- gpp_all %>% mutate(metabolic_category = "gpp")
 r_export <- r %>% mutate(metabolic_category = "r")
 
 
-final_dataset <- rbind(r_export, npp_export, gpp_export) %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, cnidarian_type, metabolic_category, study_id) 
+final_dataset <- rbind(r_export, npp_export, gpp_export) %>% select(tpc_grp, depth_broad, broad_coral, latitude, species, mol_gCmin, inv_T, temp, cnidarian_type, metabolic_category, study_id,  error, error_type, sample_size) 
 
-write_csv(final_dataset, "analysis/tidy data/tidy_ramping_coral_24marc25.csv")
+write_csv(final_dataset, "analysis/tidy data/tidy_ramping_coral.csv")
 
 

@@ -1,0 +1,11 @@
+# Lit search -- 25 Feb 2026
+# 173 papers
+
+TOPIC "temperature"  AND "symbio*" AND ("Paramecium bursaria" OR "Stentor coeruleus" OR "Foraminifera" OR "Noctiluca scintillans" OR "Collozoum inerme")
+
+
+
+# Lit search -- 26 Feb 2026
+# 213 papers 
+
+TS = (temperature  AND  ( Foraminifera OR foraminifer*  OR Paramecium OR Stentor  OR Noctiluca OR colloform OR Radiolaria OR collodariae ) AND ( "oxygen consumption" OR "oxygen production" OR respiration OR "net photosynthesis" OR "gross photosynthesis" OR "oxygen flux" OR microelectrode OR microelectrodes OR metabolism OR metabolic ) )

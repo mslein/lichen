@@ -15,12 +15,7 @@ pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork)
 
 
 
-#29 jan 2024
-# ABSTRACT = "zooxan*" AND "temperature" AND ("photosynthesis" OR "respiration")
-#65 papers -----> zoox.bib
-#coral2 <- read_bibliography("lit search files/zoox.bib")
-#lichen2 <- read_bibliography("wos155.bib")
-#screen_abstracts(coral2)
+
 
 #### mixotroph search 
 # 18 jan 
@@ -31,12 +26,7 @@ pacman::p_load(viridis, revtools, nlme, lme4, MuMIn, patchwork)
 
 
 
-#### symbiodinium search
-# 13 march 
-# ABSTRACT = "symbiodinium" AND "temperature" and "photosynthesis"
-# 41 papers ----> symbiodinium.bib
-#symbio1 <- read_bibliography("lit search files/symbiodinium.bib")
-#screen_abstracts(symbio1)
+
 
 
 

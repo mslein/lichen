@@ -964,12 +964,6 @@
 2,higuchi2015,higuchi2015,table 1,pop,Acropora,pruinosa,23,C,respiration,6.1,umol cm^-2 hr^-1,o2,umol,cm^2,hr,0.7,SEM,3,M,lab,,,,,0,0,umol m^-2  s^-1,r,33.9481,,hermatypic coral,2,2
 2,higuchi2015,higuchi2015,table 1,pop,Acropora,pruinosa,18,C,respiration,7.3,umol cm^-2 hr^-1,o2,umol,cm^2,hr,0.9,SEM,3,M,lab,,,,,0,0,umol m^-2  s^-1,r,33.9481,,hermatypic coral,2,2
 2,higuchi2015,higuchi2015,table 1,pop,Acropora,pruinosa,13,C,respiration,0.5,umol cm^-2 hr^-1,o2,umol,cm^2,hr,0.3,SEM,3,M,lab,,,,,0,0,umol m^-2  s^-1,r,33.9481,,hermatypic coral,2,2
-1,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,damicornis,25,C,dark respiration,1.191178993,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.568960381,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
-1,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,damicornis,30,C,dark respiration,1.596370316,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.435340898,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
-1,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,damicornis,35,C,dark respiration,1.195511866,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.366376003,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
-2,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,verrucosa,25,C,dark respiration,1.061914949,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.284480191,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
-2,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,verrucosa,30,C,dark respiration,1.445532176,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.336203862,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
-2,al-sofyani2013,al-sofyani2013,figure 3,pop,Pocillopora ,verrucosa,35,C,dark respiration,1.398141378,uL o2 mg dt^-1 hr^-1,o2,uL,mg,hr,0.331893556,SD,10,M,lab,,,,,0,0,umol m^-2  s^-1,r,21.4,,hermatypic coral,3,3
 1,bahr2018,bahr2018,figure 1a,pop,Leptastrea,purpurea,23,C,net photosynthesis,0.050524109,mg O2 g CaCO3 h^−1,o2,mg,g CaCO3,hr,0.00293501,SEM,10,M,lab,,,pH,8,500,500,umol m^-2  s^-1,npp,21.4,,hermatypic coral,4,4
 1,bahr2018,bahr2018,figure 1a,pop,Leptastrea,purpurea,26,C,net photosynthesis,0.047589099,mg O2 g CaCO3 h^−1,o2,mg,g CaCO3,hr,0.002096436,SEM,10,M,lab,,,pH,8,500,500,umol m^-2  s^-1,npp,21.4,,hermatypic coral,4,4
 1,bahr2018,bahr2018,figure 1a,pop,Leptastrea,purpurea,30,C,net photosynthesis,0.037945493,mg O2 g CaCO3 h^−1,o2,mg,g CaCO3,hr,0.007337526,SEM,10,M,lab,,,pH,8,500,500,umol m^-2  s^-1,npp,21.4,,hermatypic coral,4,4
